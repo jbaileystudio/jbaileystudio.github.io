@@ -20,7 +20,7 @@ body {
     background: greenyellow;
     max-width: 550px;
     margin: auto;
-    font-size: 40px;}
+    font-size: 35px;}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -28,7 +28,8 @@ body {
   #content {
     background: skyblue;
     max-width: 720px;
-    margin: auto;}
+    margin: auto;
+    font-size: 40px;}
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
