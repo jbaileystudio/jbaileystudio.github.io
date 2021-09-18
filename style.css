@@ -11,32 +11,31 @@ body {
     background: mediumvioletred;
     max-width: 450px;
     margin: auto;
-    font-size: 30px;}
+    font-size: 45px;}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   #content {
     background: greenyellow;
-    max-width: 550px;
+    max-width: 590px;
     margin: auto;
-    font-size: 35px;}
+    font-size: 40px;}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   #content {
     background: skyblue;
-    max-width: 720px;
-    margin: auto;
-    font-size: 40px;}
+    max-width: 740px;
+    margin: auto;}
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   #content {
     background: orange;
-    max-width: 900px;
+    max-width: 980px;
     margin: auto;}
 } 
 
