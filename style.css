@@ -13,17 +13,17 @@ footer {
   font-size: 20px;
 }
 
-mark{
-  background-color: yellow;
-  background: rgba(255, 255, 0, .5); /* RGBA */
-  color: black;
+#underline_style {
+  text-decoration-line: underline;
+  text-decoration-color: yellow;
+  text-decoration-thickness: .6rem;
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   #content {
     background: mediumvioletred;
-    max-width: 450px;
+    max-width: 550px;
     margin: auto;
     font-size: 64px;}
 
@@ -31,6 +31,10 @@ mark{
     list-style-type: none;
     margin: 0;
     padding: 0;
+  }
+
+  h1 {
+    font-size: 80px;
   }
 }
 
@@ -45,7 +49,12 @@ mark{
     #menu{
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0;    
+    font-size: 50px;
+  }
+
+  h1 {
+    font-size: 90px;
   }
 }
 
@@ -61,6 +70,7 @@ mark{
     list-style-type: none;
     margin: 0;
     padding: 0;
+    font-size: 50px;
   }
 } 
 
