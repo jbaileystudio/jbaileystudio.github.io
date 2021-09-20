@@ -16,6 +16,7 @@ footer {
 #underline_style {
   text-decoration-line: underline;
   text-decoration-color: yellow;
+  text-decoration-skip-ink: none;
   text-decoration-thickness: .6rem;
 }
 
