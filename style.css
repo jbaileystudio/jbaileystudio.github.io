@@ -10,10 +10,6 @@ body {
   text-decoration: none;
 }
 
-h1{
-  opacity: 20%;
-}
-
 footer {
   font-size: 20px;
 }
@@ -46,7 +42,7 @@ mark{
 @media only screen and (min-width: 768px) {
   #content {
     background: lightblue;
-    max-width: 740px;
+    max-width: 720px;
     margin: auto;
     font-size: 60px;}
 } 
