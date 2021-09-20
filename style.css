@@ -42,7 +42,7 @@ mark{
 @media only screen and (min-width: 768px) {
   #content {
     background: lightblue;
-    max-width: 720px;
+    max-width: 760px;
     margin: auto;
     font-size: 60px;}
 } 
