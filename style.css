@@ -20,6 +20,15 @@ footer {
   text-decoration-thickness: .6rem;
 }
 
+#work_list{
+  margin-top: auto;
+}
+
+h3{
+  margin-bottom: 2rem;
+}
+
+/* Page breaks */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   #content {
