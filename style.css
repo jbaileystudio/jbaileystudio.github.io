@@ -12,24 +12,9 @@ footer {
   font-size: 20px;
 }
 
-#underline_style {
-  text-decoration-line: underline;
-  text-decoration-color: #AEBCAF;
-  text-decoration-skip-ink: none;
-  text-decoration-thickness: .6rem;
-}
-
 #work_list{
   margin-top: auto;
 }
-
-mark {
-  background-color: #C1D3C3;
-}
-
-/*#home_copy{
-  line-height: 8rem;
-} */
 
 h3{
   margin-bottom: 2rem;
@@ -57,7 +42,7 @@ a:active {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   #content {
-    background: #F3DCD4;
+    background: #E9FEFE;
     max-width: 550px;
     margin: auto;
     font-size: 64px;}
@@ -79,12 +64,24 @@ a:active {
   #home_copy{
   line-height: 5.8rem;
   }
+
+  #underline_style {
+  text-decoration-line: underline;
+  text-decoration-color: #b8fcfc;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: .6rem;
+  }
+
+  mark {
+    background-color: #b8fcfc;
+  }
+  
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   #content {
-    background: #C2C2B4;
+    background: #fee9e9;
     max-width: 590px;
     margin: auto;
     font-size: 62px;}
@@ -106,12 +103,23 @@ a:active {
   #home_copy{
     line-height: 5.9rem;
   }
+
+  #underline_style {
+  text-decoration-line: underline;
+  text-decoration-color: #fdbdbd;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: .6rem;
+  }
+
+  mark {
+    background-color: #fdbdbd;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   #content {
-    background: #D1CFC0;
+    background: #ded5db;
     max-width: 760px;
     margin: auto;
     font-size: 60px;}
@@ -126,12 +134,24 @@ a:active {
   #home_copy{
     line-height: 5.5rem;
   }
+
+    #underline_style {
+  text-decoration-line: underline;
+  text-decoration-color: #bdacb7;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: .6rem;
+  }
+
+  mark {
+    background-color: #bdacb7;
+  }
+
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   #content {
-    background: #ECC9C7;
+    background: #d5dbde;
     max-width: 980px;
     margin: auto;
     font-size: 50px;}
@@ -149,6 +169,17 @@ a:active {
   #home_copy{
     line-height: 4.6rem;
   }
+
+  #underline_style {
+  text-decoration-line: underline;
+  text-decoration-color: #acb7bd;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: .6rem;
+  }
+
+  mark {
+    background-color: #acb7bd;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -159,10 +190,21 @@ a:active {
     margin: auto;
     font-size: 40px;
     color: black;}
+
+    #underline_style {
+    text-decoration-line: underline;
+    text-decoration-color: #AEBCAF;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: .6rem;
+    }
+
+    mark {
+      background-color: #C1D3C3;
+    }
   
-  #home_copy{
-    line-height: 3.8rem;
-  }
+    #home_copy{
+      line-height: 3.8rem;
+    }
 
   }
   
