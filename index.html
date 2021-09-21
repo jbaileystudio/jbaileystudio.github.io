@@ -5,17 +5,18 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body id=content>
+  <a name="top"></a>
   <h1><a id=logo aria-label="J Bailey Studio Home" href="/">jbaileystudio</a></h1>
     <p>I'm James, a web design professional currently working at <a aria-label="I Marc" href="https://imarc.com/">Imarc</a> as a UX Strategist.</p>
       <ul id="menu">
-        <li id="menu_item"><a href="#jump_link">Jump to my work</a></li>
+        <li id="menu_item"><a href="#Professional_Work">Jump to my work</a></li>
         <li id="menu_item"><a href="https://drive.google.com/file/d/1eac2XNW6ccyVEvK5ixNMwgP0iY7vID8q/view">View my Resume</a></li>
         <li id="menu_item"><a href="mailto:james@jbaileystudio.com">Reach out to me</a></li>
       </ul>
   <p id="home_copy">I craft <mark>customer-focused user experiences</mark> that help clients exceed their business goals serving their target audiences on the web. What sets me apart from my peers is I aim to <mark> consistently deliver quality work, commit to frequent collaboration and critique, and strive for daily improvement</mark>. Professionally I am curious about how design becomes communication and believe in <mark>building onto work that ultimately makes an impact.</mark></p>
   <p id="home_copy">Outside of my day to day work, I am passionate about running, augmented reality, endurance motorsport, and visual storytelling. </p>
-  <h3 id="jump_link">Professional Work:</h3>
-    <ul id="work_list">
+  <h3 id="Professional_Work">Professional Work:</h3>   
+  <ul id="work_list">
       <li><a href="#bright horizons">Bright Horizons</a></li>
       <li><a href="#beacon hill">Beacon Hill Staffing</a></li>
       <li><a href="#sterling">Sterling Corporation</a></li>
@@ -33,6 +34,30 @@
       <li><a href="#electric">Electric personal car</a></li>
       <li><a href="#logos">Logos</a></li>
     </ul>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button> 
   <footer><u id="underline_style">Copyright © James Bailey 2021</u></footer><br>  <!-- This website was built by me using the best extent of my HTML and CSS knowledge -->
 </body>
+
+<script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+</script>
+
 </html>
