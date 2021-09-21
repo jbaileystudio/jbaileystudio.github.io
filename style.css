@@ -19,7 +19,6 @@ footer {
 h3{
   margin-bottom: 2rem;
 }
- 
 
 a:link {
   text-decoration: none;
@@ -30,6 +29,11 @@ a:visited {
   color: blue;
 }
 
+a:focus {
+  text-decoration: underline;
+  background-color: orange;
+}
+
 a:hover {
   text-decoration: underline;
   background-color: orange;
@@ -38,6 +42,8 @@ a:hover {
 a:active {
   text-decoration: underline;
 }
+
+
 
 /*Floating Back-To-Top Button*/
 #myBtn {
@@ -102,8 +108,11 @@ a:active {
   }
 
   #myBtn {
-    display: none;
-    font-size: 40px;
+  display: none;
+  font-size: 100px;
+  padding-top: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
   }
 }
 
@@ -144,9 +153,12 @@ a:active {
     background-color: #fdbdbd;
   }
 
-    #myBtn {
-    display: none;
-    font-size: 40px;
+  #myBtn {
+  display: none;
+  font-size: 100px;
+  padding-top: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
   }
 }
 
