@@ -14,6 +14,11 @@ footer {
 
 #work_list{
   margin-top: auto;
+  line-height: 115%;
+}
+
+ul li {
+  padding: 12px 0px;
 }
 
 h3{
