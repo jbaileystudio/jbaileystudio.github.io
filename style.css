@@ -89,10 +89,7 @@ a:active {
   text-decoration: underline;
 }
 
-b {
-  margin-top: 25px;
-  font-size: 24px;
-}
+
 
 
 /*Floating Back-To-Top Button*/
@@ -238,7 +235,7 @@ b {
     padding: 0;
   }
 
-  #second_list_item{
+  .second_list_item{
     display: inline-block;
     margin-right: 1rem;}
 
@@ -298,11 +295,21 @@ b {
   }
 
   h2 {
-  font-size: 1.6em;
-  line-height: 128px;
+  font-size: 2em;
+  line-height: 140px;
   margin-top: 60px;
   padding-bottom: 0px;
   }
+
+.indent{
+  white-space: pre-line;
+  font-size: 36px;
+  margin-top: 0px;
+}
+
+b {
+  font-size: 60px;
+}
 
   .hero_content{
   max-width: 768px;
@@ -311,25 +318,29 @@ b {
 
   #pill_detail_menu{
   list-style-type: none;
-  margin-top: 20px;
+  margin-top: 50px;
   margin-bottom: 60px;
   padding: 0;}
 
   #pill_detail_menu_item{
   display: inline-block;
-  padding-top: 0px;
-  padding-bottom: 8px;
+  padding-top: 16px;
+  padding-bottom: 12px;
   margin-right: 8px;}
 
 
   #second_list{
     list-style-type: none;
     padding: 0;
+    padding-top: 60px;
   }
 
-  #second_list_item{
+  .second_list_item{
     display: inline-block;
-    margin-right: 1.6rem;}
+    margin-right: 6rem;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;}
 
 
   .child_copy{
@@ -343,13 +354,13 @@ b {
     border-style: solid;
     border-color: rgba(255, 255, 255, 1);
     color: white;
-    padding: 20px 40px;
+    padding: 24px 48px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
-    border-radius: 32px;
-    font-size: 28px;
+    border-radius: 48px;
+    font-size: 40px;
     pointer-events: none;
   }
 
@@ -380,6 +391,16 @@ b {
   font-weight: 200;
   font-size: 20px;
   color: #fff;
+}
+
+.indent{
+  white-space: pre-line;
+  font-size: 16px;
+}
+
+b {
+  margin-top: 25px;
+  font-size: 24px;
 }
 
   #menu{
@@ -439,7 +460,7 @@ b {
     padding: 0;
   }
 
-  #second_list_item{
+  .second_list_item{
     display: inline-block;
     margin-right: 3rem;  }
 
@@ -533,7 +554,7 @@ b {
     padding: 0;
   }
 
-  #second_list_item{
+  .second_list_item{
     display: inline-block;
     margin-right: 3rem;  }
 
