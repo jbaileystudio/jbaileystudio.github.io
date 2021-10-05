@@ -62,10 +62,6 @@ h3{
   margin-bottom: 2rem;
 }
 
-h4 {
-  margin-bottom: 1rem;
-}
-
 a:link {
   text-decoration: none;
 }
@@ -301,6 +297,13 @@ a:active {
   padding-bottom: 0px;
   }
 
+  h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 120px;
+}
+
+
 .indent{
   white-space: pre-line;
   font-size: 36px;
@@ -337,7 +340,7 @@ b {
 
   .second_list_item{
     display: inline-block;
-    margin-right: 6rem;
+    margin-right: 3rem;
     padding-top: 0px;
     margin-top: 0px;
     margin-bottom: 0px;}
@@ -381,6 +384,10 @@ b {
       padding-bottom: 20px;
     }
 
+  h4 {
+    margin-top: 60px;
+    font-size: 60px;
+}
 
     .hero_content{
     max-width: 980px;
@@ -433,6 +440,16 @@ b {
     font-size: 50px
   }
 
+ #work_list{
+    font-size: 40px
+  }
+
+  .child_copy{
+  font-size: 24px;
+  line-height: 2rem;
+  white-space: pre-line;
+  }
+
   #underline_style {
   text-decoration-line: underline;
   text-decoration-color: #acb7bd;
@@ -462,14 +479,10 @@ b {
 
   .second_list_item{
     display: inline-block;
-    margin-right: 3rem;  }
+    margin-right: 2rem;  }
 
 
-  .child_copy{
-    font-size: 24px;
-    line-height: 2rem;
-    white-space: pre-line;
-  }
+
 
   .button {
   background-color:rgba(0, 0, 0, 0);
