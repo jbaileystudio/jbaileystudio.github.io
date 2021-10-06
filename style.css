@@ -46,6 +46,11 @@ footer {
 #work_list{
   margin-top: auto;
   line-height: 115%;
+  font-size: 50px;
+}
+
+#play_list {
+  font-size: 50px;
 }
 
 ul {
