@@ -18,7 +18,7 @@ body {
   position: relative;
   right: 50%;
   width: 100vw;
-  background-color: #818f82; /* Deep purple */
+  background-color: #057383; /* Deep green */
   color: white;
   padding-top: 50px;
   padding-bottom: 30px;
@@ -363,8 +363,8 @@ b {
 
 
   .child_copy{
-    font-size: 24px;
-    line-height: 2rem;
+    font-size: 40px;
+    line-height: 5rem;
     white-space: pre-line;
   }
 
@@ -466,7 +466,7 @@ b {
 
   .child_copy{
   font-size: 24px;
-  line-height: 2rem;
+  line-height: 3rem;
   white-space: pre-line;
   }
 
@@ -524,7 +524,7 @@ b {
 /* Extra large devices (large laptops and desktops, 1200px and up) desktop - ipad horizontal*/
 @media only screen and (min-width: 1200px) {
   #content {
-    background: #D9E3DA;
+    background: #fff;
     max-width: 1100px;
     margin: auto;}
 
@@ -595,7 +595,7 @@ b {
 
   .child_copy{
     font-size: 24px;
-    line-height: 2rem;
+    line-height: 2.6rem;
     white-space: pre-line;
   }
 
