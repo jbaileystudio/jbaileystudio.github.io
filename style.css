@@ -31,6 +31,7 @@ body {
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
+  margin-top: 50px;
   height: 300px;
   
 }
@@ -117,7 +118,7 @@ a:active {
   bottom: 20px; /* Place the button at the bottom of the page */
   right: 30px; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
-  border: none;/* 3px solid grey;  Color borders */
+  border: 3px solid black;/* 3px solid grey;  Color borders */
   background-color: #fdfdfd; /* White - Set a background color */
   color: black; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
@@ -160,9 +161,9 @@ a:active {
 
   #underline_style {
   text-decoration-line: underline;
-  text-decoration-color: #b8fcfc;
+  text-decoration-color: black;
   text-decoration-skip-ink: none;
-  text-decoration-thickness: .6rem;
+  text-decoration-thickness: .2rem;
   }
 
   mark {
@@ -204,9 +205,9 @@ a:active {
 
   #underline_style {
   text-decoration-line: underline;
-  text-decoration-color: #fdbdbd;
+  text-decoration-color: black;
   text-decoration-skip-ink: none;
-  text-decoration-thickness: .6rem;
+  text-decoration-thickness: .2rem;
   }
 
   mark {
@@ -287,11 +288,11 @@ a:active {
     font-size: 60px;
   }
 
-    #underline_style {
+  #underline_style {
   text-decoration-line: underline;
-  text-decoration-color: #bdacb7;
+  text-decoration-color: black;
   text-decoration-skip-ink: none;
-  text-decoration-thickness: .6rem;
+  text-decoration-thickness: .2rem;
   }
 
   mark {
@@ -472,9 +473,9 @@ b {
 
   #underline_style {
   text-decoration-line: underline;
-  text-decoration-color: #acb7bd;
+  text-decoration-color: black;
   text-decoration-skip-ink: none;
-  text-decoration-thickness: .6rem;
+  text-decoration-thickness: .2rem;
   }
 
   mark {
@@ -532,13 +533,13 @@ b {
       max-width: 1100px;
       margin: auto;
     }
-
-    #underline_style {
-    text-decoration-line: underline;
-    text-decoration-color: #AEBCAF;
-    text-decoration-skip-ink: none;
-    text-decoration-thickness: .6rem;
-    }
+    
+  #underline_style {
+  text-decoration-line: underline;
+  text-decoration-color: black;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: .2rem;
+  }
 
     mark {
       background-color: #fbff00;
