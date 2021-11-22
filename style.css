@@ -24,24 +24,57 @@ body {
   padding-bottom: 30px;
 }
 
-.wide_image {
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  margin-top: 50px;
-  height: 300px;
-  
+.image_fig {
+  margin-top: 60px;
 }
+
+.fig_caption{
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+
+.images {
+  width:100%;
+  max-width:1100px;
+  -webkit-filter: drop-shadow(6px 6px 9px #cccccc);
+        filter: drop-shadow(6px 6px 9px #cccccc); 
+
+  transition:  .2s ease-in-out;      
+}
+
+.images:hover {
+  transform: scale(1.5);
+}
+
+.Reach-out-btn {
+  background-color: black;
+  border: 2px solid white;
+  border-color: white;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  padding: .75rem 1.2rem;
+  text-align: center;
+  width: auto;
+}
+
+.Reach-out-btn:hover{
+  background-color: orange;
+}
+
+.Reach-out-btn:focus{
+  background-color: orange;
+}
+
+.Back_to_top:focus{
+  background-color: orange;
+}
+
 
 #logo{
   color: black;
-}
-
-footer {
-  font-size: 20px;
 }
 
 #work_list{
@@ -52,6 +85,25 @@ footer {
 
 #play_list {
   font-size: 50px;
+}
+
+.footer-text {
+  margin-top: 48px;
+  font-size: 24px;
+  line-height: 2rem;
+  white-space: pre-line;
+}
+
+footer {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  background-color: black;
+  color: white;
+  border: 3px solid black;
+  padding: 10px;
+  text-align: center;
 }
 
 ul {
@@ -403,7 +455,7 @@ b {
 
   h4 {
     padding-top: 20px;
-    font-size: 60px;
+    font-size: 32px;
 }
 
     .hero_content{

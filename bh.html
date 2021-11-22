@@ -11,10 +11,9 @@
             <a id="back_to_home" aria-label="J Bailey Studio Home" href="index.html">&#60; Back to jbaileystudio home</a>
             <h2>Optimizing lead generation for parents at enterprise scale</h2>
               <ul id="pill_detail_menu">
+                <li id="pill_detail_menu_item"><button class="button" tabindex="-1" placeholder="NoTabIndex">Sketching</button></li>
                 <li id="pill_detail_menu_item"><button class="button" tabindex="-1" placeholder="NoTabIndex">Wireframes</button></li>
                 <li id="pill_detail_menu_item"><button class="button" tabindex="-1" placeholder="NoTabIndex">Prototyping</button></li>
-                <li id="pill_detail_menu_item"><button class="button" tabindex="-1" placeholder="NoTabIndex">User Flows</button></li>
-                <li id="pill_detail_menu_item"><button class="button" tabindex="-1" placeholder="NoTabIndex">User Journeys</button></li>
               </ul>
               <ul id="second_list">
                 <li class="second_list_item"> 
@@ -23,40 +22,98 @@
                   </p>
                 </li>
                 <li class="second_list_item"> 
-                  <p class="indent">HOURS:
-                    <b>410+</b>
-                  </p>
-                </li>
-                <li class="second_list_item"> 
-                  <p class="indent">BUDGET:
-                    <b>$1 million</b>
+                  <p class="indent">UX HOURS:
+                    <b>50</b>
                   </p>
                 </li>
                 <li class="second_list_item"> 
                   <p class="indent">DELIVERABLE:
-                    <b>Website or Analysis</b>
+                    <b>Website</b>
                   </p>
-                </li>      
+                </li>
+                <li class="second_list_item"> 
+                  <p class="indent">DEPARTMENTS:
+                    <b>UX, Creative, Development</b>
+                  </p>
+                </li>        
               </ul>
            </div>
         </div>
-      <h4>The task / Summary / What is X</h4>  
-        <p class="child_copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <h4>Why / Pain Points</h4>
-        <p class="child_copy">Massa tincidunt nunc pulvinar sapien. Sem viverra aliquet eget sit amet tellus cras adipiscing. Sed faucibus turpis in eu mi bibendum. Porta nibh venenatis cras sed. Convallis tellus id interdum velit laoreet id donec ultrices tincidunt. Odio eu feugiat pretium nibh ipsum consequat nisl vel.</p>
+      <h4>The task</h4>  
+        <p class="child_copy">Bright Horizons was seeking to improve one of their many lead generation processes by iterating on their child care center location tool. The old experience was unfriendly to mobile devices, provided minimal clarity to users in areas where there are a ot of child care centers, and wasn't built on a system that could be updated easily.</p>
+      <h4>Solution</h4>
+        <p class="child_copy">The solution was broken into three core parts: Create a map powered by Google Maps to align with the industry standard for location services, optimize the design to service desktop and mobile better devices regardless of device size, and provide child care center location details on click/tap for quicker highlight information.</p> 
+        <figure class="image_fig">
+          <center>
+            <img class="images" src="Center-locator-desktop.png">
+            <figcaption class="fig_caption"> The new Center Locator Tool <a href="https://www.brighthorizons.com/find-a-center"><u>See It Here</u></a></figcaption>
+          </center>
+        </figure>
       <h4>Process</h4>
-        <p class="child_copy">Interdum posuere lorem ipsum dolor sit. Interdum consectetur libero id faucibus nisl tincidunt eget. Adipiscing enim eu turpis egestas pretium aenean pharetra. Faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi.
+        <p class="child_copy">The hardest part of improving the locator tool was determining which improvement would make the most impact to the user base. The old locator tool was forcing users to locate their nearest location via a massive full screen map and a tiny ZIP code box that was attached to an infinite scrolling results list.</p>
+        <figure class="image_fig">
+          <center>
+            <img class="images" src="Center-locator-old.png">
+            <figcaption class="fig_caption">The Old Center Locator Tool</figcaption>
+          </center>
+        </figure>
 
-        Cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum. A arcu cursus vitae congue mauris rhoncus. Non blandit massa enim nec dui nunc mattis. Interdum consectetur libero id faucibus nisl tincidunt. Suspendisse sed nisi lacus sed. Nunc non blandit massa enim nec dui nunc. At quis risus sed vulputate odio ut enim blandit. </p> 
+        <p class="child_copy">To create the largest improvement for our users we needed to ensure the largest possible audience could use the tool in the first place regardless of wich device they were on. This led us to separating the search and results list from its old location overlaying the map.</p> 
+        
 
-        <div><img class="wide_image" src="Screen-Shot-2021-09-30-at.png"></div>
-      <h4>Solutions</h4>
-        <p class="child_copy">Dapibus ultrices in iaculis nunc sed augue. Dignissim suspendisse in est ante. Morbi quis commodo odio aenean sed. Dui ut ornare lectus sit amet est placerat. Euismod quis viverra nibh cras pulvinar mattis nunc sed. Ultricies integer quis auctor elit sed. Adipiscing vitae proin sagittis nisl. Scelerisque eu ultrices vitae auctor eu augue ut. Sodales ut etiam sit amet nisl purus. Viverra accumsan in nisl nisi scelerisque eu ultrices. Porta nibh venenatis cras sed felis.</p> 
+        <figure class="image_fig">
+          <center>
+            <img class="images" src="Center-locator-sketch.png">
+            <figcaption class="fig_caption">Sketch of the new Center Locator layout along with an improved pin</figcaption>
+          </center>
+        </figure>
+
+        <p class="child_copy">Adding essential information to the existing map pins was the lowest hanging fruit for improvement. Map users of the internet today are familiar with the mental model of pins and we opted to lean into that by adding only the essential pieces of information parents need to know was as a way to declutter the overall design and lighten up the search results.</p>
+
+        <figure class="image_fig">
+          <center>
+            <img class="images" src="Center-locator-wires-early-2.png">
+            <figcaption class="fig_caption">Early improvements to the current system</figcaption>
+          </center>
+        </figure>
+
+        <p class="child_copy">After internal review we determined that while the presentation of the map and its results was in a better spot than before, the vertical split of map and search results was too closely mirroring the previous iteration and was ultimately still limiting mobile visitors control.
+
+        Therefore a decision was made to approach the map and search tools in a horizontal 50/50 split of the page with a much lighter landing experience for new visitors. This would lead into a more refined filtering results page with a double set of cards and a lot more visual room to massage information around that is friendlier to different device types.</p>
+
+        <figure class="image_fig">
+          <center>
+            <img class="images" src="Center-locator-wires-early.png">
+            <figcaption class="fig_caption">Early wireframe iterations</figcaption>
+          </center>
+        </figure>
+
+        <p class="child_copy">Upon final review we scrapped the early introductary search screens as they took up too many clicks for the user and planted the visitor directly into the map experience instead. This became an incredibly streamlined flow for the user as they could now immediately search for their location or choose pins upon initial arrival. Additionally the presentation of multiple cards on screen along with sophisticated filtering gives maximal control without detracting from the initial purpose of visit.</p>
+
+        <figure class="image_fig">
+          <center>
+            <img class="images" src="Center-locator-wires-desktop.png">
+            <figcaption class="fig_caption">Desktop view of the new Center Locator Tool</figcaption>
+          </center>
+        </figure>
+
+        <p class="child_copy">We knew we were on the right track when the mobile wireframes natural information flow could still operate as a map and a search and results page at the same time without detracting from the overall goal of finding a center..</p>
+
+        <figure class="image_fig">
+          <center>
+            <img class="images" src="Center-locator-wires-mobile.png">
+            <figcaption class="fig_caption">Mobile view of the new Center Locator Tool</figcaption>
+          </center>
+        </figure>
       <h4>Result</h4>
-        <p class="child_copy">Dapibus ultrices in iaculis nunc sed augue. Dignissim suspendisse in est ante. Morbi quis commodo odio aenean sed. Dui ut ornare lectus sit amet est placerat. Euismod quis viverra nibh cras pulvinar mattis nunc sed. Ultricies integer quis auctor elit sed. Adipiscing vitae proin sagittis nisl. Scelerisque eu ultrices vitae auctor eu augue ut. Sodales ut etiam sit amet nisl purus. Viverra accumsan in nisl nisi scelerisque eu ultrices. Porta nibh venenatis cras sed felis.</p> 
-      <button onclick="topFunction()" aria-label="Back to Top" id="myBtn" title="Go to top">&#xA71B;</button><br>
+        <p class="child_copy">The live version of the new Center Locator tool can be seen <a href="https://www.brighthorizons.com/find-a-center">here.</a> This enhanced tool has enabled Bright horizons to better display the locations of their child care centers, highlight to their users any essential information they need about each one, and streamline the lead collection experience.</p>
+      <h4>Related Work From This Client</h4>
+        <p class="child_copy">Homepage, Single Page Lead Form, EDW</p> 
+      <button class="Back_to_top" onclick="topFunction()" aria-label="Back to Top" id="myBtn" title="Go to top">&#xA71B;</button><br>
         <footer>
-          <u id="underline_style">Copyright © James Bailey 2021</u>
+          <p class="footer-text">Interested in what this project and want to learn more?</p>
+          <button onclick="window.location.href='mailto:james@jbaileystudio.com';" class="Reach-out-btn">Reach out to me</button><br><br><br><br>
+          Copyright © James Bailey 2021
         </footer>
       <br>  <!-- This website was built by me using the best extent of my HTML and CSS knowledge -->
     </body>
@@ -80,5 +137,8 @@
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
       }
+
+
+
   </script>
 </html>
