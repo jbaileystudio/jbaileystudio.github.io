@@ -3,6 +3,9 @@
 
 body {
   font-family: 'Roboto Slab', serif;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
 }
 
 .indent{
@@ -26,6 +29,7 @@ body {
 
 .image_fig {
   margin-top: 60px;
+  display: block;
 }
 
 .fig_caption{
@@ -43,9 +47,28 @@ body {
   transition:  .2s ease-in-out;      
 }
 
+/* 
 .images:hover {
   transform: scale(1.5);
 }
+*/
+
+/*
+
+.imgLink { border: none; background: none; }
+.imgLink img
+{
+  height: 40rem;
+  cursor: pointer;
+    -webkit-filter: drop-shadow(6px 6px 9px #cccccc);
+        filter: drop-shadow(6px 6px 9px #cccccc); 
+}
+.imgLink:active img, .imgLink:focus img
+{
+  height: 60rem;
+}
+
+*/
 
 .Reach-out-btn {
   background-color: black;
@@ -89,21 +112,36 @@ body {
 
 .footer-text {
   margin-top: 48px;
+  margin-bottom: 32px;
   font-size: 24px;
   line-height: 2rem;
   white-space: pre-line;
 }
 
+.child_copy_list {
+  font-size: 24px;
+  margin-top: 0px;
+}
+
+.child_copy_list_item {
+  padding-top: 8px;
+}
+
+#child_copy_list{
+  margin-bottom: 16px;
+  font-size: 24px;
+  }
+
 footer {
-  position: relative;
-  margin-right: auto;
-  margin-left: auto;
   width: 100%;
   background-color: black;
   color: white;
-  border: 3px solid black;
-  padding: 10px;
   text-align: center;
+  padding-bottom: 32px ;
+  position: ;
+  bottom: 0;
+  overflow: hidden;
+  margin-top: 100px;
 }
 
 ul {
@@ -190,11 +228,15 @@ a:active {
 /* Page breaks ------------------------------------------------------------------------------------------------*/
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  #content {
+  .content {
     background: #E9FEFE;
-    max-width: 550px;
-    margin: auto;
     font-size: 64px;
+    }
+
+    .page_content{
+      max-width: 550px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     #menu{
@@ -233,11 +275,15 @@ a:active {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  #content {
+  .content {
     background: #fee9e9;
-    max-width: 590px;
-    margin: auto;
   }
+
+      .page_content{
+      max-width: 590px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
   #menu {
     list-style-type: none;
@@ -314,10 +360,14 @@ a:active {
 
 /* Medium devices (landscape tablets, 768px and up) iphone */ 
 @media only screen and (min-width: 768px) {
-  #content {
-    background: #ded5db;
-    max-width: 760px;
-    margin: auto;}
+  .content {
+    background: #ded5db;}
+
+    .page_content{
+      max-width: 760px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
   #menu{
     list-style-type: none;
@@ -441,11 +491,15 @@ b {
 
 /* Large devices (laptops/desktops, 992px and up) ipad vertical*/
 @media only screen and (min-width: 992px) {
-  #content {
+  .content {
     background: #d5dbde;
-    max-width: 980px;
-    margin: auto;
   }
+
+      .page_content{
+      max-width: 980px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
     h2 {
       font-size: 80px;
@@ -576,14 +630,19 @@ b {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) desktop - ipad horizontal*/
 @media only screen and (min-width: 1200px) {
-  #content {
+  .content {
     background: #fff;
-    max-width: 1100px;
-    margin: auto;}
+  }
 
     .hero_content{
       max-width: 1100px;
       margin: auto;
+    }
+
+    .page_content{
+      max-width: 1100px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
   #underline_style {
