@@ -107,9 +107,9 @@ body {
   padding-top: 8px;
 }
 
-#child_copy_list{
+#detail_list_title{
   margin-bottom: 16px;
-  font-size: 24px;
+  font-size: 4rem;
   }
 
 footer {
@@ -335,6 +335,13 @@ a:active {
     line-height: 2rem;
     white-space: pre-line;
   }
+
+.detail_list_title {
+  font-size: 10rem;
+}
+
+
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) iphone */ 
@@ -398,7 +405,7 @@ a:active {
   h4 {
     padding-top: 30px;
     margin-bottom: 0px;
-    font-size: 120px;
+    font-size: 4rem;
 }
 
 
@@ -465,6 +472,13 @@ b {
     pointer-events: none;
   }
 
+  .detail_list_title {
+  font-size: 2rem;
+}
+
+.child_copy_list_item {
+  font-size: 2rem;
+}
 
 } 
 
