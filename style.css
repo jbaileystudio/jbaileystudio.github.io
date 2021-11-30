@@ -6,6 +6,7 @@ body {
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 .indent{
@@ -30,45 +31,14 @@ body {
 .image_fig {
   margin-top: 60px;
   display: block;
+  -webkit-filter: drop-shadow(6px 6px 4px #cccccc);;
 }
 
 .fig_caption{
   padding-top: 16px;
   padding-bottom: 16px;
+  color: #434343;
 }
-
-
-.images {
-  width:100%;
-  max-width:1100px;
-  -webkit-filter: drop-shadow(6px 6px 9px #cccccc);
-        filter: drop-shadow(6px 6px 9px #cccccc); 
-
-  transition:  .2s ease-in-out;      
-}
-
-/* 
-.images:hover {
-  transform: scale(1.5);
-}
-*/
-
-/*
-
-.imgLink { border: none; background: none; }
-.imgLink img
-{
-  height: 40rem;
-  cursor: pointer;
-    -webkit-filter: drop-shadow(6px 6px 9px #cccccc);
-        filter: drop-shadow(6px 6px 9px #cccccc); 
-}
-.imgLink:active img, .imgLink:focus img
-{
-  height: 60rem;
-}
-
-*/
 
 .Reach-out-btn {
   background-color: black;
@@ -709,6 +679,16 @@ b {
     font-size: 24px;
     line-height: 2.6rem;
     white-space: pre-line;
+    
+  }
+
+  .child_copy_block{   /* Text and h4 */
+    margin-bottom: 4rem;
+  }
+
+  .child_copy_block_2{ /* Text between two images */
+    margin-top: 6rem;
+    margin-bottom: 8rem;
   }
 
 }
