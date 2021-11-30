@@ -48,6 +48,7 @@ body {
   padding-top: 16px;
   padding-bottom: 16px;
   color: #434343;
+  font-size: 1rem;
 }
 
 .Reach-out-btn {
@@ -107,7 +108,7 @@ body {
   padding-top: 8px;
 }
 
-#detail_list_title{
+.detail_list_title{
   margin-bottom: 16px;
   font-size: 4rem;
   }
