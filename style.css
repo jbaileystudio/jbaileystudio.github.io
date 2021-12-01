@@ -217,7 +217,6 @@ footer {
   background-color: orange; /* Add a dark-grey background on hover */
 }
 
-
 /* Page breaks ------------------------------------------------------------------------------------------------*/
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -644,9 +643,8 @@ b {
   }
 
 
-.image_fig img { /* Images above iphone screen size width */
+.image_fig img { /* Images above iphone screen size width will be this size */
  width: 992px;
-
 }
 
 
