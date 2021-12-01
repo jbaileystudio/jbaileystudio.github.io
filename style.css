@@ -73,6 +73,10 @@ footer {
   margin-top: 10rem;
 }
 
+.centerImage {
+ text-align:center;
+}
+
 .footer-text {
   margin-top: 48px;
   margin-bottom: 32px;
@@ -132,10 +136,10 @@ footer {
 }
 /*------------------------------------------------------------------------*/
 
-.image_fig {
+.image_fig { /* Container for images */
   margin-top: 5rem;
-  display: block;
-  -webkit-filter: drop-shadow(6px 6px 4px #cccccc);;
+  text-align: center;
+  -webkit-filter: drop-shadow(6px 6px 4px #cccccc);
 }
 
 .fig_caption{
@@ -143,6 +147,8 @@ footer {
   padding-bottom: 16px;
   color: #434343;
   font-size: 1rem;
+  display: block;
+  text-align: center;
 }
 
 .Reach-out-btn:hover{
@@ -636,6 +642,13 @@ b {
     font-size: 24px;
     margin-bottom: .1rem;
   }
+
+
+.image_fig img { /* Images above iphone screen size width */
+ width: 992px;
+
+}
+
 
 }
 
