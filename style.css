@@ -410,8 +410,8 @@ footer {
 
   h2 {
   font-size: 104px;
-  line-height: 140px;
-  margin-top: 60px;
+  line-height: 8rem;
+  margin-top: 7rem;
   padding-bottom: 0px;
   }
 
@@ -429,7 +429,7 @@ footer {
 }
 
 b {
-  font-size: 60px;
+  font-size: 3rem;
 }
 
   .hero_content{
@@ -447,7 +447,8 @@ b {
   display: inline-block;
   padding-top: 16px;
   padding-bottom: 12px;
-  margin-right: 8px;}
+  margin-right: 1rem;
+}
 
 
   #second_list{
@@ -458,7 +459,7 @@ b {
 
   .second_list_item{
     display: inline-block;
-    margin-right: 1rem;
+    margin-right: 8rem;
     padding-top: 0px;
     margin-top: 0px;
     margin-bottom: 0px;}
