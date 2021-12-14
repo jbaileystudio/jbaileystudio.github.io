@@ -156,6 +156,17 @@ footer {
   -webkit-filter: drop-shadow(6px 6px 4px #cccccc);
 }
 
+.image_fig_3 { /* Container for images */
+  margin-top: 5rem;
+  text-align: center;
+  -webkit-filter: drop-shadow(6px 6px 4px #cccccc);
+}
+
+.image_fig_3_no_shadow { /* Container for images */
+  margin-top: 5rem;
+  text-align: center;
+}
+
 .fig_caption{
   padding-top: 16px;
   padding-bottom: 16px;
@@ -667,10 +678,24 @@ b {
   }
 
   .image_fig_2 img { /* Wider images above iphone screen side width will be this size at max*/
+    max-width: 1500px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .image_fig_3 img { /* Wider images above iphone screen side width will be this size at max*/
     max-width: 1920px;
     display: block;
     margin-right: auto;
     margin-left: auto;
+  }
+
+  .image_fig_3_no_shadow img { /* Wider images above iphone screen side width will be this size at max*/
+  max-width: 1920px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
   }
 
 }
