@@ -162,6 +162,16 @@ footer {
   -webkit-filter: drop-shadow(6px 6px 4px #cccccc);
 }
 
+.image_fig_no_shadow { /* Container for images */
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.image_fig_2_no_shadow { /* Container for images */
+  margin-top: 5rem;
+  text-align: center;
+}
+
 .image_fig_3_no_shadow { /* Container for images */
   margin-top: 5rem;
   text-align: center;
