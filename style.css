@@ -150,6 +150,12 @@ footer {
   -webkit-filter: drop-shadow(6px 6px 4px #cccccc);
 }
 
+.image_fig_2 { /* Container for images */
+  margin-top: 5rem;
+  text-align: center;
+  -webkit-filter: drop-shadow(6px 6px 4px #cccccc);
+}
+
 .fig_caption{
   padding-top: 16px;
   padding-bottom: 16px;
@@ -655,12 +661,24 @@ b {
 
   .image_fig img { /* Images above iphone screen size width will be this size */
    width: 992px;
+   display: inline-block;
+   margin-right: auto;
+   margin-left: auto;
+  }
+
+  .image_fig_2 img { /* Wider images above iphone screen side width will be this size at max*/
+    max-width: 1920px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
   }
 
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) desktop - ipad horizontal*/
 @media only screen and (min-width: 1200px) {
+
+
   .content {
     background: #fff;
   }
