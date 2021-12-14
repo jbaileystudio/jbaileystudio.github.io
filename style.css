@@ -128,11 +128,19 @@ footer {
 
 /* -----------------------Header and Footer Colors----------------------- */
 #bh_banner{ /* Bright Horizons Banner Color */
-  background-color: #1a475f; /* Deep green */
+  background-color: #1a475f; /* Deep blue */
 }
 
 #bh_footer{ /* Bright Horizons Footer Color */
-  background-color: #1a475f; /* Deep green */
+  background-color: #1a475f; /* Deep blue */
+}
+
+#at_banner{ /* AspenTech Banner Color */
+  background-color: #64b300; /* Bright green */
+}
+
+#at_footer{ /* AspenTech Footer Color */
+  background-color: #64b300; /* Bright green */
 }
 /*------------------------------------------------------------------------*/
 
@@ -645,10 +653,9 @@ b {
   }
 
 
-.image_fig img { /* Images above iphone screen size width will be this size */
- width: 992px;
-}
-
+  .image_fig img { /* Images above iphone screen size width will be this size */
+   width: 992px;
+  }
 
 }
 
