@@ -142,6 +142,15 @@ footer {
 #at_footer{ /* AspenTech Footer Color */
   background-color: #64b300; /* Bright green */
 }
+
+#sm_banner{ /* Sterling Moving Banner Color */
+  background-color: #2a307a /* Deep purple */
+}
+
+#sm_footer { /* Sterling Moving Footer Color */
+  background-color: #2a307a; /* Deep purple */
+}
+
 /*------------------------------------------------------------------------*/
 
 .image_fig { /* Container for images */
@@ -685,6 +694,7 @@ b {
    display: inline-block;
    margin-right: auto;
    margin-left: auto;
+   margin-top: 1rem;
   }
 
   .image_fig_2 img { /* Wider images above iphone screen side width will be this size at max*/
@@ -692,6 +702,7 @@ b {
     display: block;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 1rem;
   }
 
   .image_fig_3 img { /* Wider images above iphone screen side width will be this size at max*/
@@ -699,6 +710,7 @@ b {
     display: block;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 1rem;
   }
 
   .image_fig_3_no_shadow img { /* Wider images above iphone screen side width will be this size at max*/
