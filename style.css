@@ -151,9 +151,24 @@ footer {
   background-color: #2a307a; /* Deep purple */
 }
 
+#racing_sim_banner{ /* Sterling Moving Banner Color */
+  background-color: #2C2C2C /* Deep purple */
+}
+
+#racing_sim_footer { /* Sterling Moving Footer Color */
+  background-color: #2C2C2C; /* Deep purple */
+}
+
+
 /*------------------------------------------------------------------------*/
 
 .image_fig { /* Container for images */
+  margin-top: 5rem;
+  text-align: center;
+  -webkit-filter: drop-shadow(6px 6px 4px #cccccc);
+}
+
+.image_fig_1 { /* Container for images */
   margin-top: 5rem;
   text-align: center;
   -webkit-filter: drop-shadow(6px 6px 4px #cccccc);
@@ -694,6 +709,13 @@ b {
    display: inline-block;
    margin-right: auto;
    margin-left: auto;
+   margin-top: 1rem;
+  }
+
+  .image_fig_1 img { /* Images above iphone screen size width will be this size */
+   width: auto;
+   max-height: 600px;
+   display: inline-block;
    margin-top: 1rem;
   }
 
