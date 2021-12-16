@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Urban Design Studies</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="content">
+  <a name="top"></a>
+  <div class="hero_banner" id="racing_sim_banner">
+    <div class="hero_content">
+      <a id="back_to_home" aria-label="J Bailey Studio Home" href="index.html">&#60; Back to jbaileystudio home</a>
+      <h2>Urban Design Studies</h2>
+      <p class="child_copy">With more of my life orienting itself around my home I've become a lot more aware to my local neighborhood and in particular its roads. I believe lots of improvements to the layout of my towns and many in the country can be done. These are some sketches I've put together to show how I am imagining improving the urban world around me.</p>
+    </div>
+  </div>
+  <div class="image_fig">
+    <img src="urban-design-studies/intersection-roundabout.png" alt="ATCQ speaker box" width="100%" height="auto" class=centerImage/>
+  </div>
+  <footer id="racing_sim_footer">
+    <p class="footer-text">Interested in this project and want to learn more?</p>
+    <button onclick="window.location.href='mailto:james@jbaileystudio.com';" class="Reach-out-btn">Reach out to me</button>
+    <br><br><br><br>
+    <!-- <p class="copyrite-text">Copyright © James Bailey 2021</p> -->
+    <button class="Back_to_top" onclick="topFunction()" aria-label="Back to Top" id="myBtn" title="Go to top">&#xA71B;</button><br>
+  <br>  <!-- This website was built by me using the best extent of my HTML and CSS knowledge -->
+  </footer>
+</body>
+<script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    </html>
