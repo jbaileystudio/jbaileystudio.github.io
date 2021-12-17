@@ -280,7 +280,7 @@ footer {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .content {
-    background: #E9FEFE;
+    background: ;
     font-size: 64px;
     }
 
@@ -312,7 +312,7 @@ footer {
   }
 
   mark {
-    background-color: #b8fcfc;
+    background-color: #fbff00;
   }
 
   #myBtn {
@@ -327,7 +327,7 @@ footer {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .content {
-    background: #fee9e9;
+    background: ;
   }
 
       .page_content{
@@ -360,7 +360,7 @@ footer {
   }
 
   mark {
-    background-color: #fdbdbd;
+    background-color: #fbff00;
   }
 
   #myBtn {
@@ -419,7 +419,7 @@ footer {
 /* Medium devices (landscape tablets, 768px and up) iphone */ 
 @media only screen and (min-width: 768px) {
   .content {
-    background: #ded5db;}
+    background: ;}
 
     .page_content{
       max-width: 760px;
@@ -456,7 +456,7 @@ footer {
   }
 
   mark {
-    background-color: #bdacb7;
+    background-color: #fbff00;
   }
 
   #myBtn {
@@ -559,7 +559,7 @@ b {
 /* Large devices (laptops/desktops, 992px and up) ipad vertical*/
 @media only screen and (min-width: 992px) {
   .content {
-    background: #d5dbde;
+    background: ;
   }
 
       .page_content{
@@ -653,7 +653,7 @@ b {
   }
 
   mark {
-    background-color: #acb7bd;
+    background-color: #fbff00;
   }
 
   #myBtn {
