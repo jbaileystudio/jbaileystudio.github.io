@@ -1,8 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Hanuman:wght@300;400;700&display=swap');
+
+
 
 body {
-  font-family: 'Roboto Slab', serif;
+font-family: 'Hanuman', serif;
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 0;
@@ -19,21 +22,24 @@ ul li {
 
 h1 {
   font-size: 100px;
+  font-family: 'Lato', sans-serif;
 }
 
 h2 {
-  font-size: 60px;
+  font-family: 'Lato', sans-serif;
+  font-size: 54px;
   margin-bottom: 0px;
 }
 
 h3{
-  font-size: 60px;
-  margin-bottom: 2rem;
+  font-family: 'Lato', sans-serif;
+  font-size: 40px;
+  margin-bottom: 1.5rem;
 }
 
 h4{
-  font-size: 60px;
-  margin-bottom: 0px;
+  font-family: 'Lato', sans-serif;
+  font-size: 32px;
 }
 
 p {
@@ -128,7 +134,8 @@ footer {
 
 /* -----------------------Header and Footer Colors----------------------- */
 #bh_banner{ /* Bright Horizons Banner Color */
-  background-color: #1a475f; /* Deep blue */
+  background-color: background: rgb(26,71,95);
+background: linear-gradient(180deg, rgba(26,71,95,1) 50%, rgba(15,45,61,1) 100%); /* Deep blue */
 }
 
 #bh_footer{ /* Bright Horizons Footer Color */
@@ -136,7 +143,8 @@ footer {
 }
 
 #at_banner{ /* AspenTech Banner Color */
-  background-color: #64b300; /* Bright green */
+  background: rgb(100,179,0);
+background: linear-gradient(180deg, rgba(100,179,0,1) 73%, rgba(84,150,0,1) 100%); /* Bright green */
 }
 
 #at_footer{ /* AspenTech Footer Color */
@@ -144,7 +152,8 @@ footer {
 }
 
 #sm_banner{ /* Sterling Moving Banner Color */
-  background-color: #2a307a /* Deep purple */
+  background: rgb(42,48,122);
+background: linear-gradient(180deg, rgba(42,48,122,1) 50%, rgba(14,20,96,1) 100%); /* Deep purple */
 }
 
 #sm_footer { /* Sterling Moving Footer Color */
@@ -448,6 +457,29 @@ footer {
     font-size: 60px;
   }
 
+  #home_copy_intro{
+    font-weight: 400;
+    line-height: 5.5rem;
+    font-size: 60px;
+  }
+
+    #work_list {
+      font-size: 60px;
+      margin-top: 16px;
+      margin-bottom: 0px;
+      padding: 0;
+      line-height: 4.8rem;
+      list-style-type: none;
+    }
+
+    #play_list {
+      font-size: 60px;
+      margin-top: 16px;
+      margin-bottom: 0px;
+      padding: 0;
+      list-style-type: none;
+    }
+
   #underline_style {
   text-decoration-line: underline;
   text-decoration-color: black;
@@ -470,7 +502,6 @@ footer {
   h2 {
   font-size: 104px;
   line-height: 8rem;
-  margin-top: 7rem;
   padding-bottom: 0px;
   }
 
@@ -499,7 +530,6 @@ b {
   #pill_detail_menu{
   list-style-type: none;
   margin-top: 50px;
-  margin-bottom: 60px;
   padding: 0;}
 
   #pill_detail_menu_item{
@@ -571,13 +601,12 @@ b {
     h2 {
       font-size: 80px;
       line-height: 6rem;
-      margin-top: 4rem;
-      padding-bottom: 3.5rem;
+      padding-bottom: 0px;
     }
 
   h4 {
     padding-top: 20px;
-    font-size: 32px;
+    font-size: 40px;
 }
 
     .hero_content{
@@ -628,15 +657,30 @@ b {
 
   #home_copy{
     line-height: 4.6rem;
-    font-size: 50px
+    font-size: 48px
+  }
+
+    #home_copy_intro{
+    font-weight: 400;
+    line-height: 4.6rem;
+    font-size: 48px;
   }
 
     #work_list {
-      font-size: 40px
+      font-size: 48px;
+      margin-top: 16px;
+      margin-bottom: 0px;
+      padding: 0;
+      line-height: 4rem;
+      list-style-type: none;
     }
 
     #play_list {
-      font-size: 40px
+      font-size: 48px;
+      margin-top: 16px;
+      margin-bottom: 0px;
+      padding: 0;
+      list-style-type: none;
     }
 
   .child_copy{
@@ -747,70 +791,103 @@ b {
 /* Extra large devices (large laptops and desktops, 1200px and up) desktop - ipad horizontal*/
 @media only screen and (min-width: 1200px) {
 
+  .homepage_content {
+    background: rgb(255,103,91);
+background: linear-gradient(180deg, rgba(255,103,91,0.09987745098039214) 0%, rgba(255,255,255,1) 50%);
+  }
 
   .content {
-    background: #fff;
+    color: white;
   }
 
-    .hero_content{
-      max-width: 1100px;
-      margin: auto;
-    }
+  .hero_content{
+    max-width: 1100px;
+    margin: auto;
+  }
 
-    .page_content{
-      max-width: 1100px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+  .page_content{
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   #underline_style {
-  text-decoration-line: underline;
-  text-decoration-color: black;
-  text-decoration-skip-ink: none;
-  text-decoration-thickness: .2rem;
+    text-decoration-line: underline;
+    text-decoration-color: black;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: .2rem;
   }
 
-    mark {
-      background-color: #fbff00;
-    }
-  
-    #home_copy{
-      line-height: 3.8rem;
-      font-size: 40px;
-    }
+  mark {
+    background-color: #fbff00;
+  }
 
-    #work_list {
-      font-size: 40px
-    }
+  #home_copy{
+    font-weight: 400;
+    line-height: 3.4rem;
+    font-size: 32px;
+  }
 
-    #play_list {
-      font-size: 40px
-    }
+  #home_copy_intro{
+    font-weight: 400;
+    line-height: 3.4rem;
+    font-size: 32px;
+  }
+
+  #work_list {
+    font-weight: 400;
+    font-size: 32px;
+    margin-top: 16px;
+    margin-bottom: 0px;
+    line-height: 3rem;
+    padding: 0;
+    list-style-type: none;
+
+  }
+
+  #play_list {
+    font-weight: 400;
+    font-size: 32px;
+    margin-top: 16px;
+    margin-bottom: 0px;
+    line-height: 3rem;
+
+    padding: 0;
+    list-style-type: none;
+
+  }
+
+ #menu_item{
+    display: inline;
+    margin-right: 32px;
+    font-size: 24px;
+  }
 
   #myBtn {
-      display: none;
-      font-size: 40px;
-      padding-right: 20px;
-      padding-left: 20px;
-      padding-top: 15px;
-      font-size: 30px;
-    }
+    display: none;
+    font-size: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 15px;
+    font-size: 30px;
+  }
 
-    h2 {
-      font-size: 72px;
-      line-height: 90px;
-      padding-bottom: 40px;
-    }
-
+  h2 {
+    font-size: 54px;
+    line-height: 4.8rem;
+    padding-bottom: 0px;
+  }
 
   #pill_detail_menu{
-  list-style-type: none;
-  margin-top: -10px;}
+    list-style-type: none;
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+  }
 
   #pill_detail_menu_item{
-  display: inline-block;
-  margin-right: .3rem;}
-
+    display: inline-block;
+    margin-right: .3rem;
+  }
 
   #second_list{
     list-style-type: none;
@@ -820,7 +897,8 @@ b {
 
   .second_list_item{
     display: inline-block;
-    margin-right: 2rem;  }
+    margin-right: 2rem;  
+    padding-bottom: 0;}
 
 
   .child_copy{
