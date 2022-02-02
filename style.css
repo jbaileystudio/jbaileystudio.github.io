@@ -336,7 +336,7 @@ background: linear-gradient(180deg, rgba(42,48,122,1) 50%, rgba(14,20,96,1) 100%
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .content {
-    background: ;
+    
   }
 
       .page_content{
@@ -427,8 +427,17 @@ background: linear-gradient(180deg, rgba(42,48,122,1) 50%, rgba(14,20,96,1) 100%
 
 /* Medium devices (landscape tablets, 768px and up) iphone */ 
 @media only screen and (min-width: 768px) {
+    .homepage_content {
+    background: rgb(255,103,91);
+    background: -moz-linear-gradient(180deg, rgba(255,103,91,0.09987745098039214) 0%, rgba(255,255,255,1) 50%);
+    background: -webkit-linear-gradient(180deg, rgba(255,103,91,0.09987745098039214) 0%, rgba(255,255,255,1) 50%);
+    background: linear-gradient(180deg, rgba(255,103,91,0.09987745098039214) 0%, rgba(255,255,255,1) 50%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff675b",endColorstr="#ffffff",GradientType=1);
+  }
+
   .content {
-    background: ;}
+ 
+  }
 
     .page_content{
       max-width: 760px;
@@ -589,7 +598,7 @@ b {
 /* Large devices (laptops/desktops, 992px and up) ipad vertical*/
 @media only screen and (min-width: 992px) {
   .content {
-    background: ;
+
   }
 
       .page_content{
@@ -792,12 +801,10 @@ b {
 @media only screen and (min-width: 1200px) {
 
   .homepage_content {
-    background: rgb(255,103,91);
-background: linear-gradient(180deg, rgba(255,103,91,0.09987745098039214) 0%, rgba(255,255,255,1) 50%);
   }
 
   .content {
-    color: white;
+    color: black;
   }
 
   .hero_content{
