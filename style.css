@@ -428,15 +428,16 @@ background: linear-gradient(180deg, rgba(42,48,122,1) 50%, rgba(14,20,96,1) 100%
 /* Medium devices (landscape tablets, 768px and up) iphone */ 
 @media only screen and (min-width: 768px) {
   .homepage_content {
-    background-image:#99ffeb;background-image:  
-    radial-gradient(at 16% 1%, hsla(146,88%,69%,1) 0, rgb(255,255,255,0) 44%),  
-    radial-gradient(at 93% 12%, hsla(183,72%,71%,1) 0, rgb(255,255,255,0) 51%),  
-    radial-gradient(at 58% 32%, hsla(210,89%,70%,1) 0, rgb(255,255,255,0) 54%),  
-    radial-gradient(at 12% 6%, hsla(138,72%,67%,1) 0, rgb(255,255,255,0) 50%),  
-    radial-gradient(at 6% 39%, hsla(273,93%,67%,1) 0, rgb(255,255,255,0) 46%);
-  
-    background-size: 100% 100%;
 
+    background-image:#bd99ff;background-image:  
+    radial-gradient(at 47% 51%, hsla(172,97%,69%,1) 0, rgb(255,255,255,0) 49%),  
+    radial-gradient(at 73% 35%, hsla(313,61%,71%,1) 0, rgb(255,255,255,0) 44%),  
+    radial-gradient(at 10% 0%, hsla(39,88%,62%,1) 0, rgb(255,255,255,0) 48%),  
+    radial-gradient(at 45% 10%, hsla(74,93%,72%,1) 0, rgb(255,255,255,0) 49%),  
+    radial-gradient(at 11% 25%, hsla(56,86%,61%,1) 0, rgb(255,255,255,0) 54%);
+  
+    background-size: 100% 19.5%;
+    background-repeat: no-repeat;
 
   }
 
