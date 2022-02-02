@@ -17,7 +17,7 @@ ul {
 }
 
 ul li {
-  padding: 16px 0px;
+  padding-top: 16px;
 }
 
 h1 {
@@ -461,6 +461,11 @@ background: linear-gradient(0deg, rgba(44,44,44,1) 50%, rgba(22,22,22,1) 100%); 
     padding: 0;
   }
 
+ul li {
+  padding-top: 16px;
+  padding-bottom: 32px;
+}
+
 #back_to_home {
   font-weight: 200;
   font-size: 32px;
@@ -632,6 +637,12 @@ b {
     max-width: 980px;
     margin: auto;
     }
+
+
+ul li {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
 
 #back_to_home {
   font-weight: 200;
@@ -835,6 +846,11 @@ b {
     text-decoration-thickness: .2rem;
   }
 
+ul li {
+  padding-top: 16px;
+  padding-bottom: 8px;
+}
+
   mark {
     background-color: #fbff00;
   }
@@ -859,7 +875,6 @@ b {
     line-height: 3rem;
     padding: 0;
     list-style-type: none;
-
   }
 
   #play_list {
