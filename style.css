@@ -131,7 +131,6 @@ footer {
   padding-bottom: 30px;
 }
 
-
 /* -----------------------Header and Footer Colors----------------------- */
 #bh_banner{ /* Bright Horizons Banner Color */
   background-color: background: rgb(26,71,95);
@@ -139,7 +138,8 @@ background: linear-gradient(180deg, rgba(26,71,95,1) 50%, rgba(15,45,61,1) 100%)
 }
 
 #bh_footer{ /* Bright Horizons Footer Color */
-  background-color: #1a475f; /* Deep blue */
+  background-color: background: rgb(26,71,95);
+background: linear-gradient(0deg, rgba(26,71,95,1) 50%, rgba(15,45,61,1) 100%); /* Deep blue */
 }
 
 #at_banner{ /* AspenTech Banner Color */
@@ -148,7 +148,8 @@ background: linear-gradient(180deg, rgba(100,179,0,1) 73%, rgba(84,150,0,1) 100%
 }
 
 #at_footer{ /* AspenTech Footer Color */
-  background-color: #64b300; /* Bright green */
+  background: rgb(100,179,0);
+background: linear-gradient(0deg, rgba(100,179,0,1) 73%, rgba(84,150,0,1) 100%); /* Bright green */
 }
 
 #sm_banner{ /* Sterling Moving Banner Color */
@@ -157,15 +158,18 @@ background: linear-gradient(180deg, rgba(42,48,122,1) 50%, rgba(14,20,96,1) 100%
 }
 
 #sm_footer { /* Sterling Moving Footer Color */
-  background-color: #2a307a; /* Deep purple */
+  background: rgb(42,48,122);
+background: linear-gradient(0deg, rgba(42,48,122,1) 50%, rgba(14,20,96,1) 100%); /* Deep purple */
 }
 
-#racing_sim_banner{ /* Sterling Moving Banner Color */
-  background-color: #2C2C2C /* Deep purple */
+#racing_sim_banner{ /* Personal Work Banner Color */
+  background: rgb(44,44,44);
+background: linear-gradient(180deg, rgba(44,44,44,1) 50%, rgba(22,22,22,1) 100%); /* Deep black */
 }
 
-#racing_sim_footer { /* Sterling Moving Footer Color */
-  background-color: #2C2C2C; /* Deep purple */
+#racing_sim_footer { /* Personal Work Footer Color */
+  background: rgb(44,44,44);
+background: linear-gradient(0deg, rgba(44,44,44,1) 50%, rgba(22,22,22,1) 100%); /* Deep black */
 }
 
 
@@ -929,6 +933,7 @@ b {
     margin-top: 6rem;
     margin-bottom: 8rem;
   }
+
 
 }
   
