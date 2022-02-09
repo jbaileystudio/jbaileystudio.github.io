@@ -81,6 +81,8 @@ footer {
 
 .centerImage {
  text-align:center;
+ max-width: 1920px;
+ margin: auto;
 }
 
 .footer-text {
@@ -215,13 +217,24 @@ background: linear-gradient(0deg, rgba(44,44,44,1) 50%, rgba(22,22,22,1) 100%); 
 }
 
 .fig_caption{
-  padding-top: 16px;
+  margin-top: 0px;
+  padding-top: 2rem;
   padding-bottom: 16px;
   color: #434343;
   font-size: 1rem;
   display: block;
   text-align: center;
 }
+
+.fig_caption_hero{
+  margin-top: 0px;
+  padding-bottom: 16px;
+  color: #434343;
+  font-size: 1rem;
+  display: block;
+  text-align: center;
+}
+
 
 .Reach-out-btn:hover{
   background-color: orange;
