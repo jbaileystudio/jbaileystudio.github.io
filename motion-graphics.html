@@ -1,74 +1,232 @@
 <!DOCTYPE html>
-<html>
-<head>
- <!-- Tracking -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jbaileystudio - Motion Graphics</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="favicons/favicon-32x32.png" type="image/x-icon">
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-219530537-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Tracking -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-219530537-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-219530537-1');
+    </script>
+    <!-- End Tracking -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-  gtag('config', 'UA-219530537-1');
-</script>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
+    .header {
+      text-align: left;
+      padding: 32px;
+      padding-left: 0px;
+      padding-top: 0px;
+    }
 
-  <title>Motion Graphics</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
+    .row {
+      display: -ms-flexbox; /* IE 10 */
+      display: flex;
+      -ms-flex-wrap: wrap; /* IE 10 */
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
 
+    /* Create two equal columns that sits next to each other */
+    .column {
+      -ms-flex: 50%; /* IE 10 */
+      flex: 50%;
+      padding: 0 4px;
+    }
 
-</head>
-<body class="content">
-  <a name="top"></a>
-  <div class="hero_banner" id="racing_sim_banner">
-    <div class="hero_content">
-      <a id="back_to_home" aria-label="J Bailey Studio Home" href="index.html">&#60; Back to jbaileystudio home</a>
-      <h2>Motion Graphics</h2>
-      <p class="child_copy">These are some short motion graphics studies that I've experimented with in my free time.</p>
+    .column img {
+      margin-top: 8px;
+      margin-bottom: 8px;
+      vertical-align: middle;
+    }
+
+    /* Style the buttons */
+    .btn {
+      border: none;
+      outline: none;
+      padding: 10px 16px;
+      background-color: #f1f1f1;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .btn:hover {
+      background-color: #ddd;
+    }
+
+    .btn.active {
+      background-color: #666;
+      color: white;
+    }
+  </style>
+  <body>
+    <div style="background: #f7f7f7;">
+      <div class="header_div">
+        <a class="back_to_home" aria-label="J Bailey Studio Home" href="index.html" style="text-decoration: none; color: black">&#8592; Back Home</a>
+        <h1 style="padding-bottom: 30px;">Motion Graphics Studies</h1>
+      </div> 
     </div>
-  </div>
-  <div class="image_fig_1">
-    <img src="motion-graphics/atcq-speaker-box.gif" alt="ATCQ speaker box" width="100%" height="auto" class=centerImage/>
-    <!--<img src="motion-graphics/circles-2.gif" alt="Circles motion" width="100%" height="auto" class=centerImage/>-->
-    <img src="motion-graphics/circular-hashed-2.gif" alt="Hashed circles" width="100%" height="auto" class=centerImage/>
-    <img src="motion-graphics/hexagonrotate.gif" alt="Rotating hexagons" width="100%" height="auto" class=centerImage/>
-    <img src="motion-graphics/purplestuff.gif" alt="Purple motion" width="100%" height="auto" class=centerImage/>
-    <img src="motion-graphics/homepage-background-loop.gif" alt="Flipping squares" width="100%" height="auto" class=centerImage/>
-    <!--<img src="motion-graphics/lightbulb_sound.gif" alt="Lightbulb" width="100%" height="auto" class=centerImage/>-->
-    <img src="motion-graphics/skyscraper-fall_noise.gif" alt="Skyscrape design" width="100%" height="auto" class=centerImage/>
-    <img src="motion-graphics/water-statue.gif" alt="Water statue" width="100%" height="auto" class=centerImage/>
-    <img src="motion-graphics/walkway_noise.gif" alt="Walkway" width="100%" height="auto" class=centerImage/>
-  </div>
-  <footer id="racing_sim_footer">
-    <p class="footer-text">Interested in this and want to learn more?</p>
-    <button onclick="window.location.href='mailto:james@jbaileystudio.com';" class="Reach-out-btn">Reach out to me</button>
-    <br><br><br><br>
-    <!-- <p class="copyrite-text">Copyright © James Bailey 2021</p> -->
-    <button class="Back_to_top" onclick="topFunction()" aria-label="Back to Top" id="myBtn" title="Go to top">&#xA71B;</button><br>
-  <br>  <!-- This website was built by me using the best extent of my HTML and CSS knowledge -->
-  </footer>
-</body>
-<script>
-      //Get the button
-      var mybutton = document.getElementById("myBtn");
+    <main class="inner_main">
+      <!-- Header -->
+      <div class="header" id="myHeader">
+        <p>These are some short motion graphics studies that I've experimented with in my free time.</p>
+        <p>Click on the buttons to change the grid view.</p>
+        <button class="btn" onclick="one()">1</button>
+        <button class="btn active" onclick="two()">2</button>
+        <button class="btn" onclick="four()">4</button>
+      </div>
+      <!-- Photo Grid -->
+      <div class="row"> 
+        <div class="column">
+          <img src="motion-graphics/atcq-speaker-box.gif" alt="ATCQ speaker box" style="width:100%"/>
+          <img src="motion-graphics/circles-2.gif" alt="Circles motion" style="width:100%"/>
+          <img src="motion-graphics/circular-hashed-2.gif" alt="Hashed circles" style="width:100%"/>     
+        </div>
+        <div class="column">
+          <img src="motion-graphics/homepage-background-loop.gif" alt="Flipping squares" style="width:100%"/>
+          <img src="motion-graphics/lightbulb_sound.gif" alt="Lightbulb" style="width:100%"/>
+          <img src="motion-graphics/water-statue.gif" alt="Water statue" style="width:100%"/>
+        </div>  
+        <div class="column">
+          <img src="motion-graphics/hexagonrotate.gif" alt="Rotating hexagons" style="width:100%"/>
+          <img src="motion-graphics/purplestuff.gif" alt="Purple motion" style="width:100%"/>
+        </div>
+        <div class="column">
+          <img src="motion-graphics/walkway_noise.gif" alt="Walkway" style="width:100%"/>
+          <img src="motion-graphics/skyscraper-fall_noise.gif" alt="Skyscrape design" style="width:100%"/>
 
-      // When the user scrolls down 20px from the top of the document, show the button
-      window.onscroll = function() {scrollFunction()};
+        </div>
+      </div>
 
-      function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          mybutton.style.display = "block";
-        } else {
-          mybutton.style.display = "none";
+      <script>
+      // Get the elements with class="column"
+      var elements = document.getElementsByClassName("column");
+
+      // Declare a loop variable
+      var i;
+
+      // Full-width images
+      function one() {
+          for (i = 0; i < elements.length; i++) {
+          elements[i].style.msFlex = "100%";  // IE10
+          elements[i].style.flex = "100%";
         }
       }
 
-      // When the user clicks on the button, scroll to the top of the document
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
+      // Two images side by side
+      function two() {
+        for (i = 0; i < elements.length; i++) {
+          elements[i].style.msFlex = "50%";  // IE10
+          elements[i].style.flex = "50%";
+        }
       }
-    </script>
-    </html>
+
+      // Four images side by side
+      function four() {
+        for (i = 0; i < elements.length; i++) {
+          elements[i].style.msFlex = "25%";  // IE10
+          elements[i].style.flex = "25%";
+        }
+      }
+
+      // Add active class to the current button (highlight it)
+      var header = document.getElementById("myHeader");
+      var btns = header.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+      </script>
+    </main>
+    <footer>
+      <p>
+        Interested in this project and want to learn more? <a href="mailto:james@jbaileystudio.com">Reach out to me</a>
+      </p>
+      
+    </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+      </script>
+
+      <!--Lightbox Carousel Script-->
+      <script>
+        function openModal() {
+          document.getElementById("myModal").style.display = "block";
+          }
+
+        function closeModal() {
+          document.getElementById("myModal").style.display = "none";
+
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+      </script>
+    </body>
+</html>

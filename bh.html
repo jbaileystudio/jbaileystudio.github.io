@@ -1,189 +1,279 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jbaileystudio - Center Locator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="favicons/favicon-32x32.png" type="image/x-icon">
+
     <!-- Tracking -->
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-219530537-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-219530537-1');
-</script>
-
-
-
-  <title>Bright Horizons Project</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
-
-
-</head>
-<body class="content">
-  <a name="top"></a>
-  <div class="hero_banner" id="bh_banner">
-    <div class="hero_content">
-      <a id="back_to_home" aria-label="J Bailey Studio Home" href="index.html">&#60; Back to jbaileystudio home</a>
-      <h2>A new way for parents to find their closest childcare facility</h2>
-      <ul id="pill_detail_menu">
-        <li id="pill_detail_menu_item"><button class="button" tabindex="-1" placeholder="NoTabIndex">Sketching</button></li>
-        <li id="pill_detail_menu_item"><button class="button" tabindex="-1" placeholder="NoTabIndex">Wireframes</button></li>
-        <li id="pill_detail_menu_item"><button class="button" tabindex="-1" placeholder="NoTabIndex">Prototyping</button></li>
-      </ul>
-      <ul id="second_list">
-        <li class="second_list_item"> 
-          <p class="indent">CLIENT:
-            <b>Child-Care Provider</b>
-          </p>
-        </li>
-        <li class="second_list_item"> 
-          <p class="indent">DELIVERABLE:
-            <b>Website</b>
-          </p>
-        </li>
-        <li class="second_list_item"> 
-          <p class="indent">DEPARTMENTS:
-            <b>UX, Creative, Development</b>
-          </p>
-        </li> 
-        <li class="second_list_item"> 
-          <p class="indent">UX HOURS:
-            <b>60</b>
-          </p>
-        </li>       
-      </ul>
-    </div>
-  </div>
-  <div class="page_content">
-    <div class="child_copy_block">
-      <h4>Objective</h4>  
-        <p class="child_copy">Bright Horizons was seeking to improve one of their many child care lead generation processes by iterating on their center location tool. The old experience was unfriendly to mobile devices, lacked clarity in areas where there are a lot of child care centers, and wasn't built on a system that could be updated easily.</p>
-      </div>
-    <div class="child_copy_block">
-      <h4>Solution</h4>
-        <p class="detail_list_title">The solution was broken into three core parts: 
-          <ul class="child_copy_list">
-            <li class="child_copy_list_item">Create a map powered by Google Maps to follow the industry standard on location services.</li>
-            <li class="child_copy_list_item">Optimize the design to service desktop and mobile devices better regardless of device size.</li>
-            <li class="child_copy_list_item">Provide essential child care center details on click or tap for quicker information access.</li>
-          </ul>
-        </p>
-      </div>
-    </div>
-    <div class="centerImage" >
-        <img src="bh-photos/Center-locator-landing.png" alt="The Center Locator Tool" width="100%" height="auto"/>
-        <!--<embed type="text/html" src="https://www.brighthorizons.com/child-care-locator" width="90%" height="800px" class="centerImage">   -->
-        <figcaption class="fig_caption_hero">The new Center Locator Tool <a href="https://www.brighthorizons.com/find-a-center"><u>See It Here</u></a></figcaption> 
-    </div>
-  <div class="page_content">
-    <div class="child_copy_block_2">
-      <h4>Process</h4>
-        <p class="child_copy">The hardest part of improving the locator tool was determining which improvement would make the most impact to the large user base. 
-
-        The old locator tool was forcing users to locate their nearest location via a massive full screen map and a tiny ZIP code box that was attached to an infinite scrolling results list.</p>
-      </div>
-  </div>
-  <div class="image_fig">
-    <img src="bh-photos/Center-locator-old.png" alt="The Old Center Locator Tool" width="100%" height="auto" class=centerImage/> 
-  </div>
-  <figcaption class="fig_caption">The Old Center Locator Tool</figcaption> 
-  <div class="child_copy_block_2">
-    <div class="page_content">
-      <p class="child_copy">First, to create the largest improvement we wanted to first ensure the largest possible audience could use the tool regardless of which device they were on. To us, addressing the usability of the existing tool was the least effort to change with the largest possible impact on the userbase. This meant addressing the layout; our thinking led us to separating the search and results list from its old location which used to overlay the map.</p> 
-    </div>
-  </div>
-  <div class="image_fig">
-    <img src="bh-photos/Center-locator-sketch.png" alt="Pencil sketch of the new Center Locator Tool" width="100%" height="auto"class=centerImage/>
-    <img src="bh-photos/Center-locator-sketch-color.jpg" alt="Digital sketch of the new Center Locator Tool Color" width="100%" height="auto"class=centerImage/>
-  </div>
-  <figcaption class="fig_caption">Sketchs of the new Center Locator layout along with improved pins</figcaption>
-  <div class="child_copy_block_2">
-    <div class="page_content">
-      <p class="child_copy">Adding key pieces of information to the existing map pins in an on-click dialogue box was what we choose to add to the experience that didn't exist before. It was a simple nice to have that in combination with the google maps powered baseline update we think completed the package. 
-
-      Users on the internet today who use maps are familiar with the mental model of pins and we wanted to lean into that by adding only the essential pieces of information parents need to know as a way to declutter the design and simplify up the search results.</p>
-    </div>
-  </div>
-  <div class="image_fig">
-    <img src="bh-photos/Center-locator-first-wire.png" alt="Early improvements to the current system" width="100%" height="auto" class=centerImage />
-  </div>
-  <figcaption class="fig_caption">Early improvements to the current system</figcaption> 
-  <div class="child_copy_block_2">
-    <div class="page_content">
-      <p class="child_copy">After internal review we determined that while the presentation of the map and its results was in a better spot than before, the vertical split of map and search results was too closely mirroring the old locator and was ultimately still limiting mobile visitors control.
-
-      Therefore a decision was made to pivot the map and search tools into a horizontal 50/50 split of the page with a much more introductory landing experience for new visitors. This would then lead into a more refined results page with filtering controls and a set of double cards. By providing more visual room to massage information around we were able to design friendlier to different device types.</p>
-    </div>
-  </div>
-  <div class="image_fig">
-    <img src="bh-photos/Center-locator-wires-early-2.png" alt="Early wireframe iterations" width="100%" height="auto" class=centerImage/> 
-  </div>
-  <figcaption class="fig_caption">Introductory landing experience wireframe</figcaption> 
-  <div class="child_copy_block_2">
-    <div class="page_content">
-      <p class="child_copy">Upon final review we scrapped the early introductory search screens as they took too many clicks to see results and instead planted the visitor directly into the map experience. 
-
-      This became an incredibly streamlined flow for the user as they could now immediately search for their location or choose pins upon initial arrival. Additionally the presentation of multiple cards on screen along with basic essential filters gives the user maximum control without detracting from their initial purpose of visit.</p>
-    </div>
-  </div>
-  <div class="image_fig">
-    <img src="bh-photos/Center-locator-wires-desktop-2.png" alt="Desktop view of the new Center Locator Tool" width="100%" height="auto" class=centerImage/> 
-  </div>
-  <figcaption class="fig_caption">Desktop view of the new Center Locator Tool (Entire experience happens here)</figcaption> 
-  <div class="child_copy_block_2">
-    <div class="page_content">
-      <p class="child_copy">We knew we were on the right track when the mobile wireframe prototypes could still operate naturally as a map, and the search and results page didn't detract from the overall goal of finding a center.</p>
-    </div>
-  </div>
-  <div class="image_fig">
-    <img src="bh-photos/Center-locator-wires-mobile.png" alt="Mobile view of the new Center Locator Tool" width="100%" height="auto" class=centerImage/> 
-  </div>
-  <figcaption class="fig_caption">Mobile view of the new Center Locator Tool</figcaption> 
-  <div class="page_content">
-    <div class="child_copy_block">   
-      <h4>Result</h4>
-      <p class="child_copy">The live version of the new Center Locator tool can be seen <a href="https://www.brighthorizons.com/find-a-center">here.</a> 
-
-      This improved tool has enabled Bright Horizons to better display the locations of their child care centers, highlight to their users essential information they need to know about each one, and according to the client ultimately streamlined the lead collection experience.</p>
-    </div>
-    <div class="child_copy_block"> 
-      <h4>Related Work From This Client</h4>
-      <p class="child_copy">2022 - <a href="https://www.brighthorizons.com/resources/"> Resource Aggregator</a>
-        2020 - <a href="https://www.brighthorizons.com"> New Homepage</a>
-        2019 - <a href="https://www.brighthorizons.com/schedule-a-visit?center=0106&bookingType=appointment&optin=y"> Single Page Lead Form</a>
-      </p>
-    </div> 
-  </div>
-  <footer id="bh_footer">
-    <p class="footer-text">Interested in this project and want to learn more?</p>
-    <button onclick="window.location.href='mailto:james@jbaileystudio.com';" class="Reach-out-btn">Reach out to me</button>
-    <br><br><br><br>
-    <!-- <p class="copyrite-text">Copyright © James Bailey 2021</p> -->
-    <button class="Back_to_top" onclick="topFunction()" aria-label="Back to Top" id="myBtn" title="Go to top">&#xA71B;</button><br>
-  <br>  <!-- This website was built by me using the best extent of my HTML and CSS knowledge -->
-  </footer>
-</body>
-<script>
-      //Get the button
-      var mybutton = document.getElementById("myBtn");
-
-      // When the user scrolls down 20px from the top of the document, show the button
-      window.onscroll = function() {scrollFunction()};
-
-      function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          mybutton.style.display = "block";
-        } else {
-          mybutton.style.display = "none";
-        }
-      }
-
-      // When the user clicks on the button, scroll to the top of the document
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-219530537-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-219530537-1');
     </script>
-    </html>
+    <!-- End Tracking -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <style>
+  </style>
+  <body>
+    <div style="background: #f7f7f7;">
+      <div class="header_div">
+        <a class="back_to_home" aria-label="J Bailey Studio Home" href="index.html" style="text-decoration: none; color: black">&#8592; Back Home</a>
+        <h1>A new way for parents to find their closest childcare facility</h1>
+        <ul class="horz_list2">
+          <li class="horz_item">Client: <a>Bright Horizons</a></li>
+          <li class="horz_item">Deliverables: <a>Sketches, Wireframes, Prototypes</a></li>
+          <li class="horz_item">Departments: <a>UX, Creative, Development</a></li> 
+          <li class="horz_item">Time: <a>60 UX Hours</a></li>       
+        </ul>
+          <ul class="horz_list3">
+            <li class=horz_item>Jump to: </li>
+            <li class="horz_item"><a href="#objective">Objective</a></li>
+            <li class="horz_item"><a href="#solution">Solution</a></li>
+            <li class="horz_item"><a href="#process">Process</a></li>
+            <li class="horz_item"><a href="#result">Result</a></li>
+            <li class="horz_item"><a href="#appendix">Appendix</a></li>
+            <li class="horz_item"><a href="#related">Related Work From This Client</a></li>
+          </ul>
+      </div> 
+    </div>
+    <main class="inner_main">
+      <img src="bh-photos/Center-locator-landing.png" alt="The New Center Locator Tool" width="100%" height="auto"/>
+      <figcaption class="fig_caption_hero">The New Center Locator Tool <a href="https://www.brighthorizons.com/find-a-center">See It Here</a></figcaption>
+      <h2 id="objective">Objective</h2>  
+      <p>Bright Horizons was seeking to improve one of their many child care lead generation processes by iterating on their center location tool. The old experience was unfriendly to mobile devices, lacked clarity in areas where there are a lot of child care centers, and wasn't built on a system that could be updated easily.</p>
+      <h2 id="solution">Solution</h2>
+      <p>Our solution came in three parts:</p>
+      <ul>
+        <li>Create a map powered by Google Maps following the industry standard on location services.</li>
+        <li>Improve the design to better service desktop and mobile devices regardless of screen size.</li>
+        <li>Provide essential details on click or tap for quicker information access.</li>
+      </ul>
+      <h2 id="process">Process</h2>
+      <p>Due to its archaic design, the hardest part about choosing where to iterate on the Center Locator tool was determining which improvement would make the most impact to their large user base. The existing tool was forcing users to locate their nearest location via a massive full screen map with a tiny zip code overlay panel that when queried would serve an infinite scrolling results list that was difficult to use. Moreover, the entire user interface did not scale down to mobile so users on their phones were met with a horizontal scrolling mess.</p>
+      <p>We chose to iterate the design in a way that would ensure the largest possible audience could use the tool regardless of which device they were on. To us, that would be a design that was highly usable and mobile-first. Our thinking led us to separating the search and results list from it’s old location, siting on the map in an overlay along the side, and instead run both parts of the UI in a split-screen like design. This would enable users to maximize their screen real estate by prioritizing the new Google Maps integration being built in.</p>
+      <p>We then pushed our designs further to compliment the pin system that already existed. Users on the internet today who use maps are familiar with the mental model of pins and we wanted to extracting supporting information from pins that would normally clog search results. By adding key pieces of information that sprouted from the pins we took what started as a simple search and location experience and turned it into a more contexual map.</p>
+      <p>We experimented with search and results being shown along the side of the screen by sharing the designs with parents in the office, but ultimately choose to run both along the bottom of the window in a drawer to ensure the design was as usable as we could make it. Intitally we had added steps to the experience with an introductory landing page, but we abandoned this effort as we were requiring too many clicks to see search results from a user as they could now immediately search for their location on landing or quickly choose a pin. Additionally, by presenting multiple cards already on screen along with basic filters the user would have maximum control without detracting from their initial purpose of visit.</p>
+      <p>Our last bit of validation came when we saw how the mobile wireframe prototypes could still operate naturally as a map, and the search and results page didn't disrupt from the overall goal of finding a center.</p>
+      <h2 id="result">Result</h2>
+      <p>The live version of the new Center Locator tool can be seen <a href="https://www.brighthorizons.com/find-a-center">here.</a> This improved tool enabled Bright Horizons to better display the locations of their child care centers, highlight for their users only essential information about each one, and streamlined their lead collection experience.</p>
+      <h2 id="appendix">Appendix</h2>
+      <p>Process images can be seen below.</p>
+      <!-- Lightbox Carousel Start -->
+      <!-- Images used to open the lightbox -->
+      <div class="row">
+        <div class="column">
+            <img src="bh-photos/Center-locator-old.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" tabindex="0">
+        </div>
+        <div class="column">
+            <img src="bh-photos/Center-locator-sketch.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor" tabindex="0">
+        </div>
+        <div class="column">
+            <img src="bh-photos/Center-locator-sketch-color.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor" tabindex="0">
+        </div>
+        <div class="column">
+            <img src="bh-photos/Center-locator-first-wire.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" tabindex="0">
+        </div>
+        <div class="column">
+            <img src="bh-photos/Center-locator-wires-early-2.png" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor" tabindex="0">
+        </div>
+        <div class="column">
+            <img src="bh-photos/Center-locator-wires-desktop-2.png" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor" tabindex="0">
+        </div>
+        <div class="column">
+            <img src="bh-photos/Center-locator-wires-mobile.png" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor" tabindex="0">
+        </div>
+        <div class="column">
+            <img src="bh-photos/Center-locator-desktop.png" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor" tabindex="0">
+        </div>
+      </div>
+
+      <!-- The Modal/Lightbox -->
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+          <div class="mySlides">
+            <div class="numbertext">1 / 8</div>
+              <img src="bh-photos/Center-locator-old.png" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 8</div>
+              <img src="bh-photos/Center-locator-sketch.png" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 8</div>
+              <img src="bh-photos/Center-locator-sketch-color.jpg" style="width:100%">
+          </div>
+          
+          <div class="mySlides">
+            <div class="numbertext">4 / 8</div>
+              <img src="bh-photos/Center-locator-first-wire.png" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">5 / 8</div>
+              <img src="bh-photos/Center-locator-wires-early-2.png" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">6 / 8</div>
+              <img src="bh-photos/Center-locator-wires-desktop-2.png" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">7 / 8</div>
+              <img src="bh-photos/Center-locator-wires-mobile.png" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">8 / 8</div>
+              <img src="bh-photos/Center-locator-desktop.png" style="width:100%">
+          </div>
+          
+          <!-- Next/previous controls -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <!-- Caption text -->
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <!-- Thumbnail image controls -->
+          <div class="column">
+            <a class="imageAnchor" href="#">
+              <img class="demo cursor" src="bh-photos/Center-locator-old.png" style="width:100%" onclick="currentSlide(1)" alt="The Old Center Locator Tool">
+            </a>
+          </div>
+          <div class="column">
+            <a class="imageAnchor" href="#">
+              <img class="demo cursor" src="bh-photos/Center-locator-sketch.png" style="width:100%" onclick="currentSlide(2)" alt="One of Many Pencil Sketches of the Sew Center Locator Layout With Improved Pins">
+            </a>
+          </div>
+          <div class="column">
+            <a class="imageAnchor" href="#">
+              <img class="demo cursor" src="bh-photos/Center-locator-sketch-color.jpg" style="width:100%" onclick="currentSlide(3)" alt="Higher Fidelity Sketches of the New Center Locator Layout With Improved Pins">
+            </a>
+          </div>
+          <div class="column">
+            <a class="imageAnchor" href="#">
+              <img class="demo cursor" src="bh-photos/Center-locator-first-wire.png" style="width:100%" onclick="currentSlide(4)" alt="Early Design Improvements to the Current Locator System">
+            </a>
+          </div>
+          <div class="column">
+            <a class="imageAnchor" href="#">
+              <img class="demo cursor" src="bh-photos/Center-locator-wires-early-2.png" style="width:100%" onclick="currentSlide(5)" alt="Introductory Landing Experience Wireframe - This was scrapped">
+            </a>
+          </div>
+          <div class="column">
+            <a class="imageAnchor" href="#">
+              <img class="demo cursor" src="bh-photos/Center-locator-wires-desktop-2.png" style="width:100%" onclick="currentSlide(6)" alt="Desktop Wireframe of the New Center Locator Tool - The entire experience happens here">
+            </a>
+          </div>
+          <div class="column">
+            <a class="imageAnchor" href="#">
+              <img class="demo cursor" src="bh-photos/Center-locator-wires-mobile.png" style="width:100%" onclick="currentSlide(7)" alt="Mobile Wireframes of the New Center Locator Tool
+">
+            </a>
+          </div>
+          <div class="column">
+            <a class="imageAnchor" href="#">
+              <img class="demo cursor" src="bh-photos/Center-locator-desktop.png" style="width:100%" onclick="currentSlide(8)" alt="The New Center Locator Tool">
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Lightbox Carousel End-->
+
+      <h2 id="related">Related Work From This Client</h2>
+      <ul>
+        <li>2022 - <a href="https://www.brighthorizons.com/resources/"> Resource Aggregator</a></li>
+        <li>2020 - <a href="https://www.brighthorizons.com"> New Homepage</a></li>
+        <li>2019 - <a href="https://www.brighthorizons.com/schedule-a-visit?center=0106&bookingType=appointment&optin=y"> Single Page Lead Form</a></li>
+      </ul>
+    </main>
+    <footer>
+      <p>
+        Interested in this project and want to learn more? <a href="mailto:james@jbaileystudio.com">Reach out to me</a>
+      </p>
+      
+    </footer>
+    
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        
+
+      <!--Back to top button script-->
+      <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+      </script>
+
+      <!--Lightbox Carousel Script-->
+      <script>
+        function openModal() {
+          document.getElementById("myModal").style.display = "block";
+          }
+
+        function closeModal() {
+          document.getElementById("myModal").style.display = "none";
+
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+      </script>
+    </body>
+</html>

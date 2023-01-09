@@ -1,201 +1,163 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <!-- Tracking -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jbaileystudio - Autonomous Car Dashboard</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="favicons/favicon-32x32.png" type="image/x-icon">
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-219530537-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-219530537-1');
-</script>
-
-
-
-  <title>Self Driving Car Dashboard</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
-
-
-</head>
-<body class="content">
-  <a name="top"></a>
-  <div class="hero_banner" id="racing_sim_banner">
-    <div class="hero_content">
-      <a id="back_to_home" aria-label="J Bailey Studio Home" href="index.html">&#60; Back to jbaileystudio home</a>
-      <h2>Self Driving Car Dashboard Concept</h2>
-      <p class="child_copy">A short concept project for an automotive job interview.</p>
-    </div>
-  </div>
-  <div class="page_content">
-    <div class="image_fig_2">
-        <img src="self-driving-dashboard-photos/IMG_5585.png" alt="Final Dashbboard Render" width="100%" height="auto" class=centerImage/>
-    </div>
-      <div class="child_copy_block">
-        <h4>Prompt</h4>  
-          <p class="child_copy"><i>"We’re 10 years in the future and autonomous vehicles have become the main mode of transportation. An autonomous car company has hired you to design a new digital experience for a car dashboard."</i></p>
-      </div>
-
-      <div class="child_copy_block">
-        <h4>Inspiration</h4>
-          <p class="child_copy">I wanted to read about how people were thinking about potential use cases for self driving cars before I would begin to think about what the inside of the car is used for. If I could identify a could use case I could base the dashboard project around that one use case.</p> 
-      
-        <div class=image_fig>
-            <img src="self-driving-dashboard-photos/valet_parking.png" alt="Autonomous Valet Parking" width="100%" height="auto"/>
-        </div>
-        <figcaption class="fig_caption">Autonomous Valet Parking</figcaption>
-            
-        <div class="child_copy_block">
-          <p class="child_copy">"The driver saves the time of finding a parking spot as well as of walking to/from a remote parking spot. In addition, access to the vehicle is eased (spatially and temporally). Additional parking space is used more efficiently and search for parking is arranged more efficiently.”
-          <i>Source: <a href="https://link.springer.com/chapter/10.1007/978-3-662-48847-8_2#Fig3">Autonomous Valet Parking</a></i></p>
-        </div>
-
-        <div class="image_fig">
-            <img src="self-driving-dashboard-photos/vehicle_on_demand.png" alt="Autonomous Vehicle On Demand" width="100%" height="auto" class=centerImage/>
-        </div>
-        <figcaption class="fig_caption">Autonomous Vehicle On Demand</figcaption>
-
-        <div class="child_copy_block">
-          <p class="child_copy">"The driving robot drives the vehicle autonomously in all scenarios with occupants, with cargo, but also completely without any payload. The driving robot makes the vehicle available at any requested location. Passengers use the travel time completely independently for other activities than performing the driving task. The cabin is designed completely independently from any restrictions of a driver workplace whatsoever."
-            <i>Source: <a href="https://link.springer.com/chapter/10.1007/978-3-662-48847-8_2#Fig7">Autonomous Vehicle On Demand</a></i></p>
-        </div>
-
-      </div>  
-
-
-
-      <div class="child_copy_block">
-        <h4>Direction</h4>  
-          <p class="detail_list_title">I decided that the best dashboard I could visualize was for an autonomous car getting onto a highway and ramping up speed. Here are the steps I planned to visualize: 
-          <ul class="child_copy_list">
-            <li class="child_copy_list_item">Highway</li>
-            <li class="child_copy_list_item">Option to fast travel</li>
-            <li class="child_copy_list_item">Changing Lanes</li>
-            <li class="child_copy_list_item">Fast Travel</li>
-          </ul>
-        </p>
-
-        <div class="image_fig">
-            <img src="self-driving-dashboard-photos/dashboard_use_flow.png" alt="Highway fast travel use case flow" width="100%" height="auto" class=centerImage/>
-        </div>
-        <figcaption class="fig_caption">Highway fast travel use case flow</figcaption>
-
-      </div>
-
-      
-
-
-      <div class="child_copy_block">
-        <h4>User Interface</h4> 
-        <p class="child_copy">I needed to sketch icons and screens out to decide on UI elements that meet the needs of the highway fast travel use case.</p>
-        <div class="image_fig">
-          <img src="self-driving-dashboard-photos/ui_1.png" alt="Essential screen elements" width="100%" height="auto" class=centerImage/>
-        </div>
-        <figcaption class="fig_caption">Essential screen elements</figcaption>
-
-        <div class="image_fig">
-          <img src="self-driving-dashboard-photos/ui_2.png" alt="Arrows, Icons, and Travel States" width="100%" height="auto" class=centerImage/>
-        </div>
-        <figcaption class="fig_caption">Arrows, icons, colors, and travel states</figcaption>
-
-        <div class="image_fig">
-          <img src="self-driving-dashboard-photos/ui_3.png" alt="Element arrangements and changing modes" width="100%" height="auto" class=centerImage/>
-        </div>
-        <figcaption class="fig_caption">Element arrangements and changing modes</figcaption>
-
-        <div class="image_fig">
-          <img src="self-driving-dashboard-photos/ui_4.png" alt="Overall panel shape" width="100%" height="auto" class=centerImage/>
-        </div>
-        <figcaption class="fig_caption">Overall panel shape</figcaption>
-      </div>
-
-      <div class="child_copy_block">
-        <h4>Wireframes</h4> 
-        <p class="child_copy">After sketching my ideas out I put together some wireframes to help visualize what this dashboard could look like.</p>
-        <div class="image_fig">
-          <img src="self-driving-dashboard-photos/Wireframes_1.png" alt="On highway screen and option to fast travel" width="100%" height="auto" class=centerImage/>
-        </div>
-        <figcaption class="fig_caption">On highway screen and option to fast travel</figcaption>
-
-        <div class="image_fig">
-          <img src="self-driving-dashboard-photos/Wireframes_2.png" alt="Fast travel selected and lane merge" width="100%" height="auto" class=centerImage/>
-        </div>
-        <figcaption class="fig_caption">Fast travel selected and lane merge</figcaption>
-
-        <div class="image_fig">
-          <img src="self-driving-dashboard-photos/Wireframes_3.png" alt="Fast travel screen state" width="100%" height="auto" class=centerImage/>
-        </div>
-        <figcaption class="fig_caption">Fast travel screen state</figcaption>
-      </div>
-
-
-      <div class="child_copy_block">
-        <h4>Compositions</h4> 
-        <p class="child_copy">Finally after pulling together all the elements of each screen state in wireframes, I crafted some realistic color compositions.</p>
-        <div class="image_fig">
-          <img src="self-driving-dashboard-photos/Visual_Designs_1.png" alt="Default highway screen" width="100%" height="auto" class=centerImage/>
-        </div>
-
-        <div class="image_fig">
-          <img src="self-driving-dashboard-photos/Visual_Designs_2.png" alt="Option to fast travel" width="100%" height="auto" class=centerImage/>
-        </div>
-
-        <div class="image_fig">
-          <img src="self-driving-dashboard-photos/Visual_Designs_3.png" alt="Fast travel pressed" width="100%" height="auto" class=centerImage/>
-        </div>
-
-        <div class="image_fig">
-          <img src="self-driving-dashboard-photos/Visual_Designs_4.png" alt="Changing / merging lanes" width="100%" height="auto" class=centerImage/>
-        </div>
-
-        <div class="image_fig">
-          <img src="self-driving-dashboard-photos/Visual_Designs_5.png" alt="Fast travel active state" width="100%" height="auto" class=centerImage/>
-        </div>
-      </div>
-
-      <div class="child_copy_block">
-        <h4>Summary</h4> 
-        <p class="child_copy">All that remained was to sketch out the interior view of what a rider would see from the inside of their self driving car and overlay one of the compisitions to finish off the concept.</p>
-        <div class="image_fig_2">
-          <img src="self-driving-dashboard-photos/IMG_5585.png" alt="Final Dashbboard Render" width="100%" height="auto" class=centerImage/>
-        </div>
-      </div>
-
-    </div>
-  </div>
-  
-
-  <footer id="racing_sim_footer">
-    <p class="footer-text">Interested in this project and want to learn more?</p>
-    <button onclick="window.location.href='mailto:james@jbaileystudio.com';" class="Reach-out-btn">Reach out to me</button>
-    <br><br><br><br>
-    <!-- <p class="copyrite-text">Copyright © James Bailey 2021</p> -->
-    <button class="Back_to_top" onclick="topFunction()" aria-label="Back to Top" id="myBtn" title="Go to top">&#xA71B;</button><br>
-  <br>  <!-- This website was built by me using the best extent of my HTML and CSS knowledge -->
-  </footer>
-</body>
-<script>
-      //Get the button
-      var mybutton = document.getElementById("myBtn");
-
-      // When the user scrolls down 20px from the top of the document, show the button
-      window.onscroll = function() {scrollFunction()};
-
-      function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          mybutton.style.display = "block";
-        } else {
-          mybutton.style.display = "none";
-        }
-      }
-
-      // When the user clicks on the button, scroll to the top of the document
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
+    <!-- Tracking -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-219530537-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-219530537-1');
     </script>
-    </html>
+    <!-- End Tracking -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <style>
+    img {border: solid 1px lightgray;}
+  </style>
+  <body>
+    <div style="background: #f7f7f7;">
+      <div class="header_div">
+        <a class="back_to_home" aria-label="J Bailey Studio Home" href="index.html" style="text-decoration: none; color: black">&#8592; Back Home</a>
+        <h1 style="padding-bottom: 30px;">Autonomous Car Dashboard</h1>
+      </div> 
+    </div>
+    <main class="inner_main">
+      <p>A short concept project for an automotive job interview.</p>
+      <img src="self-driving-dashboard-photos/IMG_5585.png" alt="Final Dashbboard Render" width="100%" height="auto"/>
+      <figcaption class="fig_caption_hero" style="padding-top: 16px;">The Final Dashboard Render</figcaption>
+      
+      <h2>Prompt</h2>
+      <p>We’re 10 years in the future and autonomous vehicles have become the main mode of transportation. An autonomous car company has hired you to design a new digital experience for a car dashboard."</p>
+      
+      <h2>Inspiration</h2>
+      <p>I wanted to read about how people were thinking about use cases for self driving cars before I would begin to think about what the inside of the car is used for. If I could identify a use case I could base the dashboard project around expanding on it.</p>
+      <img src="self-driving-dashboard-photos/valet_parking.png" style="width: 100%;" alt="Autonomous Valet Parking" />
+      <figcaption class="fig_caption_hero" style="padding-top: 16px;">Autonomous Valet Parking</figcaption>
+      <p>"The driver saves the time of finding a parking spot as well as of walking to/from a remote parking spot. In addition, access to the vehicle is eased (spatially and temporally). Additional parking space is used more efficiently and search for parking is arranged more efficiently.” Source: <a href="https://link.springer.com/chapter/10.1007/978-3-662-48847-8_2#Fig3">Autonomous Valet Parking</a></p>
+      <img src="self-driving-dashboard-photos/vehicle_on_demand.png" style="width: 100%;" alt="Autonomous Vehicle On Demand" /> 
+      <figcaption class="fig_caption_hero" style="padding-top: 16px;">Autonomous Vehicle On Demand</figcaption>
+      <p>"The driving robot drives the vehicle autonomously in all scenarios with occupants, with cargo, but also completely without any payload. The driving robot makes the vehicle available at any requested location. Passengers use the travel time completely independently for other activities than performing the driving task. The cabin is designed completely independently from any restrictions of a driver workplace whatsoever." Source: <a href="https://link.springer.com/chapter/10.1007/978-3-662-48847-8_2#Fig7">Autonomous Vehicle On Demand</a></p>
+
+      <h2>Direction</h2>
+      <p>I decided that the best dashboard I could visualize was for the process of an autonomous car getting onto a highway and ramping up to speed. Here are the steps I planned to visualize:</p>
+      <ul>
+        <li>On Highway</li>
+        <li>Option to fast travel</li>
+        <li>Changing Lanes</li>
+        <li>Fast Travel</li>
+      </ul>
+      <img src="self-driving-dashboard-photos/dashboard_use_flow.png" style="width: 100%;" alt="Highway fast travel use case flow" />
+      <figcaption class="fig_caption_hero" style="padding-top: 16px;">Highway fast travel use case flow</figcaption>
+
+      <h2>User Interface</h2>
+      <p>To fit my needs of the highway fast travel use case I needed to sketch icons and screens out to decide on UI elements.</p>
+      <img src="self-driving-dashboard-photos/ui_1.png" alt="Essential screen elements" style="width: 100%;" class=centerImage/>
+      <figcaption class="fig_caption_hero">Essential screen elements</figcaption>
+      <img src="self-driving-dashboard-photos/ui_2.png" alt="Arrows, Icons, and Travel States" style="width: 100%;" class=centerImage/>
+      <figcaption class="fig_caption_hero">Arrows, icons, colors, and travel states</figcaption>
+      <img src="self-driving-dashboard-photos/ui_3.png" alt="Element arrangements and changing modes" style="width: 100%;" class=centerImage/>
+      <figcaption class="fig_caption_hero">Element arrangements and changing modes</figcaption>
+      <img src="self-driving-dashboard-photos/ui_4.png" alt="Overall panel shape" style="width: 100%;" class=centerImage/>
+      <figcaption class="fig_caption_hero">Overall panel shape</figcaption>
+
+      <h2>Wireframes</h2>
+      <p>After sketching my ideas out I put together some wireframes to help visualize what this dashboard could look like.</p>
+      <img src="self-driving-dashboard-photos/Wireframes_1.png" alt="On highway screen and option to fast travel" style="width: 100%;" class=centerImage/>
+      <figcaption class="fig_caption_hero">On highway screen and option to fast travel</figcaption>
+      <img src="self-driving-dashboard-photos/Wireframes_2.png" alt="Fast travel selected and lane merge" style="width: 100%;" class=centerImage/>
+      <figcaption class="fig_caption_hero">Fast travel selected and lane merge</figcaption>
+      <img src="self-driving-dashboard-photos/Wireframes_3.png" alt="Fast travel screen state" style="width: 100%;" class=centerImage/>
+      <figcaption class="fig_caption_hero">Fast travel screen state</figcaption>
+
+      <h2>Compositions</h2>
+      <p>After pulling together all the elements of each screen state in wireframes, I crafted some realistic color compositions.</p>
+      <img src="self-driving-dashboard-photos/Visual_Designs_1.png" style="width: 100%;" alt="Default highway screen" />
+      <img src="self-driving-dashboard-photos/Visual_Designs_2.png" style="width: 100%;" alt="Option to fast travel" />
+      <img src="self-driving-dashboard-photos/Visual_Designs_3.png" style="width: 100%;" alt="Fast travel pressed" />
+      <img src="self-driving-dashboard-photos/Visual_Designs_4.png" style="width: 100%;" alt="Changing / merging lanes" />
+      <img src="self-driving-dashboard-photos/Visual_Designs_5.png" style="width: 100%;" alt="Fast travel active state" />
+
+      <h2>Summary</h2>
+      <p>All that remained was to sketch out the interior view of what a rider would see from the inside of their self driving car and overlay one of the compisitions to finish off the concept.</p>
+      <img src="self-driving-dashboard-photos/IMG_5585.png" style="width: 100%;" alt="Final Dashbboard Render" />
+    </main>
+    <footer>
+      <p>
+        Interested in this project and want to learn more? <a href="mailto:james@jbaileystudio.com">Reach out to me</a>
+      </p>
+      
+    </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+      </script>
+
+      <!--Lightbox Carousel Script-->
+      <script>
+        function openModal() {
+          document.getElementById("myModal").style.display = "block";
+          }
+
+        function closeModal() {
+          document.getElementById("myModal").style.display = "none";
+
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+      </script>
+    </body>
+</html>
