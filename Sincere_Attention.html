@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
     <title>Sincere Attention | jbaileystudio</title>
     <style>
         :root {
@@ -1696,6 +1698,19 @@
             }
 
         }
+
+        /* First add base styles for fade-in elements */
+      .fade-in {
+        opacity: 0;
+        transform: translateY(60px);
+        transition: opacity 0.6s ease-out, transform 0.4s ease-out;
+      }
+
+      /* Add class when element becomes visible */
+      .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
     </style>
 </head>
 <body>
@@ -1718,7 +1733,7 @@
                     <p class="description">Crafting the approach for a research department intent on answering the core questions product teams ask<span class="bold"> every single day.</span></p>
                 </section>
 
-                <section class="grid-section">
+                <section class="grid-section fade-in">
                     <div class="grid grid-4">
                         <div class="card">
                                 <div class="card-content-top">
@@ -1778,9 +1793,9 @@
 
         <section class="feature">
             <div class="feature-content">
-                <h2 class="section-title"><span class="gradient-text-3">Up Close.</span> <br>Personal.</h2>
-                <p class="feature-text">At UNFI I quickly realized our customers would never fail to share with us where we were not meeting their expectations; however their <span>frame of reference</span> was missing. Without it, we would never be able to serve them the future they deserved. We didn’t know what we didn’t know — we needed to become the <span>foremost experts in our customers context.</span></p>
-                <p class="feature-text">Therefore, I started <span>going to our customers place of work and observing them using our software.</span> This was eye opening. While in-person, glaring frustrations were exposed, unexpected behavior sprung up, and opportunities to serve the customer of the future started to shine.</p>
+                <h2 class="section-title fade-in"><span class="gradient-text-3">Up Close.</span> <br>Personal.</h2>
+                <p class="feature-text fade-in">At UNFI I quickly realized our customers would never fail to share with us where we were not meeting their expectations; however their <span>frame of reference</span> was missing. Without it, we would never be able to serve them the future they deserved. We didn’t know what we didn’t know — we needed to become the <span>foremost experts in our customers context.</span></p>
+                <p class="feature-text fade-in">Therefore, I started <span>going to our customers place of work and observing them using our software.</span> This was eye opening. While in-person, glaring frustrations were exposed, unexpected behavior sprung up, and opportunities to serve the customer of the future started to shine.</p>
             </div>
             <div class="feature-image">
                 <picture>
@@ -1798,8 +1813,8 @@
         </section>
 
         <section class="timeline">
-            <h2 class="medium-title">Over 18 <br>months:</h2>
-            <div class="grid grid-4 timeline-grid">
+            <h2 class="medium-title fade-in">Over 18 <br>months:</h2>
+            <div class="grid grid-4 timeline-grid fade-in">
                 <div class="timeline-item">
                     <p class="eyebrow">I planned and led</p>
                     <div class="card">
@@ -1842,9 +1857,9 @@
 
 <div class="grey-background-wrapper">
     <div class="content-wrapper">
-        <section>
-           <h2 class="section-title">How it Worked</h2>
-           <div class="carousel">
+        <section class="">
+           <h2 class="section-title fade-in">How it Worked</h2>
+           <div class="carousel fade-in">
                <div class="carousel-content">
                    <div class="carousel-item">
                        <div class="card">
@@ -1936,8 +1951,8 @@
 
 
         <section class="gestures gestures-section">
-            <h2 class="section-title">Small Gestures, Big Impact</h2>
-            <div class="grid grid-3">
+            <h2 class="section-title fade-in">Small Gestures, Big Impact</h2>
+            <div class="grid grid-3 fade-in">
                 <div class="card">
 
                     <div class="gestures-content">
@@ -1996,17 +2011,17 @@
 
 
         <section class="perspective-section">
-            <h2 class="section-title">Fuller Perspective</h2>
-            <p class="perspective-text">This approach supported any team wanting to take an important deeper look. The focus was on witnessing how we influenced the <span class="gradient-text-1">life of the customer.</span> We quickly found that what matters to our users was lacking attention, what didn’t was getting priority, and where opportunity in the industry existed was unclaimed. <span class="gradient-text-2">The customer had never gotten this level of attention.</span></p>
+            <h2 class="section-title fade-in">Fuller Perspective</h2>
+            <p class="perspective-text fade-in">This approach supported any team wanting to take an important deeper look. The focus was on witnessing how we influenced the <span class="gradient-text-1">life of the customer.</span> We quickly found that what matters to our users was lacking attention, what didn’t was getting priority, and where opportunity in the industry existed was unclaimed. <span class="gradient-text-2">The customer had never gotten this level of attention.</span></p>
         </section>
 
 <div class="dark-background-wrapper bottom">
     <div class="content-wrapper">
 
         <section class="reality-section text-center">
-            <h2 class="section-title">Tomorrow's Reality</h2>
-            <p class="subtitle">Take a peek into the future we see for independent grocery ordering.</p>
-            <div class="reality-carousel">
+            <h2 class="section-title fade-in">Tomorrow's Reality</h2>
+            <p class="subtitle fade-in">Take a peek into the future we see for independent grocery ordering.</p>
+            <div class="reality-carousel fade-in">
                 <div class="reality-carousel-content">
                     <div class="reality-carousel-item">
                         <div class="card">
@@ -2037,7 +2052,7 @@
                                 <source srcset="Group-90.webp" type="image/webp">
                                 
                                 <!-- Fallback for older browsers -->
-                                 <img src="Group-90.png" loading="lazy" alt="Final 1">
+                                 <img src="Group-90.png" loading="" alt="Final 1">
                            </picture>
                         </div>
                         <div class="carousel-item-caption">
@@ -2056,7 +2071,7 @@
                                 <source srcset="Group-91.webp" type="image/webp">
                                 
                                 <!-- Fallback for older browsers -->
-                                 <img src="Group-91.png" loading="lazy" alt="Final 1">
+                                 <img src="Group-91.png" loading="" alt="Final 1">
                            </picture>
                         </div>
                         <div class="carousel-item-caption">
@@ -2075,7 +2090,7 @@
                                 <source srcset="Group-92.webp" type="image/webp">
                                 
                                 <!-- Fallback for older browsers -->
-                                 <img src="Group-92.png" loading="lazy" alt="Final 1">
+                                 <img src="Group-92.png" loading="" alt="Final 1">
                            </picture>
                         </div>
                         <div class="carousel-item-caption">
@@ -2094,7 +2109,7 @@
                                 <source srcset="Group-93.webp" type="image/webp">
                                 
                                 <!-- Fallback for older browsers -->
-                                 <img src="Group-93.png" loading="lazy" alt="Final 1">
+                                 <img src="Group-93.png" loading="" alt="Final 1">
                            </picture>
                         </div>
                         <div class="carousel-item-caption">
@@ -2248,7 +2263,22 @@ history.scrollRestoration = 'auto';
 });
 
 
-//Sideways scroll
+
+        // Create an intersection observer
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, {
+  threshold: 0.33  // Trigger when 33% of element is visible
+});
+
+// Observe all fade-in elements
+document.querySelectorAll('.fade-in').forEach((element) => {
+  observer.observe(element);
+});
 
 
 
