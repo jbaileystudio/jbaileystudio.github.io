@@ -116,7 +116,11 @@
             margin-left: -50vw;
             margin-right: -50vw;
             background-color: var(--bg);
-            background-image: url('IMG_5660.JPG');
+            background-image: image-set(
+                url('IMG_5660.heic') type('image/heic'),
+                url('IMG_5660.webp') type('image/webp'),
+                url('IMG_5660.jpg') type('image/jpeg')
+            );            
             background-position: center top;
             background-repeat: no-repeat;
             background-size: cover;
@@ -130,7 +134,11 @@
             left: 0;
             right: 0;
             bottom: -10%;
-            background-image: url('IMG_5660.JPG');
+            background-image: image-set(
+                url('IMG_5660.heic') type('image/heic'),
+                url('IMG_5660.webp') type('image/webp'),
+                url('IMG_5660.jpg') type('image/jpeg')
+            );            
             background-position: center top;
             background-size: cover;
             transform: translateY(var(--parallax-offset, 0));
@@ -1775,7 +1783,16 @@
                 <p class="feature-text">Therefore, I started <span>going to our customers place of work and observing them using our software.</span> This was eye opening. While in-person, glaring frustrations were exposed, unexpected behavior sprung up, and opportunities to serve the customer of the future started to shine.</p>
             </div>
             <div class="feature-image">
-                <img class="feature-img" src="Mask group.png" alt="Feature">
+                <picture>
+                    <!-- HEIC/HEIF first (most efficient) -->
+                    <source srcset="Mask-group.heic" type="image/heic">
+                    
+                    <!-- WebP second (wide support, still efficient) -->
+                    <source srcset="Mask-group.webp" type="image/webp">
+                    
+                    <!-- Fallback for older browsers -->
+                    <img class="feature-img" src="Mask-group.png" loading="lazy" alt="Feature">
+               </picture>
                 <!--This is a comment. <button class="btn" onclick="openModal()">Take a look through our eyes</button>-->
             </div>
         </section>
@@ -1837,7 +1854,16 @@
                                    <p class="carousel-description">It became clear what the customer thought we're responsible for. The rest was opportunity.</p>
                                </div>
                                 <div class="carousel-image-container">
-                                    <img class="carousel-image" src="observations.png" alt="Carousel image 1">
+                                    <picture>
+                                         <!-- HEIC/HEIF first (most efficient) -->
+                                         <source srcset="observations.heic" type="image/heic">
+                                         
+                                         <!-- WebP second (wide support, still efficient) -->
+                                         <source srcset="observations.webp" type="image/webp">
+                                         
+                                         <!-- Fallback for older browsers -->
+                                          <img class="carousel-image" src="observations.png" loading="lazy" alt="Carousel image 1">
+                                    </picture>
                                 </div>
                        </div>
                    </div>
@@ -1849,7 +1875,16 @@
                                     <p class="carousel-description">What wasn't working quickly came into focus for improvement.</p>
                                </div>
                                <div class="carousel-image-container">
-                                    <img class="carousel-image" src="emotions.png" alt="Carousel image 2">
+                                    <picture>
+                                         <!-- HEIC/HEIF first (most efficient) -->
+                                         <source srcset="emotions.heic" type="image/heic">
+                                         
+                                         <!-- WebP second (wide support, still efficient) -->
+                                         <source srcset="emotions.webp" type="image/webp">
+                                         
+                                         <!-- Fallback for older browsers -->
+                                          <img class="carousel-image" src="emotions.png" loading="lazy" alt="Carousel image 2">
+                                    </picture>
                                 </div>
                        </div>
                    </div>
@@ -1861,7 +1896,16 @@
                                     <p class="carousel-description">We found we continued to miss the majority of the experience. </p>
                                </div>
                                <div class="carousel-image-container">
-                                    <img class="carousel-image" src="blinders.png" alt="Carousel image 3">
+                                    <picture>
+                                         <!-- HEIC/HEIF first (most efficient) -->
+                                         <source srcset="blinders.heic" type="image/heic">
+                                         
+                                         <!-- WebP second (wide support, still efficient) -->
+                                         <source srcset="blinders.webp" type="image/webp">
+                                         
+                                         <!-- Fallback for older browsers -->
+                                          <img class="carousel-image" src="blinders.png" loading="lazy" alt="Carousel image 3">
+                                    </picture>
                                 </div>
                        </div>
                    </div>
@@ -1873,7 +1917,16 @@
                                     <p class="carousel-description">Indicators of what directly affects customer behavior, satisfaction, and efficiency became signals to watch increasing our certainty of a positive impact on the customer experience.</p>
                                </div>
                                <div class="carousel-image-container">
-                                    <img class="carousel-image" src="measures.png" alt="Carousel image 4">
+                                    <picture>
+                                         <!-- HEIC/HEIF first (most efficient) -->
+                                         <source srcset="measures.heic" type="image/heic">
+                                         
+                                         <!-- WebP second (wide support, still efficient) -->
+                                         <source srcset="measures.webp" type="image/webp">
+                                         
+                                         <!-- Fallback for older browsers -->
+                                          <img class="carousel-image" src="measures.png" loading="lazy" alt="Carousel image 4">
+                                    </picture>
                                 </div>
                        </div>
                    </div>
@@ -1888,7 +1941,16 @@
                 <div class="card">
 
                     <div class="gestures-content">
-                        <img src="game circle.png" alt="Center icon" class="gestures-image">
+                        <picture>
+                             <!-- HEIC/HEIF first (most efficient) -->
+                             <source srcset="game-circle.heic" type="image/heic">
+                             
+                             <!-- WebP second (wide support, still efficient) -->
+                             <source srcset="game-circle.webp" type="image/webp">
+                             
+                             <!-- Fallback for older browsers -->
+                              <img src="game-circle.png" alt="Center icon" loading="lazy" class="gestures-image">
+                        </picture>
                         <h3 class="carousel-heading">Game Ready</h3>
                         <p class="carousel-description">Pillars of the experience was the framework used to understand impact. Showing a team exactly where they played before they decided how to win never was easier.</p>
                     </div>
@@ -1896,7 +1958,16 @@
                 <div class="card">
 
                     <div class="gestures-content">
-                        <img src="blue circle.png" alt="Center icon" class="gestures-image">
+                        <picture>
+                             <!-- HEIC/HEIF first (most efficient) -->
+                             <source srcset="blue-circle.heic" type="image/heic">
+                             
+                             <!-- WebP second (wide support, still efficient) -->
+                             <source srcset="blue-circle.webp" type="image/webp">
+                             
+                             <!-- Fallback for older browsers -->
+                              <img src="blue-circle.png" alt="Center icon" loading="lazy" class="gestures-image">
+                        </picture>
                         <h3 class="carousel-heading">Technology Second</h3>
                         <p class="carousel-description">The needs of the customer had never been clearer allowing us to freely choose how to meet expectations. No longer was the current hardware a box we were forced to think in.</p>
                     </div>
@@ -1904,15 +1975,22 @@
                 <div class="card">
 
                     <div class="gestures-content">
-                        <img src="purple circle.png" alt="Center icon" class="gestures-image">
+                        <picture>
+                                <!-- HEIC/HEIF first (most efficient) -->
+                                <source srcset="purple-circle.heic" type="image/heic">
+                                
+                                <!-- WebP second (wide support, still efficient) -->
+                                <source srcset="purple-circle.webp" type="image/webp">
+                                
+                                <!-- Fallback for older browsers -->
+                                 <img src="purple-circle.png" alt="Center icon" loading="lazy" class="gestures-image">
+                           </picture>
                         <h3 class="carousel-heading">Cost Sensitive</h3>
                         <p class="carousel-description">From one field study alone we were able to identify the exact point within the ordering experience that was costing our customers over $10mm/yr from frustration and friction.</p>
                     </div>
                 </div>
             </div>
         </section>
-
-
     </div>
 </div>
 
@@ -1932,7 +2010,16 @@
                 <div class="reality-carousel-content">
                     <div class="reality-carousel-item">
                         <div class="card">
-                            <img src="Group 89.png" alt="Final 1">
+                           <picture>
+                                <!-- HEIC/HEIF first (most efficient) -->
+                                <source srcset="Group-89.heic" type="image/heic">
+                                
+                                <!-- WebP second (wide support, still efficient) -->
+                                <source srcset="Group-89.webp" type="image/webp">
+                                
+                                <!-- Fallback for older browsers -->
+                                 <img src="Group-89.png" loading="lazy" alt="Final 1">
+                           </picture>
                         </div>
                         <div class="carousel-item-caption">
                             <span class="caption-bold">The speed of sight.</span>
@@ -1942,7 +2029,16 @@
                     <!-- Repeat for other carousel items -->
                     <div class="reality-carousel-item">
                         <div class="card">
-                            <img src="Group 90.png" alt="Final 1">
+                           <picture>
+                                <!-- HEIC/HEIF first (most efficient) -->
+                                <source srcset="Group-90.heic" type="image/heic">
+                                
+                                <!-- WebP second (wide support, still efficient) -->
+                                <source srcset="Group-90.webp" type="image/webp">
+                                
+                                <!-- Fallback for older browsers -->
+                                 <img src="Group-90.png" loading="lazy" alt="Final 1">
+                           </picture>
                         </div>
                         <div class="carousel-item-caption">
                             <span class="caption-bold">Act and correct at will.</span>
@@ -1952,7 +2048,16 @@
                     <!-- Repeat for other carousel items -->
                     <div class="reality-carousel-item">
                         <div class="card">
-                            <img src="Group 91.png" alt="Final 1">
+                           <picture>
+                                <!-- HEIC/HEIF first (most efficient) -->
+                                <source srcset="Group-91.heic" type="image/heic">
+                                
+                                <!-- WebP second (wide support, still efficient) -->
+                                <source srcset="Group-91.webp" type="image/webp">
+                                
+                                <!-- Fallback for older browsers -->
+                                 <img src="Group-91.png" loading="lazy" alt="Final 1">
+                           </picture>
                         </div>
                         <div class="carousel-item-caption">
                             <span class="caption-bold">Distance and perspective.</span>
@@ -1962,7 +2067,16 @@
                     <!-- Repeat for other carousel items -->
                     <div class="reality-carousel-item">
                         <div class="card">
-                            <img src="Group 92.png" alt="Final 1">
+                            <picture>
+                                <!-- HEIC/HEIF first (most efficient) -->
+                                <source srcset="Group-92.heic" type="image/heic">
+                                
+                                <!-- WebP second (wide support, still efficient) -->
+                                <source srcset="Group-92.webp" type="image/webp">
+                                
+                                <!-- Fallback for older browsers -->
+                                 <img src="Group-92.png" loading="lazy" alt="Final 1">
+                           </picture>
                         </div>
                         <div class="carousel-item-caption">
                             <span class="caption-bold">Infinite canvas.</span>
@@ -1972,7 +2086,16 @@
                     <!-- Repeat for other carousel items -->
                     <div class="reality-carousel-item">
                         <div class="card">
-                            <img src="Group 93.png" alt="Final 1">
+                           <picture>
+                                <!-- HEIC/HEIF first (most efficient) -->
+                                <source srcset="Group-93.heic" type="image/heic">
+                                
+                                <!-- WebP second (wide support, still efficient) -->
+                                <source srcset="Group-93.webp" type="image/webp">
+                                
+                                <!-- Fallback for older browsers -->
+                                 <img src="Group-93.png" loading="lazy" alt="Final 1">
+                           </picture>
                         </div>
                         <div class="carousel-item-caption">
                             <span class="caption-bold">Observe and reflect.</span>
@@ -2031,9 +2154,9 @@
                 </div>
                 <!-- Repeat for other 4 blurbs -->
             </div>
-            <div class="modal-content">
-                <img src="/api/placeholder/600/900" alt="Feature Image" class="feature-img">
-            </div>
+            <!-- <div class="modal-content">
+                <img src="/api/placeholder/600/900" alt="Feature Image" loading="lazy" class="feature-img">
+            </div> -->
         </div>
     </div>
 
