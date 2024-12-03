@@ -525,7 +525,7 @@
         }
 
         .carousel-description {
-            font-size: 22px;
+            font-size: clamp(16px, 1.5vw, 22px);
             line-height: 1.3;
         }
 
@@ -1375,7 +1375,7 @@
            }
 
            .carousel-description {
-                font-size: .9rem; /* Adjust as needed */
+                font-size: 1rem; /* Adjust as needed */
                 line-height: 1.5;
             }
             
@@ -1536,7 +1536,7 @@
            }
 
            .carousel-item .card {
-               min-height: 500px;
+               min-height: 555px;
                display: flex;
                justify-content: center;
                overflow: visible;
@@ -1562,7 +1562,7 @@
 
             /* You might need to adjust card height for horizontal images */
             .carousel-item:nth-child(n+2) .card {
-                min-height: 500px; /* Adjust this value */
+                min-height: 555px; /* Adjust this value */
             }
 
            .carousel-text-block {
@@ -1703,7 +1703,7 @@
       .fade-in {
         opacity: 0;
         transform: translateY(60px);
-        transition: opacity 0.6s ease-out, transform 0.4s ease-out;
+        transition: opacity 0.5s ease-out, transform 0.35s ease-out;
       }
 
       /* Add class when element becomes visible */
@@ -2262,9 +2262,10 @@ history.scrollRestoration = 'auto';
     document.documentElement.style.setProperty('--parallax-offset', `${scrolled * rate}px`);
 });
 
+// Check if mobile
+const isMobile = window.innerWidth <= 768; // Common mobile breakpoint
 
-
-        // Create an intersection observer
+// Create an intersection observer
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -2272,7 +2273,7 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 }, {
-  threshold: 0.33  // Trigger when 33% of element is visible
+  threshold: isMobile ? 0.2 : 0.33  // Trigger when 33% of element is visible // Higher threshold for mobile
 });
 
 // Observe all fade-in elements
