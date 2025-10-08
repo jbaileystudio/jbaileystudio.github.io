@@ -35,1711 +35,1741 @@
     <!-- End Favicons --> 
 
     <style>
-        :root {
-           --max: 1400px;
-           --title: 3.5rem;
-           --subtitle: 2.5rem;
-           --body: 1rem;
-           --radius: 16px;
-           --bg: #E5E5E5;
-        }
-
-        section {
-           margin: 0;
-        }
-
-        html {
-           scroll-behavior: smooth;
-           font-size: 16px;
-        }
-
-        body {
-           margin: 0;
-            font-family: "Helvetica Neue", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-           line-height: 1.6;
-           overflow-x: hidden;
-           color: #000;
-           letter-spacing: -0.03em;
-           overscroll-behavior: auto; /* or 'contain' for less bounce */
-            scroll-behavior: smooth;
-        }
-
-        .dark-background-wrapper {
-           background-image: linear-gradient(black, #0E0E0E);
-           width: 100vw;
-           position: relative;
-           left: 50%;
-           right: 50%;
-           margin-left: -50vw;
-           margin-right: -50vw;
-           padding-bottom: 143px;
-        }
-
-        .grey-background-wrapper {
-           background-color: #E5E5E5;
-           width: 100vw;
-           position: relative;
-           left: 50%;
-           right: 50%;
-           margin-left: -50vw;
-           margin-right: -50vw;
-        }
-
-        .content-wrapper {
-           max-width: var(--max);
-           margin: 0 auto;
-        }
-
-        .header .title,
-        .header .subtitle,
-        .description,
-        .box-heading,
-        .box-text,
-        .box-tag,
-        .subtitle, 
-        .reality-section {
-           color: white;
-        }
-
-        .subtitle,
-        .box-text,
-        .timeline-description,
-        .carousel-description,
-        .gestures-content {
-           color: #000;
-        }
-
-        .wrap {
-           max-width: var(--max);
-           margin: 0 auto;
-           padding: 0;
-
-        }
-
-        .header {
-           margin: 0;
-           display: flex;
-           justify-content: space-between;
-           align-items: baseline;
-           padding-top: 40px;
-        }
-
-
-        .header-section {
-           max-width: var(--max);
-           margin: 0 auto;
-           margin-bottom: 79px;
-           padding: 0 24px;
-        }
-
-
-        .hero-section {
-           margin: 0;
-           margin-bottom: 100px;
-        }
-
-        .hero {
-            width: 100vw;
-            height: 715px;
-            position: relative;
-            left: 50%;
-            margin-left: -50vw;
-            margin-right: -50vw;
-            background-color: var(--bg);
-            background-image: image-set(
-                url('images/IMG_5660.heic') type('image/heic'),
-                url('images/IMG_5660.webp') type('image/webp'),
-                url('images/IMG_5660.jpg') type('image/jpeg')
-            );            
-            background-position: center top;
-            background-repeat: no-repeat;
-            background-size: cover;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: -10%;
-            left: 0;
-            right: 0;
-            bottom: -10%;
-            background-image: image-set(
-                url('images/IMG_5660.heic') type('image/heic'),
-                url('images/IMG_5660.webp') type('image/webp'),
-                url('images/IMG_5660.jpg') type('image/jpeg')
-            );            
-            background-position: center top;
-            background-size: cover;
-            transform: translateY(var(--parallax-offset, 0));
-            will-change: transform;
-        }
-
-        .description-section {
-           margin: 0;
-           margin-bottom: 68px;
-        }
-
-        .description {
-           font-size: 2.5rem;
-           max-width: 1200px;
-           line-height: 1.36;
-           margin: 0;
-        }
-
-        .description .bold {
-           font-weight: bold;
-        }
-
-        .grid-section {
-           margin: 0;
-           margin-bottom: 143px;
-        }
-
-        .grid {
-           display: grid;
-           gap: 13px;
-           margin: 0;
-        }
-
-        .grid-4 {
-           grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-           gap: clamp(13px, 2vw, 15px);
-        }
-
-        .grid-4 .card {
-           height: clamp(320px, 30vw, 356px);
-           background-color: white;
-        }
-
-        .grid-4 .card .box-heading,
-        .grid-4 .card .box-text,
-        .grid-4 .card .box-tag {
-           color: black;
-        }
-
-        .feature {
-            display: flex;
-            gap: var(--space);
-            margin: 0;
-            border: var(--debug-border);
-            margin-top: -115px;
-            position: relative;
-            z-index: 1;
-        }
-
-        .feature .section-title {
-           margin-top: 201px;
-           margin-bottom: 60px;
-           letter-spacing: -0.07em;
-           font-size: 4.8rem;
-        }
-
-        .feature-content {
-            flex: 1;
-            padding-right: var(--space);
-        }
-
-        .feature-image {
-            width: min(691px, 100%); /* Use minimum of either 691px or 100% width */
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .feature-img {
-            width: 100%;
-            max-width: 691px;
-            height: auto;
-            aspect-ratio: 691/996; /* Maintain proportion */
-            margin-bottom: 52px;
-            border-radius: 16px;
-        }
-
-        .feature-image img,
-        .feature-img {
-           background-color: var(--bg);
-        }
-
-        .feature-text {
-            overflow-y: auto;
-            line-height: 1.61;
-            font-size: 1.6rem;
-            max-width: 600px; /* Fixed width for text */
-            margin: 0;
-            margin-bottom: 46px;
-            letter-spacing: -0.025em;
-            font-weight: 500;
-            color: #929292;
-        }
-
-        .feature-text span {
-            color: #000;
-        }
-
-        .feature-text:last-child {
-           margin-bottom: 0;
-        }
-
-        section.timeline {
-           padding-top: 152px;
-           padding-bottom: 166px;
-        }
-
-        .timeline {
-           display: flex;
-           gap: 50px;
-           align-items: flex-start;
-        }
-
-        .timeline-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, 267px);
-            gap: 24px;
-            max-width: 1360px;
-            margin: 0 auto;
-            justify-content: center;
-            position: relative;
-            min-width: 0px;
-        }
-
-        .timeline-grid-item {
-           height: clamp(240px, 30vw, 385px);
-        }
-
-        .timeline-grid .card {
-            background: radial-gradient(
-                    circle 278px at 1% 5%,
-                    rgb(0,0,0) 0%,        /* #000 with no transparency */
-                    rgb(47,33,90) 100%    /* #2F215A with no transparency */
-                );
-            position: relative;
-            overflow: hidden;
-           box-shadow: 0 0 24px 0 rgba(205, 205, 205, 0.25);
-        }
-
-        .gradient-text-1 {
-            background: linear-gradient(55deg, #123763, 10%, #9D41A6);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-        }
-
-        .gradient-text-2 {
-            background: linear-gradient(30deg, #6736BC, 40%, #2892CB);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-        }
-
-        .gradient-text-3 {
-            background: linear-gradient(45deg, #14BA54, #103D00);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-        }
-
-        .timeline-grid .card .timeline-number,
-        .timeline-grid .card .timeline-description {
-           color: white;
-        }
-
-        .carousel-section {
-           margin: 0;
-           overflow: hidden;
-        }
-
-        /* Carousel Styles */
-        .carousel {
-            position: relative;
-            width: 100vw;
-            left: 50%;
-            right: 50%;
-            margin-left: -50vw;
-            margin-right: -50vw;
-            overflow-x: auto;
-            overflow-y: hidden;
-            scroll-behavior: smooth;
-            scrollbar-width: none;
-            white-space: nowrap;
-            scroll-snap-type: x mandatory; /* Add this */
-            -webkit-overflow-scrolling: touch; /* Add this */
-        }
-
-        .carousel::-webkit-scrollbar {
-           display: none;
-        }
-
-        .carousel-content {
-            display: inline-flex;
-            gap: 59px;
-            padding: 0 24px;
-        }
-
-        .carousel-item {
-            width: min(1400px, 90vw);
-            flex-shrink: 0;
-            height: 700px; /* Default height for largest screens */
-            scroll-snap-align: center; /* Add this to make items snap to center */
-        }
-
-        .carousel-item .card {
-            width: 100%;
-            height: 100%;
-            background: white;
-            display: flex;
-            align-items: center;
-            justify-content: center; /* Change to center */
-            gap: 0px; /* Add explicit gap between text and image */
-            box-sizing: border-box;
-            box-shadow: 0 0 24px 0 rgba(205, 205, 205, 0.25);
-        }
-
-        .carousel-item:nth-child(n+2) .card {
-            gap: 80px; /* Adjust this value for horizontal images */
-        }
-
-        section > .section-title:has(+ .carousel) {
-           padding-top: 149px;
-           margin-bottom: 74px;
-        }
-
-        .carousel-section .carousel {
-           margin-top: 74px;
-        }
-
-        .carousel-section .carousel-heading {
-           letter-spacing: -0.01em;
-        }
-
-        .gestures-section {
-           margin: 0;
-           margin-top: 223px;
-        }
-
-        .gestures-section .section-title {
-           margin-bottom: 63px;
-        }
-
-        .gestures-section .card {
-           background-color: white;
-        }
-
-        .gestures-content .carousel-description {
-           letter-spacing: -0.02em;
-           max-width: 365px;
-           margin-top: 0px;
-        }
-
-        .grid-3 {
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: clamp(16px, 2vw, 24px);
-           justify-content: space-between;
-        }
-
-        .gestures .card {
-           height: 565px;
-           width: 100%;
-           overflow: hidden;
-           position: relative;
-           background-color: white;
-              box-shadow: 0 0 24px 0 rgba(205, 205, 205, 0.25);
-
-        }
-
-        .gestures .grid {
-           padding-bottom: 212px;
-        }
-
-        .gestures-content {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            padding: 2rem;
-            color: #000;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            padding-top: 78px;
-            padding-bottom: 72px;
-        }
-
-        .gestures-image {
-            width: 150px;
-            height: 150px;
-            margin-bottom: 82px;
-            object-fit: contain; /* This ensures images maintain aspect ratio */
-            max-width: 150px; /* Enforces maximum width */
-            max-height: 150px; /* Enforces maximum height */
-            display: block; /* Ensures consistent box model */
-            flex-shrink: 0; /* Prevents image from shrinking */
-        }
-
-
-        .perspective-text {
-           font-size: 2.85rem;
-           line-height: 1.1754385965;
-           letter-spacing: -0.03em;
-           margin: 0 0 0 281px;
-           margin-left: clamp(0px, calc(281px - (1400px - 100vw)), 281px);
-           max-width: 1119px;
-           font-weight: 500;
-           margin-bottom: 315px;
-           color: #929292;
-        }
-
-        .perspective-text span {
-           /* color: #000; */
-        }
-
-        .gestures .card .carousel-heading {
-            margin-bottom: 24px; /* Set distance between header and paragraph */
-            margin-top: 0px;
-        }
-
-        .perspective-section {
-           margin-top: 252px;
-        }
-
-        .perspective-section .section-title {
-           margin-bottom: 58px;
-        }
-
-        .text-center {
-           text-align: center;
-        }
-
-        .text-center .section-title,
-        .text-center .subtitle {
-           text-align: center;
-           letter-spacing: -0.015em;
-        }
-
-        .text-center .section-title {
-           padding-top: 153px;
-        }
-
-        .text-center .subtitle {
-           margin-top: 23px;
-           margin-bottom: 68px;
-        }
-
-
-
-        .carousel-text-block {
-            width: 49%;
-            flex-shrink: 0;
-        }
-
-        .carousel-item:nth-child(n+2) .carousel-text-block {
-            width: 30%; /* Adjust this value */
-        }
-
-        .carousel-heading,
-        .carousel-description {
-           width: 100%;
-           max-width: 410px;
-           white-space: normal;
-        }
-
-        .carousel-heading {
-            font-size: clamp(24px, 2.5vw, 36px);
-            font-weight: bold;
-            margin-bottom: 24px;
-            line-height: 1.2;
-        }
-
-        .carousel-description {
-            font-size: clamp(16px, 1.5vw, 22px);
-            line-height: 1.3;
-        }
-
-        .carousel-image-container {
-            width: 25%;
-            height: 60%;
-            flex-shrink: 0;
-        }
-
-        /* First (vertical) image */
-        .carousel-image {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            overflow: visible;
-        }
-
-        /* Target the horizontal images */
-        .carousel-item:nth-child(n+2) .carousel-image-container {
-            width: 44%;
-            height: 44%;
-            flex-shrink: 0;
-        }
-
-        .carousel-item:nth-child(n+2) .carousel-image {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }
-
-        .carousel-image-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }
-
-
-        .title {
-           font-size: 4.8rem;
-           font-weight: bold;
-           line-height: 1.1;
-           margin: 0;
-        }
-
-        .section-title {
-           font-size: 4rem;
-           font-weight: bold;
-           line-height: 1;
-           margin: 0;
-        }
-
-        .medium-title {
-           margin-top: 0;
-           font-size: 2.3rem;
-           font-weight: bold;
-           line-height: 1.1;
-           color: #000;
-        }
-
-        .subtitle {
-           font-size: 1rem;
-           color: white;
-           margin: 0;
-        }
-
-        .header .subtitle {
-           text-align: right;
-           font-size: 24px;
-        }
-
-        .text-center .subtitle {
-           font-size: 1.1rem;
-           margin-bottom: 70px;
-        }
-
-        .card {
-           border-radius: var(--radius);
-           overflow: hidden;
-           position: relative;
-        }
-
-        .card-content {
-           padding: 2rem;
-           position: absolute;
-           bottom: 0;
-           left: 0;
-           right: 0;
-           z-index: 1;
-           color: white;
-        }
-
-        .box-heading {
-           font-size: 1.7rem;
-           font-weight: bold;
-           line-height: 1.118;
-           margin-bottom: 1rem;
-        }
-
-        .box-text {
-           font-size: 1rem;
-           line-height: 1.3;
-           margin-bottom: 1rem;
-        }
-
-        .box-tags {
-           font-size: 0.6rem;
-           font-weight: bold;
-        }
-
-        .box-tag {
-           margin-right: 1rem;
-           letter-spacing: 0.10em;
-        }
-
-        .btn {
-           padding: 1rem 2rem;
-           background: #000;
-           color: #fff;
-           border: none;
-           border-radius: 24px;
-           cursor: pointer;
-           transition: .3s;
-           font-size: 1rem;
-        }
-
-        .btn:hover {
-           background: #333;
-        }
-
-        /* Restore text padding */
-        .timeline-content {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            padding: 0 1.2rem; /* Restore padding */
-            color: white;
-            z-index: 2;
-        }
-
-        .timeline-number {
-            font-size: 4.2rem;
-            font-weight: bold;
-            line-height: 1;
-            margin-bottom: 1rem;
-            margin-top: 39px; /* Restore top margin */
-            letter-spacing: -0.07em;
-        }
-
-
-        /* Styles for "12" */
-        .timeline-number.twelve span {
-            display: inline-block;
-        }
-        .timeline-number.twelve span:nth-child(1) { margin-right: -0.01em; }
-        .timeline-number.twelve span:nth-child(2) { margin-right: 0.2em; }
-
-        /* Styles for "40+" (as before) */
-        .timeline-number.forty span {
-            display: inline-block;
-        }
-        .timeline-number.forty span:nth-child(1) { margin-right: 0.08em; }
-        .timeline-number.forty span:nth-child(2) { margin-right: 0.07em; }
-        .timeline-number.forty .plus { 
-            font-size: 0.8em;
-            position: relative;
-            top: -0.2em;
-        }
-
-        /* Styles for "100+" (as before) */
-        .timeline-number.hundred span {
-            display: inline-block;
-        }
-        .timeline-number.hundred span:nth-child(1) { margin-right: -0.03em; }
-        .timeline-number.hundred span:nth-child(2) { margin-right: 0.09em; }
-        .timeline-number.hundred span:nth-child(3) { margin-right: 0.07em; }
-        .timeline-number.hundred .plus { 
-            font-size: 0.8em;
-            position: relative;
-            top: -0.2em;
-        }
-
-        /* Styles for "$13m" */
-        .timeline-number.money span {
-            display: inline-block;
-        }
-        .timeline-number.money .dollar { 
-            margin-right: 0.15em;
-            position: relative;
-            top: -0.42em;
-            font-size: 0.6em; /* If you want $ smaller */
-        }
-        .timeline-number.money span:nth-child(2) { margin-right: 0.02em; }
-        .timeline-number.money span:nth-child(3) { margin-right: 0.12em; }
-        .timeline-number.money .m { 
-            font-size: 0.8em; /* If you want m smaller */
-            position: relative;
-            top: 0em; /* Adjust vertical position of m */
-        }
-
-
-        .timeline-description {
-           font-size: 1.2rem;
-           line-height: 1.33;
-        }
-
-        .eyebrow {
-           font-size: 1.2rem;
-           margin: 0;
-           padding-top: 12px;
-           color: #000;
-           margin-top: 53px;
-           margin-bottom: 20px;
-        }
-
-        .reality-carousel {
-            position: relative;
-            width: 100vw;
-            left: 50%;
-            right: 50%;
-            margin-left: -50vw;
-            margin-right: -50vw;
-            overflow-x: auto;
-            overflow-y: visible; /* Change to visible to show caption text */
-            scroll-behavior: smooth;
-            scrollbar-width: none;
-            white-space: nowrap;
-            -webkit-overflow-scrolling: touch; /* Add this */
-            scroll-snap-type: x mandatory; /* Add this */
-        }
-
-        .reality-carousel-content {
-            display: inline-flex;
-            gap: 59px;
-            padding: 0 12px;
-        }
-
-        .reality-carousel-item {
-            width: min(1124px, 90vw);
-            flex-shrink: 0;
-            display: flex;
-            flex-direction: column;
-                scroll-snap-align: center; /* Add this */
-
-        }
-
-        .reality-carousel-item .card {
-            width: 100%;
-            aspect-ratio: 5/3; /* Adjust this ratio as needed */
-            margin-bottom: 24px;
-        }
-
-        .reality-carousel-item .card img {
-            transform: translateX(0);
-            transition: transform 0.1s ease-out; /* Optional: makes movement smoother */
-            will-change: transform;
-            position: relative; /* or absolute depending on your layout */
-        }
-
-        /* Make sure caption is visible */
-        .carousel-item-caption {
-            margin-top: 1.5rem;
-            font-size: 1.2rem;
-            line-height: 1.4;
-            text-align: left;
-            white-space: normal;
-            padding: 0; /* Remove default padding */
-        }
-
-        .caption-bold {
-           font-weight: bold;
-           display: block;
-           margin-bottom: 0;
-        }
-
-        .modal-overlay {
-           display: none;
-           position: fixed;
-           inset: 0;
-           background: rgba(0,0,0,.5);
-           z-index: 1000;
-        }
-
-        .modal {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: white;
-            border-radius: var(--radius);
-            z-index: 1001;
-            width: min(1623px, 90vw);
-            height: min(1013px, 90vh);
-            box-sizing: border-box;
-        }
-
-        .modal-container {
-           /* Creates a flex container */
-           display: flex;
-           /* Makes container fill its parent */
-           width: 100%;
-           height: 100%;
-           /* Aligns flex items to start from the top */
-           align-items: flex-start;
-           /* Padding structure: top right bottom left */
-           /* top: fixed 57px */
-           /* right: scales between 40px and 162px based on 10% of container width */
-           /* bottom: fixed 57px */
-           /* left: scales between 60px and 96px based on 6% of container width */
-           padding: 57px clamp(40px, 10%, 162px) 57px clamp(60px, 6%, 96px);
-           /* Includes padding in width/height calculations */
-           box-sizing: border-box;
-        }
-
-        .modal-content {
-           /* Width scales between 400px and 623px based on 48% of container width */
-           /* 48% chosen to maintain proper spacing with right padding */
-           width: clamp(400px, 48%, 623px);
-           /* Height will be auto-calculated based on aspect ratio */
-           height: auto;
-           /* Maintains image proportion of 623:898 */
-           aspect-ratio: 623/898;
-           /* Rounds corners based on root variable */
-           border-radius: var(--radius);
-           /* Clips content that exceeds dimensions */
-           overflow: hidden;
-           /* Sets background color from root variable */
-           background-color: var(--bg);
-           /* Allows element to shrink if needed */
-           flex-shrink: 1;
-           /* Ensures proper shrinking in flex container */
-           min-width: 0;
-           /* Includes padding in width/height calculations */
-           box-sizing: border-box;
-        }
-
-        .modal-blurbs {
-            width: clamp(500px, 41%, 662px);
-            flex-shrink: 0;
-            margin-right: clamp(40px, 5%, 80px);
-            margin-top: 20px;
-            box-sizing: border-box;
-        }
-
-        .blurb {
-            display: flex;
-            gap: 38px;
-            margin-bottom: 44px;
-            align-items: flex-start; /* Change from center to flex-start */
-        }
-
-        .blurb:first-title {
-            margin-top: 0;
-        }
-
-        .blurb:last-child {
-            margin-bottom: 0;
-        }
-
-        .blurb-marker {
-            width: 22px;
-            height: 22px;
-            border-radius: 50%;
-            border: 2px solid #000;
-            background-color: #E5E5E5;
-            flex-shrink: 0;
-            margin-top: 0.02rem; /* Add a small top margin to align with title */
-        }
-
-        .blurb-content {
-            width: clamp(440px, 91%, 602px);
-        }
-
-        .blurb-title {
-            font-size: 1.2rem; 
-            font-weight: bold;
-            margin: 0 0 8px 0;
-            line-height: 1;
-        }
-
-        .blurb-text {
-            font-size: 1rem
-            line-height: 1.5;
-            margin: 0;
-        }
-
-        .modal-content img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            background-color: var(--bg);
-        }
-
-        .close-btn {
-           position: absolute;
-           top: 20px;
-           right: 20px;
-           width: 40px;
-           height: 40px;
-           background: white;
-           border: none;
-           border-radius: 50%\;
-           cursor: pointer;
-           font-size: 24px;
-           box-shadow: 0 2px 8px rgba(0,0,0,.2);
-           display: flex;
-           align-items: center;
-           justify-content: center;
-        }
-
-        .close-btn:hover {
-           background: #f0f0f0;
-        }
-
-        .modal-open {
-           overflow: hidden;
-        }
-
-        .card-content-top {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            padding: 0px 27px;
-            color: white;
-        }
-
-        .card-content-bottom {
-           position: absolute;
-           bottom: 0;
-           left: 0;
-           right: 0;
-           padding: 25px 27px 59px;
-           color: white;
-        }
-
-        img {
-           width: 100%;
-           height: 100%;
-           object-fit: cover;
-        }
-
-        .wrap,
-        .content-wrapper {
-            padding: 0 24px;
-        }
-
-        /* Desktop Large - 1440px and up */
-        @media screen and (min-width: 1440px) {
-            html {
-                font-size: 20px;
-            }
-
-
-            /* Add these styles */
-            .carousel-content {
-                    padding-left: calc((100vw - var(--max)) / 2);
-                    padding-right: calc((100vw - var(--max)) / 2);
-                }
-
-            .reality-carousel-content {
-                padding-left: calc((100vw - var(--max)) / 2);
-                padding-right: calc((100vw - var(--max)) / 2 + 220px); /* Subtract 220px from end padding */
-            }
-        }
-
-        @media screen and (max-width: 1440px) {
-            .carousel-item .card {
-                min-height: auto;
-                height: auto;
-                aspect-ratio: 16/9; /* Adjust this ratio to what works best */
-            }
-
-            .carousel-image-container {
-                width: 23%; /* Make image container relative to card size */
-                height: auto;
-                aspect-ratio: 465/695; /* Maintain original image proportions */
-            }
-
-            .carousel-item {
-                height: 758px;
-            }
-        }
-
-        /* Desktop - 1201px to 1439px */
-        @media screen and (max-width: 1439px) and (min-width: 1201px) {
-            html {
-                font-size: 19px;
-            }
-
-            .carousel-item {
-                height: 730px;
-            }
-        }
-
-        /* Cascading styles - 1200px and below */
-        @media screen and (max-width: 1200px) {
-
-            html {
-                font-size: 19px;
-            }
-
-            .timeline-grid {
-                min-width: auto;
-                display: grid;
-                grid-template-columns: repeat(2, 267px); /* Force two columns of fixed width */
-                gap: 24px; /* Consistent gap */
-                width: fit-content; /* Allow grid to be only as wide as needed */
-                margin: 0 auto; /* Center the entire grid */
-                justify-content: center; /* Center the grid items */
-                margin-bottom: 166px;
-            }
-
-            .feature {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .feature-content {
-                order: 2;
-                width: 100%;
-                max-width: 691px;
-                padding-right: 0;
-                margin: 0 auto;
-            }
-
-            .feature-image {
-                order: 1;
-                width: 100%;
-                max-width: 691px;
-                margin: 0 auto; /* Add this if not already present */
-                display: flex; /* Ensure this is present */
-                flex-direction: column;
-                align-items: center; /* Ensure this is present */
-            }
-            
-            .timeline {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .header {
-                flex-direction: column;
-                align-items: flex-start;
-                padding-top: 24px;
-            }
-
-            .header .subtitle {
-                text-align: left;
-                width: 100%;
-                align-self: flex-start;
-            }
-
-            .title {
-                margin-top: 32px;
-                margin-bottom: 16px;
-            }
-
-            br {
-                display: none;
-            }
-
-            section > .section-title:has(+ .carousel),
-            .gestures-section .section-title {
-                text-align: center;
-            }
-
-            .medium-title {
-                text-align: center;
-                width: 100%;
-               font-size: 2.8rem;
-               margin-bottom: 0px;
-            }
-
-            .carousel-item {
-                height: 630px;
-            }
-
-        }
-
-        /* Tablet Large - 1025px to 1200px */
-        @media screen and (max-width: 1200px) and (min-width: 1025px) {
-            html {
-                font-size: 18px;
-            }
-        }
-
-        /* Tablet - 768px to 1024px */
-        @media screen and (max-width: 1024px) and (min-width: 768px) {
-            html {
-                font-size: 17px;
-            }
-
-            .card-content-top {
-                padding: 8px 27px;
-            }
-
-            .card-content-bottom {
-                padding: 25px 27px 50px;
-            }
-
-           .feature .section-title,
-           .feature-text {
-               text-align: left; /* Left align text */
-               max-width: 100%; /* Allow text to fill container */
-           }
-
-           /* Adjust eyebrow margins */
-           .eyebrow {
-               margin-top: 0px; /* Reduce from 64px */
-               margin-bottom: 12px; /* Reduce from 20px */
-           }
-
-           .description {
-                font-size: 38px;
-                line-height: 1.5;
-           }
-
-           .feature-text {
-                font-size: 1.6rem;
-                line-height: 1.6
-           }
-
-           .perspective-text {
-               font-size: 38px;
-               line-height: 1.4;   
-           }
-
-           .carousel-content {
-                gap: 24px;
-           }
-
-           .grid-3 {
-                grid-template-columns: 1fr;
-            }
-
-            .modal {
-                width: min(90vw, 800px);
-                height: min(90vh, 900px);
-                padding: 32px;
-            }
-
-            .modal-container {
-                flex-direction: column-reverse;
-                overflow-y: auto;
-                height: 100%;
-                gap: 32px;
-                padding: 0;
-            }
-
-            .modal-blurbs {
-                width: 100%;
-                margin-right: 0;
-            }
-
-            .blurb-content {
-                width: 100%;
-            }
-
-            .modal-content {
-                width: 100%;
-                height: auto;
-                aspect-ratio: 691/996;
-                max-height: 50vh;
-            }
-
-
-            .feature .section-title,
-            .feature-text {
-                text-align: left; /* Changed from center to left */
-                margin-left: 0; /* Removes auto margin */
-                margin-right: 0; /* Removes auto margin */
-            }
-
-            .grid-3 {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        /* Add scaling for smaller screens */
-        @media screen and (max-width: 1024px) {
-            .carousel-image-container {
-                width: 25%;
-                height: auto;
-                aspect-ratio: 465/695;
-                order: 1;
-                margin: 0 auto; /* This should already be there but make sure */    }
-
-            .carousel-item:nth-child(n+2) .carousel-image-container {
-                width: 40%;
-                aspect-ratio: 695/465; /* Horizontal ratio */
-            }
-
-            .carousel-item .card,
-            .carousel-item:nth-child(n+2) .card {
-                gap: 32px; /* Reset gap for mobile */
-            }
-
-            .carousel-text-block,
-            .carousel-item:nth-child(n+2) .carousel-text-block {
-                width: 100%; /* Full width for mobile */
-            }
-
-            .carousel-item .card {
-                flex-direction: column;
-                gap: 32px;
-                aspect-ratio: 15 / 16;
-                padding: 10px 32px;
-                min-height: auto;
-            }
-
-            .carousel-text-block {
-                width: 100%;
-                text-align: center;
-                order: 2;
-                margin: 0 auto;
-                max-width: 410px;
-            }
-
-            .carousel-item {
-                height: auto;
-                min-height: unset; /* or auto */
-            }
-
-
-            .carousel-item .card {
-                flex-direction: column;
-                gap: 32px;
-                padding: 48px 32px;
-                min-height: unset; /* or auto */
-            }
-
-            .carousel-heading,
-            .carousel-description {
-                text-align: center; /* Add this to center the text content */
-                margin: 12px auto; /* Add this to center the text block */
-            }
-
-            .reality-carousel-item {
-                width: calc(100vw - 48px);
-            }
-            
-            .reality-carousel-item .card {
-                aspect-ratio: 4/3; /* Adjust for tablet */
-            }
-
-        }
-
-        /* Add this new breakpoint for 768px-1024px */
-        @media screen and (min-width: 768px) and (max-width: 1024px) {
-            .carousel-item .card {
-                aspect-ratio: 3.2/3; /* Adjust this ratio to what you want */
-                min-height: unset; /* Remove fixed height if needed */
-            }
-
-            /* Adjust text sizes */
-            .carousel-heading {
-                font-size: 1.6rem; /* Adjust as needed */
-                margin-bottom: 16px;
-            }
-
-            .carousel-description {
-                font-size: 1rem; /* Adjust as needed */
-                line-height: 1.5;
-            }
-
-            /* Adjust the carousel text block width if needed */
-            .carousel-text-block {
-                max-width: 410px; /* Adjust as needed */
-            }
-        }
-
-        /* Add scaling for smaller screens */
-        @media screen and (max-width: 768px) {
-            .carousel-item {
-                height: auto;
-            }
-        }
-
-        /* Add new breakpoint for single column */
-        @media screen and (max-width: 610px) {
-            .timeline-grid {
-                grid-template-columns: 267px;  /* Single column */
-                width: fit-content;
-                margin: 0 auto;
-                justify-content: center;
-            }
-
-            .carousel-item {
-                height: auto;
-            }
-        }
-
-        /* Tablet Small - 426px to 767px */
-        @media screen and (max-width: 767px) and (min-width: 426px) {
-            html {
-                font-size: 16.5px;
-            }
-            /* Your tablet-specific styles */
-
-            .eyebrow {
-               margin-top: 0px;
-            }
-
-            .timeline-item:last-child {
-               margin-bottom: ;
-            }
-
-            .carousel-description {
-                font-size: 1rem; /* Adjust as needed */
-                line-height: 1.5;
-            }
-        }
-
-
-        @media screen and (max-width: 425px) {
-            html {
-               font-size: 15.8px;
-            }
-
-            .section-title {
-                font-size: 3rem;
-            }
-
-            .reality-carousel-content {
-                gap: 22px;
-                padding: 0 16px;
-            }
-
-            .eyebrow {
-               text-align: center;
-               width: 100%;
-           }
-
-           .timeline-content {
-               text-align: center;
-           }
-
-           .timeline-number {
-               text-align: center;
-           }
-
-           .timeline-description {
-               text-align: center;
-               padding: 0 12px;
-           }
-
-           .carousel-description {
-                font-size: 1rem; /* Adjust as needed */
-                line-height: 1.5;
-            }
-            
-
-            .gestures .card .carousel-heading {
-                margin-bottom: 10px; /* Set distance between header and paragraph */
-                margin-top: 0px;
-            }
-
-            .gestures-content {
-                padding-top: 65px; /* Set icon distance from top */
-        }
-
-
-            .reality-carousel-item .card {
-                aspect-ratio: 4/3; /* Adjust for mobile */
-            }
-
-            .feature .section-title {
-                font-size: 4.4rem;
-            }
-
-            section > .section-title:has(+ .carousel) {
-               font-size: 2.9rem;
-            }
-
-           .wrap {
-               padding: 0 24px;
-           }
-
-           .content-wrapper {
-                padding: 0 24px;
-            }
-
-           .subtitle {
-            line-height: 1.25;
-           }
-
-           .card-content-top {
-                padding: 2px 27px;
-            }
-
-            .card-content-bottom {
-                padding: 25px 27px 30px;
-            }
-
-           .carousel-section {
-                padding: 0 24px;
-                margin-bottom: 0;
-           }
-
-           .perspective-text {
-               margin: 0;
-           }
-
-           .title {
-               margin-bottom: 16px;
-               text-align: left;
-           }
-
-           .subtitle {
-               text-align: left;
-           }
-
-           .hero {
-               height: 375px;
-               margin-top: 0;
-           }
-
-           .hero-section {
-               margin-bottom: 60px;
-           }
-
-           .description {
-               font-size: 28px;
-               line-height: 1.3;
-               max-width: 100%;
-               margin-bottom: 40px;
-           }
-
-           .description .bold {
-               font-weight: bold;
-           }
-
-           .grid-4 {
-               grid-template-columns: 1fr;
-               gap: 16px;
-               margin-bottom: 40px;
-           }
-
-           .grid-4 .card {
-               height: 240px;
-               width: 100%;
-           }
-
-           .feature .section-title {
-               margin-top: 20px;
-               margin-bottom: 32px;
-           }
-
-           .feature-text {
-               margin-bottom: 32px;
-               font-size: 1.2rem;
-           }
-
-           .feature-img {
-               margin-bottom: 32px;
-           }
-
-           .btn {
-               width: 100%;
-               text-align: center;
-           }
-
-           /* Ensure boxes fit within screen width */
-           .timeline-grid-item {
-               width: 100%;
-           }
-
-           .timeline-grid {
-               grid-template-columns: 267px; /* Single column but maintain width */
-                width: fit-content;
-                margin: 0 auto;
-                justify-content: center;
-           }
-
-           .medium-title {
-               display: block;
-               margin-bottom: 12px;
-               text-align: center;
-               align-self: flex-start;
-               font-size: 2rem;
-           }
-
-           .eyebrow {
-               margin-top: 20px;
-               margin-bottom: 8px;
-               margin-top: 20px;
-           }
-
-           .timeline-number {
-               margin-top: 24px;
-           }
-
-           .timeline-content {
-               padding-top: 32px;
-           }
-
-           section > .section-title:has(+ .carousel) {
-               margin-bottom: 40px;
-               font-size: 3rem;
-           }
-
-           .carousel-item {
-               width: 345px;
-               scroll-snap-align: center;
-               height: auto;
-           }
-
-           .carousel-item .card {
-               min-height: 555px;
-               display: flex;
-               justify-content: center;
-               overflow: visible;
-           }
-
-           .carousel-image-container {
-               width: 50%;
-               aspect-ratio: 465/695;
-               order: 1;
-               position: static;
-               transform: none;
-           }
-
-            /* Horizontal images (2-4) */
-            .carousel-item:nth-child(n+2) .carousel-image-container {
-                width: 80%; /* Make horizontal images wider */
-                aspect-ratio: 695/465; /* Keep horizontal ratio */
-                height: auto; /* Let height be determined by aspect ratio */
-                margin: 0 auto; /* Center the container */
-                overflow: visible;
-            }
-
-
-            /* You might need to adjust card height for horizontal images */
-            .carousel-item:nth-child(n+2) .card {
-                min-height: 555px; /* Adjust this value */
-            }
-
-           .carousel-text-block {
-               width: 100%;
-               margin-left: 0;
-               order: 2;
-               overflow: visible;
-           }
-
-           .carousel-heading,
-           .carousel-description {
-               white-space: normal;
-           }
-
-           .carousel-heading {
-               font-size: 1.5rem
-
-           }
-           .carousel-content {
-                padding-left: 24px;
-                padding-right: 48px;
-                gap: 16px;
-                padding-bottom: 0;
-           }
-
-           .carousel {
-               -webkit-overflow-scrolling: touch;
-               scroll-snap-type: x mandatory;
-           }
-
-           .gestures-section {
-               margin-top: 120px;
-           }
-
-           .gestures-section .section-title {
-               margin-bottom: 32px;
-           }
-
-           .grid-3 {
-               grid-template-columns: 1fr;
-               gap: 16px;
-               padding: 0;
-           }
-
-           .gestures .card {
-               height: 440px;
-           }
-
-           .gestures-image {
-               margin-bottom: 40px;
-           }
-
-           .gestures .grid {
-               margin-bottom: 160px;
-           }
-
-           .perspective-section {
-               margin-top: 120px;
-           }
-
-           .perspective-section .section-title {
-               margin-bottom: 32px;
-           }
-
-           .perspective-text {
-               margin-bottom: 160px;
-               line-height: 1.5;
-               font-size: 1.5rem;
-           }
-
-           .text-center .section-title {
-               padding-top: 80px;
-           }
-
-           .text-center .subtitle {
-               margin-top: 20px;
-               margin-bottom: 32px;
-           }
-
-            .text-center .carousel {
-                position: relative;
-                width: 100vw;
-                left: 50%;
-                right: 50%;
-                margin-left: -50vw;
-                margin-right: -50vw;
-                overflow-x: scroll;
-                -webkit-overflow-scrolling: touch;
-                scroll-snap-type: x mandatory;
-            }
-
-            .text-center .carousel-content {
-                display: inline-flex;
-                gap: 16px;
-                padding-left: 24px;
-                padding-right: 24px;
-            }
-
-        .text-center .carousel-item {
-            width: clamp(327px, 90vw, 1124px);
-            flex-shrink: 0;
-            display: flex; /* Add this */
-            flex-direction: column; /* Add this */
-        }
-
-        .text-center .carousel-item .card {
-            width: 100%;
-            height: clamp(246px, 55vw, 845px);
-            margin-bottom: 1.5rem; /* Add space between card and caption */
-        }
-
-            .carousel-item-caption {
-                text-align: left;
-                padding: 0;
-                margin-top: 8px;
-                width: 100%;
-                font-size: 17px;
-                line-height: 1.54;
-            }
-
-           .grid-section {
-               margin-bottom: 140px;
-           }
-
-           .timeline {
-                flex-direction: column;
-               gap: 0px;
-           }
-
-           .modal {
-                width: 90vw;
-                padding: 24px;
-            }
-
-        }
-
-        /* First add base styles for fade-in elements */
-      .fade-in {
+    /* ============================================
+       CSS CUSTOM PROPERTIES (VARIABLES)
+       ============================================ */
+    
+    :root {
+        /* Layout & Design System */
+        --max: 1400px;
+        --radius: 16px;
+        --bg: #E5E5E5;
+        
+        /* Fluid Typography System */
+        --fluid-min-width: 320;
+        --fluid-max-width: 1440;
+        --fluid-min-size: 16;
+        --fluid-max-size: 20;
+        
+        /* Modular Type Scale (1.25 ratio) */
+        --step--3: clamp(0.51rem, calc(0.49rem + 0.11vw), 0.64rem);  /* 10-13px */
+        --step--2: clamp(0.64rem, calc(0.61rem + 0.14vw), 0.80rem);  /* 13-16px: Box tags */
+        --step--1: clamp(0.80rem, calc(0.76rem + 0.18vw), 1.00rem);  /* 16-20px */
+        --step-0: clamp(1.00rem, calc(0.95rem + 0.23vw), 1.25rem);   /* 20-25px: Body text */
+        --step-1: clamp(1.25rem, calc(1.19rem + 0.29vw), 1.56rem);   /* 25-31px: Subtitle, captions */
+        --step-2: clamp(1.56rem, calc(1.48rem + 0.36vw), 1.95rem);   /* 31-39px: Feature text */
+        --step-3: clamp(1.95rem, calc(1.86rem + 0.45vw), 2.44rem);   /* 39-49px: Box headings */
+        --step-4: clamp(2.44rem, calc(2.32rem + 0.56vw), 3.05rem);   /* 49-61px: Description */
+        --step-5: clamp(3.05rem, calc(2.90rem + 0.70vw), 3.82rem);   /* 61-76px */
+        --step-6: clamp(3.82rem, calc(3.63rem + 0.88vw), 4.77rem);   /* 76-95px */
+        --step-7: clamp(4.77rem, calc(4.54rem + 1.09vw), 5.96rem);   /* 95-119px: Big headers */
+        --step-8: clamp(5.96rem, calc(5.67rem + 1.36vw), 7.45rem);   /* 119-149px: HERO ONLY */
+        
+        /* Line Heights */
+        --leading-tight: 1.2;
+        --leading-snug: 1.375;
+        --leading-normal: 1.5;
+        --leading-relaxed: 1.75;
+        
+        /* Letter Spacing */
+        --tracking-tight: -0.03em;
+        --tracking-normal: 0;
+        --tracking-wide: 0.05em;
+    }
+    
+    
+    /* ============================================
+       GLOBAL STYLES
+       ============================================ */
+    
+    html {
+        scroll-behavior: smooth;
+        font-size: 16px;
+    }
+    
+    body {
+        margin: 0;
+        font-family: "Helvetica Neue", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        line-height: 1.6;
+        overflow-x: hidden;
+        color: #000;
+        letter-spacing: -0.03em;
+        overscroll-behavior: auto;
+        scroll-behavior: smooth;
+    }
+    
+    section {
+        margin: 0;
+    }
+    
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    
+    /* ============================================
+   TYPOGRAPHY SYSTEM
+   ============================================ */
+
+/* Hero Title - Biggest text on page */
+.title {
+    font-size: var(--step-8);
+    font-weight: bold;
+    line-height: var(--leading-tight);
+    letter-spacing: var(--tracking-tight);
+    margin: 0;
+}
+
+/* Section Titles - Major headings (Charting, Thinking, Full Perspective, Tomorrow's) */
+.section-title {
+    font-size: var(--step-7);
+    font-weight: bold;
+    line-height: var(--leading-tight);
+    letter-spacing: var(--tracking-tight);
+    margin: 0;
+}
+
+/* Medium Titles */
+.medium-title {
+    margin-top: 0;
+    font-size: var(--step-4);
+    font-weight: bold;
+    line-height: var(--leading-tight);
+    letter-spacing: var(--tracking-tight);
+    color: #000;
+}
+
+/* Subtitle */
+.subtitle {
+    font-size: var(--step-0);
+    line-height: var(--leading-normal);
+    color: white;
+    margin: 0;
+}
+
+.header .subtitle {
+    text-align: right;
+    font-size: var(--step-0);
+}
+
+/* Description - Large body text */
+.description {
+    font-size: var(--step-4);
+    max-width: 1200px;
+    line-height: var(--leading-snug);
+    letter-spacing: var(--tracking-tight);
+    margin: 0;
+    color: white;
+}
+
+.description .bold {
+    font-weight: bold;
+}
+
+/* Feature Text - Condensed section */
+.feature-text {
+    overflow-y: auto;
+    line-height: 1.61;
+    letter-spacing: var(--tracking-tight);
+    max-width: 600px;
+    margin: 0;
+    margin-bottom: 46px;
+    font-weight: 500;
+    color: #929292;
+    font-size: var(--step-2);
+}
+
+.feature-text span {
+    color: #000;
+}
+
+.feature-text:last-child {
+    margin-bottom: 0;
+}
+
+/* Perspective Text - Full perspective section */
+.perspective-text {
+    font-size: var(--step-4);
+    line-height: var(--leading-snug);
+    letter-spacing: var(--tracking-tight);
+    margin: 0 0 0 281px;
+    margin-left: clamp(0px, calc(281px - (1400px - 100vw)), 281px);
+    max-width: 1119px;
+    font-weight: 500;
+    margin-bottom: 315px;
+    color: #929292;
+}
+    
+    
+    /* ============================================
+       LAYOUT CONTAINERS
+       ============================================ */
+    
+    .wrap {
+        max-width: var(--max);
+        margin: 0 auto;
+        padding: 0 24px;
+    }
+    
+    .content-wrapper {
+        max-width: var(--max);
+        margin: 0 auto;
+        padding: 0 24px;
+    }
+    
+    .dark-background-wrapper {
+        background-image: linear-gradient(black, #0E0E0E);
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        padding-bottom: 143px;
+    }
+    
+    .grey-background-wrapper {
+        background-color: #E5E5E5;
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+    }
+    
+    
+    /* ============================================
+       HEADER SECTION
+       ============================================ */
+    
+    .header-section {
+        max-width: var(--max);
+        margin: 0 auto;
+        margin-bottom: 79px;
+        padding: 0 24px;
+    }
+    
+    .header {
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding-top: 40px;
+    }
+    
+    .header .title,
+    .header .subtitle {
+        color: white;
+    }
+    
+    
+    /* ============================================
+       HERO SECTION
+       ============================================ */
+    
+    .hero-section {
+        margin: 0;
+        margin-bottom: 100px;
+    }
+    
+    .hero {
+        width: 100vw;
+        height: 715px;
+        position: relative;
+        left: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        background-color: var(--bg);
+        background-image: image-set(
+            url('images/IMG_5660.heic') type('image/heic'),
+            url('images/IMG_5660.webp') type('image/webp'),
+            url('images/IMG_5660.jpg') type('image/jpeg')
+        );
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+    }
+    
+    .hero::before {
+        content: '';
+        position: absolute;
+        top: -10%;
+        left: 0;
+        right: 0;
+        bottom: -10%;
+        background-image: image-set(
+            url('images/IMG_5660.heic') type('image/heic'),
+            url('images/IMG_5660.webp') type('image/webp'),
+            url('images/IMG_5660.jpg') type('image/jpeg')
+        );
+        background-position: center top;
+        background-size: cover;
+        transform: translateY(var(--parallax-offset, 0));
+        will-change: transform;
+    }
+    
+    
+    /* ============================================
+       DESCRIPTION SECTION
+       ============================================ */
+    
+    .description-section {
+        margin: 0;
+        margin-bottom: 68px;
+    }
+    
+    
+    /* ============================================
+       GRID & CARDS
+       ============================================ */
+    
+    .grid-section {
+        margin: 0;
+        margin-bottom: 143px;
+    }
+    
+    .grid {
+        display: grid;
+        gap: 13px;
+        margin: 0;
+    }
+    
+    .grid-4 {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: clamp(13px, 2vw, 15px);
+    }
+    
+    .grid-4 .card {
+        height: clamp(320px, 30vw, 356px);
+        background-color: white;
+    }
+    
+    .grid-3 {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: clamp(16px, 2vw, 24px);
+        justify-content: space-between;
+    }
+    
+    /* Card Component */
+    .card {
+        border-radius: var(--radius);
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .card-content {
+        padding: 2rem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        color: white;
+    }
+    
+    .card-content-top {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 0px 27px;
+        color: white;
+    }
+    
+    .card-content-bottom {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 25px 27px 59px;
+        color: white;
+    }
+    
+    /* Box Typography */
+.box-heading {
+    font-weight: bold;
+    line-height: var(--leading-tight);
+    letter-spacing: var(--tracking-tight);
+    margin-bottom: 1rem;
+}
+
+/* Override browser defaults for headings */
+h3.box-heading {
+    font-size: var(--step-3);
+}
+
+.box-text {
+    font-size: var(--step-0);
+    line-height: var(--leading-normal);
+    margin-bottom: 1rem;
+}
+
+.box-tags {
+    font-size: var(--step--2);
+    font-weight: bold;
+    letter-spacing: var(--tracking-wide);
+    text-transform: uppercase;
+}
+    
+    .box-tag {
+        margin-right: 1rem;
+        letter-spacing: 0.10em;
+    }
+    
+    .grid-4 .card .box-heading,
+    .grid-4 .card .box-text,
+    .grid-4 .card .box-tag {
+        color: black;
+    }
+    
+    
+    /* ============================================
+       FEATURE SECTION
+       ============================================ */
+    
+    .feature {
+        display: flex;
+        gap: var(--space);
+        margin: 0;
+        border: var(--debug-border);
+        margin-top: -115px;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .feature .section-title {
+    margin-top: 201px;
+    margin-bottom: 60px;
+    letter-spacing: -0.07em;
+    font-size: var(--step-7);
+    line-height: 1.05;
+}
+    
+    .feature-content {
+        flex: 1;
+        padding-right: var(--space);
+    }
+    
+    .feature-image {
+        width: min(691px, 100%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .feature-img {
+        width: 100%;
+        max-width: 691px;
+        height: auto;
+        aspect-ratio: 691/996;
+        margin-bottom: 52px;
+        border-radius: 16px;
+    }
+    
+    .feature-image img,
+    .feature-img {
+        background-color: var(--bg);
+    }
+    
+    
+    /* ============================================
+       TIMELINE SECTION
+       ============================================ */
+    
+    section.timeline {
+        padding-top: 152px;
+        padding-bottom: 166px;
+    }
+    
+    .timeline {
+        display: flex;
+        gap: 50px;
+        align-items: flex-start;
+    }
+    
+    .timeline-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 267px);
+        gap: 24px;
+        max-width: 1360px;
+        margin: 0 auto;
+        justify-content: center;
+        position: relative;
+        min-width: 0px;
+    }
+    
+    .timeline-grid-item {
+        height: clamp(240px, 30vw, 385px);
+    }
+    
+    .timeline-grid .card {
+        background: radial-gradient(
+            circle 278px at 1% 5%,
+            rgb(0,0,0) 0%,
+            rgb(47,33,90) 100%
+        );
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 0 24px 0 rgba(205, 205, 205, 0.25);
+    }
+    
+    .timeline-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 0 1.2rem;
+        color: white;
+        z-index: 2;
+    }
+    
+    /* Eyebrow */
+    .eyebrow {
+        font-size: var(--step-0);
+        margin: 0;
+        padding-top: 12px;
+        color: #000;
+        margin-top: 53px;
+        margin-bottom: 20px;
+    }
+    
+    /* Timeline Numbers */
+    .timeline-number {
+        font-size: var(--step-7);
+        font-weight: bold;
+        line-height: var(--leading-tight);
+        letter-spacing: -0.07em;
+        margin-bottom: 1rem;
+        margin-top: clamp(1.5rem, 4vw, 2.5rem);
+    }
+    
+    /* Number spacing adjustments */
+    .timeline-number.twelve span {
+        display: inline-block;
+    }
+    .timeline-number.twelve span:nth-child(1) { margin-right: -0.01em; }
+    .timeline-number.twelve span:nth-child(2) { margin-right: 0.2em; }
+    
+    .timeline-number.forty span {
+        display: inline-block;
+    }
+    .timeline-number.forty span:nth-child(1) { margin-right: 0.08em; }
+    .timeline-number.forty span:nth-child(2) { margin-right: 0.07em; }
+    .timeline-number.forty .plus {
+        font-size: 0.8em;
+        position: relative;
+        top: -0.2em;
+    }
+    
+    .timeline-number.hundred span {
+        display: inline-block;
+    }
+    .timeline-number.hundred span:nth-child(1) { margin-right: -0.03em; }
+    .timeline-number.hundred span:nth-child(2) { margin-right: 0.09em; }
+    .timeline-number.hundred span:nth-child(3) { margin-right: 0.07em; }
+    .timeline-number.hundred .plus {
+        font-size: 0.8em;
+        position: relative;
+        top: -0.2em;
+    }
+    
+    .timeline-number.money span {
+        display: inline-block;
+    }
+    .timeline-number.money .dollar {
+        margin-right: 0.15em;
+        position: relative;
+        top: -0.42em;
+        font-size: 0.6em;
+    }
+    .timeline-number.money span:nth-child(2) { margin-right: 0.02em; }
+    .timeline-number.money span:nth-child(3) { margin-right: 0.12em; }
+    .timeline-number.money .m {
+        font-size: 0.8em;
+        position: relative;
+        top: 0em;
+    }
+    
+    /* Timeline Description */
+    .timeline-description {
+        font-size: var(--step-0);
+        line-height: var(--leading-snug);
+    }
+    
+    .timeline-grid .card .timeline-number,
+    .timeline-grid .card .timeline-description {
+        color: white;
+    }
+    
+    
+    /* ============================================
+       GRADIENT TEXT EFFECTS
+       ============================================ */
+    
+    .gradient-text-1 {
+        background: linear-gradient(55deg, #123763, 10%, #9D41A6);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+    
+    .gradient-text-2 {
+        background: linear-gradient(30deg, #6736BC, 40%, #2892CB);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+    
+    .gradient-text-3 {
+        background: linear-gradient(45deg, #14BA54, #103D00);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+    
+    
+    /* ============================================
+       CAROUSEL SECTIONS
+       ============================================ */
+    
+    .carousel-section {
+        margin: 0;
+        overflow: hidden;
+    }
+    
+    .carousel {
+        position: relative;
+        width: 100vw;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+        white-space: nowrap;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .carousel::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .carousel-content {
+        display: inline-flex;
+        gap: 59px;
+        padding: 0 24px;
+    }
+    
+    .carousel-item {
+        width: min(1400px, 90vw);
+        flex-shrink: 0;
+        scroll-snap-align: center;
+    }
+    
+    .carousel-item .card {
+        width: 100%;
+        height: 100%;
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+        box-sizing: border-box;
+        box-shadow: 0 0 24px 0 rgba(205, 205, 205, 0.25);
+    }
+    
+    .carousel-item:nth-child(n+2) .card {
+        gap: 80px;
+    }
+    
+    section > .section-title:has(+ .carousel) {
+        padding-top: 149px;
+        margin-bottom: 74px;
+    }
+    
+    .carousel-section .carousel {
+        margin-top: 74px;
+    }
+    
+    .carousel-section .carousel-heading {
+        letter-spacing: -0.01em;
+    }
+    
+    /* Carousel Text */
+    .carousel-text-block {
+        width: 49%;
+        flex-shrink: 0;
+    }
+    
+    .carousel-item:nth-child(n+2) .carousel-text-block {
+        width: 30%;
+    }
+    
+    .carousel-heading,
+    .carousel-description {
+        width: 100%;
+        max-width: 410px;
+        white-space: normal;
+    }
+    
+    .carousel-heading {
+        font-size: var(--step-2);
+        font-weight: bold;
+        line-height: var(--leading-tight);
+        letter-spacing: var(--tracking-tight);
+        margin-bottom: 24px;
+    }
+    
+    .carousel-description {
+        font-size: var(--step-0);
+        line-height: var(--leading-normal);
+    }
+    
+    .carousel-item-caption {
+        margin-top: 1.5rem;
+        font-size: var(--step-1);
+        line-height: var(--leading-normal);
+        text-align: left;
+        white-space: normal;
+        padding: 0;
+    }
+    
+    /* Carousel Images */
+    .carousel-image-container {
+        width: 25%;
+        height: 60%;
+        flex-shrink: 0;
+    }
+    
+    .carousel-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: visible;
+    }
+    
+    .carousel-item:nth-child(n+2) .carousel-image-container {
+        width: 44%;
+        height: 44%;
+        flex-shrink: 0;
+    }
+    
+    .carousel-item:nth-child(n+2) .carousel-image {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    
+    .carousel-image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    
+    
+    /* ============================================
+       GESTURES SECTION
+       ============================================ */
+    
+    .gestures-section {
+        margin: 0;
+        margin-top: 223px;
+    }
+    
+    .gestures-section .section-title {
+        margin-bottom: 63px;
+    }
+    
+    .gestures-section .card {
+        background-color: white;
+    }
+    
+    .gestures .card {
+        height: 565px;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        background-color: white;
+        box-shadow: 0 0 24px 0 rgba(205, 205, 205, 0.25);
+    }
+    
+    .gestures .grid {
+        padding-bottom: 212px;
+    }
+    
+    .gestures-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 2rem;
+        color: #000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 78px;
+        padding-bottom: 72px;
+    }
+    
+    .gestures-image {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 82px;
+        object-fit: contain;
+        max-width: 150px;
+        max-height: 150px;
+        display: block;
+        flex-shrink: 0;
+    }
+    
+    .gestures-content .carousel-description {
+        font-size: var(--step-0);
+        line-height: var(--leading-normal);
+        letter-spacing: var(--tracking-tight);
+        max-width: 365px;
+        margin-top: 0px;
+    }
+    
+    .gestures .card .carousel-heading {
+        margin-bottom: 24px;
+        margin-top: 0px;
+    }
+    
+    
+    /* ============================================
+       PERSPECTIVE SECTION
+       ============================================ */
+    
+    .perspective-section {
+        margin-top: 252px;
+    }
+    
+    .perspective-section .section-title {
+        margin-bottom: 58px;
+    }
+    
+    
+    /* ============================================
+       TEXT CENTER SECTIONS
+       ============================================ */
+    
+    .text-center {
+        text-align: center;
+    }
+    
+    .text-center .section-title,
+    .text-center .subtitle {
+        text-align: center;
+        letter-spacing: var(--tracking-tight);
+    }
+    
+    .text-center .section-title {
+        padding-top: 153px;
+    }
+    
+    .text-center .subtitle {
+        font-size: var(--step-1);
+        margin-top: 23px;
+        margin-bottom: 68px;
+    }
+    
+    
+    /* ============================================
+       REALITY CAROUSEL
+       ============================================ */
+    
+    .reality-section {
+        color: white;
+    }
+    
+    .reality-carousel {
+        position: relative;
+        width: 100vw;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        overflow-x: auto;
+        overflow-y: visible;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+    }
+    
+    .reality-carousel-content {
+        display: inline-flex;
+        gap: 59px;
+        padding: 0 12px;
+    }
+    
+    .reality-carousel-item {
+        width: min(1124px, 90vw);
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        scroll-snap-align: center;
+    }
+    
+    .reality-carousel-item .card {
+        width: 100%;
+        aspect-ratio: 5/3;
+        margin-bottom: 24px;
+    }
+    
+    .reality-carousel-item .card img {
+        transform: translateX(0);
+        transition: transform 0.1s ease-out;
+        will-change: transform;
+        position: relative;
+    }
+    
+    .caption-bold {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 0;
+    }
+    
+    
+    /* ============================================
+       MODAL
+       ============================================ */
+    
+    .modal-overlay {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,.5);
+        z-index: 1000;
+    }
+    
+    .modal {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: white;
+        border-radius: var(--radius);
+        z-index: 1001;
+        width: min(1623px, 90vw);
+        height: min(1013px, 90vh);
+        box-sizing: border-box;
+    }
+    
+    .modal-container {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: flex-start;
+        padding: 57px clamp(40px, 10%, 162px) 57px clamp(60px, 6%, 96px);
+        box-sizing: border-box;
+    }
+    
+    .modal-content {
+        width: clamp(400px, 48%, 623px);
+        height: auto;
+        aspect-ratio: 623/898;
+        border-radius: var(--radius);
+        overflow: hidden;
+        background-color: var(--bg);
+        flex-shrink: 1;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+    
+    .modal-content img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background-color: var(--bg);
+    }
+    
+    .modal-blurbs {
+        width: clamp(500px, 41%, 662px);
+        flex-shrink: 0;
+        margin-right: clamp(40px, 5%, 80px);
+        margin-top: 20px;
+        box-sizing: border-box;
+    }
+    
+    .blurb {
+        display: flex;
+        gap: 38px;
+        margin-bottom: 44px;
+        align-items: flex-start;
+    }
+    
+    .blurb:first-title {
+        margin-top: 0;
+    }
+    
+    .blurb:last-child {
+        margin-bottom: 0;
+    }
+    
+    .blurb-marker {
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        border: 2px solid #000;
+        background-color: #E5E5E5;
+        flex-shrink: 0;
+        margin-top: 0.02rem;
+    }
+    
+    .blurb-content {
+        width: clamp(440px, 91%, 602px);
+    }
+    
+    .blurb-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 0 0 8px 0;
+        line-height: 1;
+    }
+    
+    .blurb-text {
+        line-height: 1.5;
+        margin: 0;
+    }
+    
+    .close-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        background: white;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 24px;
+        box-shadow: 0 2px 8px rgba(0,0,0,.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .close-btn:hover {
+        background: #f0f0f0;
+    }
+    
+    .modal-open {
+        overflow: hidden;
+    }
+    
+    
+    /* ============================================
+       BUTTONS
+       ============================================ */
+    
+    .btn {
+        padding: 1rem 2rem;
+        background: #000;
+        color: #fff;
+        border: none;
+        border-radius: 24px;
+        cursor: pointer;
+        transition: .3s;
+        font-size: 1rem;
+    }
+    
+    .btn:hover {
+        background: #333;
+    }
+    
+    
+    /* ============================================
+       ANIMATIONS
+       ============================================ */
+    
+    .fade-in {
         opacity: 0;
         transform: translateY(60px);
         transition: opacity 0.5s ease-out, transform 0.35s ease-out;
-      }
-
-      /* Add class when element becomes visible */
-      .fade-in.visible {
+    }
+    
+    .fade-in.visible {
         opacity: 1;
         transform: translateY(0);
-      }
-    </style>
+    }
+    
+    
+    /* ============================================
+       MEDIA QUERIES - DESKTOP LARGE (1440px+)
+       ============================================ */
+    
+    @media screen and (min-width: 1440px) {
+        .carousel-content {
+            padding-left: calc((100vw - var(--max)) / 2);
+            padding-right: calc((100vw - var(--max)) / 2);
+        }
+        
+        .reality-carousel-content {
+            padding-left: calc((100vw - var(--max)) / 2);
+            padding-right: calc((100vw - var(--max)) / 2 + 220px);
+        }
+    }
+    
+    
+    /* ============================================
+       MEDIA QUERIES - BELOW 1440px
+       ============================================ */
+    
+    @media screen and (max-width: 1440px) {
+        .carousel-item .card {
+            min-height: auto;
+            height: auto;
+            aspect-ratio: 16/9;
+        }
+        
+        .carousel-image-container {
+            width: 23%;
+            height: auto;
+            aspect-ratio: 465/695;
+        }
+        
+        .carousel-item {
+            height: 758px;
+        }
+    }
+    
+    
+    /* ============================================
+       MEDIA QUERIES - DESKTOP (1201-1439px)
+       ============================================ */
+    
+    @media screen and (max-width: 1439px) and (min-width: 1201px) {
+        .carousel-item {
+            height: 730px;
+        }
+    }
+    
+    
+    /* ============================================
+       MEDIA QUERIES - BELOW 1200px
+       ============================================ */
+    
+    @media screen and (max-width: 1200px) {
+        .timeline-grid {
+            min-width: auto;
+            display: grid;
+            grid-template-columns: repeat(2, 267px);
+            gap: 24px;
+            width: fit-content;
+            margin: 0 auto;
+            justify-content: center;
+            margin-bottom: 166px;
+        }
+        
+        .feature {
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .feature-content {
+            order: 2;
+            width: 100%;
+            max-width: 691px;
+            padding-right: 0;
+            margin: 0 auto;
+        }
+        
+        .feature-image {
+            order: 1;
+            width: 100%;
+            max-width: 691px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .timeline {
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .header {
+            flex-direction: column;
+            align-items: flex-start;
+            padding-top: 24px;
+        }
+        
+        .header .subtitle {
+            text-align: left;
+            width: 100%;
+            align-self: flex-start;
+        }
+        
+        .title {
+            margin-top: 32px;
+            margin-bottom: 16px;
+        }
+        
+        br {
+            display: none;
+        }
+        
+        section > .section-title:has(+ .carousel),
+        .gestures-section .section-title {
+            text-align: center;
+        }
+        
+        .medium-title {
+            text-align: center;
+            width: 100%;
+            margin-bottom: 0px;
+        }
+        
+        .carousel-item {
+            height: 630px;
+        }
+    }
+    
+    
+    /* ============================================
+       MEDIA QUERIES - TABLET LARGE (1025-1200px)
+       ============================================ */
+    
+    @media screen and (max-width: 1200px) and (min-width: 1025px) {
+        /* Inherits from above breakpoint */
+    }
+    
+    
+    /* ============================================
+       MEDIA QUERIES - TABLET (768-1024px)
+       ============================================ */
+    
+    @media screen and (max-width: 1024px) and (min-width: 768px) {
+        .card-content-top {
+            padding: 8px 27px;
+        }
+        
+        .card-content-bottom {
+            padding: 25px 27px 50px;
+        }
+        
+        .feature .section-title,
+        .feature-text {
+            text-align: left;
+            max-width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        
+        .eyebrow {
+            margin-top: 0px;
+            margin-bottom: 12px;
+        }
+        
+        .carousel-content {
+            gap: 24px;
+        }
+        
+        .grid-3 {
+            grid-template-columns: 1fr;
+        }
+        
+        .modal {
+            width: min(90vw, 800px);
+            height: min(90vh, 900px);
+            padding: 32px;
+        }
+        
+        .modal-container {
+            flex-direction: column-reverse;
+            overflow-y: auto;
+            height: 100%;
+            gap: 32px;
+            padding: 0;
+        }
+        
+        .modal-blurbs {
+            width: 100%;
+            margin-right: 0;
+        }
+        
+        .blurb-content {
+            width: 100%;
+        }
+        
+        .modal-content {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 691/996;
+            max-height: 50vh;
+        }
+    }
+    
+    
+    /* ============================================
+       MEDIA QUERIES - BELOW 1024px
+       ============================================ */
+    
+    @media screen and (max-width: 1024px) {
+        .carousel-image-container {
+            width: 25%;
+            height: auto;
+            aspect-ratio: 465/695;
+            order: 1;
+            margin: 0 auto;
+        }
+        
+        .carousel-item:nth-child(n+2) .carousel-image-container {
+            width: 40%;
+            aspect-ratio: 695/465;
+        }
+        
+        .carousel-item .card,
+        .carousel-item:nth-child(n+2) .card {
+            gap: 32px;
+        }
+        
+        .carousel-text-block,
+        .carousel-item:nth-child(n+2) .carousel-text-block {
+            width: 100%;
+        }
+        
+        .carousel-item .card {
+            flex-direction: column;
+            gap: 32px;
+            aspect-ratio: 15 / 16;
+            padding: 10px 32px;
+            min-height: auto;
+        }
+        
+        .carousel-text-block {
+            width: 100%;
+            text-align: center;
+            order: 2;
+            margin: 0 auto;
+            max-width: 410px;
+        }
+        
+        .carousel-item {
+            height: auto;
+            min-height: unset;
+        }
+        
+        .carousel-item .card {
+            flex-direction: column;
+            gap: 32px;
+            padding: 48px 32px;
+            min-height: unset;
+        }
+        
+        .carousel-heading,
+        .carousel-description {
+            text-align: center;
+            margin: 12px auto;
+        }
+        
+        .reality-carousel-item {
+            width: calc(100vw - 48px);
+        }
+        
+        .reality-carousel-item .card {
+            aspect-ratio: 4/3;
+        }
+    }
+    
+    
+    /* ============================================
+       MEDIA QUERIES - TABLET (768-1024px) SPECIFIC
+       ============================================ */
+    
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        .carousel-item .card {
+            aspect-ratio: 3.2/3;
+            min-height: unset;
+        }
+        
+        .carousel-heading {
+            margin-bottom: 16px;
+        }
+        
+        .carousel-description {
+            line-height: 1.5;
+        }
+        
+        .carousel-text-block {
+            max-width: 410px;
+        }
+    }
+    
+    
+    /* ============================================
+       MEDIA QUERIES - BELOW 768px
+       ============================================ */
+    
+    @media screen and (max-width: 768px) {
+        .carousel-item {
+            height: auto;
+        }
+    }
+    
+    
+    /* ============================================
+       MEDIA QUERIES - BELOW 610px
+       ============================================ */
+    
+    @media screen and (max-width: 610px) {
+        .timeline-grid {
+            grid-template-columns: 267px;
+            width: fit-content;
+            margin: 0 auto;
+            justify-content: center;
+        }
+        
+        .carousel-item {
+            height: auto;
+        }
+    }
+    
+    
+    /* ============================================
+       MEDIA QUERIES - TABLET SMALL (426-767px)
+       ============================================ */
+    
+    @media screen and (max-width: 767px) and (min-width: 426px) {
+        .eyebrow {
+            margin-top: 0px;
+        }
+        
+        .carousel-description {
+            line-height: 1.5;
+        }
+    }
+    
+    
+    /* ============================================
+       MEDIA QUERIES - MOBILE (≤375px)
+       ============================================ */
+    
+    @media screen and (max-width: 375px) {
+        /* Scale down ONLY the huge text */
+        .title {
+            font-size: var(--step-7); /* Down from step-8 (149px → 95px) */
+        }
+        
+        .section-title {
+            font-size: var(--step-5); /* Down from step-7 (119px → 61px) */
+        }
+
+        .perspective-text {
+            font-size: var(--step-2); /* 39px - down from 61px */
+        }
+        
+        .reality-carousel-content {
+            gap: 22px;
+            padding: 0 16px;
+        }
+        
+        .eyebrow {
+            text-align: center;
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+        
+        .timeline-content {
+            text-align: center;
+            padding-top: 32px;
+        }
+        
+        .timeline-number {
+            text-align: center;
+            margin-top: 24px;
+        }
+        
+        .timeline-description {
+            text-align: center;
+            padding: 0 12px;
+        }
+        
+        .carousel-description {
+            line-height: 1.5;
+        }
+        
+        .gestures .card .carousel-heading {
+            margin-bottom: 10px;
+            margin-top: 0px;
+        }
+        
+        .gestures-content {
+            padding-top: 65px;
+        }
+        
+        .reality-carousel-item .card {
+            aspect-ratio: 4/3;
+        }
+        
+        .feature .section-title {
+            margin-top: 20px;
+            margin-bottom: 32px;
+        }
+        
+        section > .section-title:has(+ .carousel) {
+            margin-bottom: 40px;
+        }
+        
+        .subtitle {
+            line-height: 1.25;
+            text-align: left;
+        }
+        
+        .card-content-top {
+            padding: 2px 27px;
+        }
+        
+        .card-content-bottom {
+            padding: 25px 27px 30px;
+        }
+        
+        .carousel-section {
+            padding: 0 24px;
+            margin-bottom: 0;
+        }
+        
+        .perspective-text {
+            margin: 0;
+            margin-bottom: 160px;
+            line-height: 1.5;
+        }
+        
+        .title {
+            margin-bottom: 16px;
+            text-align: left;
+        }
+        
+        .hero {
+            height: 375px;
+            margin-top: 0;
+        }
+        
+        .hero-section {
+            margin-bottom: 60px;
+        }
+        
+        .description {
+            line-height: 1.3;
+            max-width: 100%;
+            margin-bottom: 40px;
+        }
+        
+        .grid-4 {
+            grid-template-columns: 1fr;
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+        
+        .grid-4 .card {
+            height: 240px;
+            width: 100%;
+        }
+        
+        .feature-text {
+            margin-bottom: 32px;
+        }
+        
+        .feature-img {
+            margin-bottom: 32px;
+        }
+        
+        .btn {
+            width: 100%;
+            text-align: center;
+        }
+        
+        .timeline-grid-item {
+            width: 100%;
+        }
+        
+        .timeline-grid {
+            grid-template-columns: 267px;
+            width: fit-content;
+            margin: 0 auto;
+            justify-content: center;
+        }
+        
+        .medium-title {
+            display: block;
+            margin-bottom: 12px;
+            text-align: center;
+            align-self: flex-start;
+        }
+        
+        .carousel-item {
+            width: 345px;
+            scroll-snap-align: center;
+            height: auto;
+        }
+        
+        .carousel-item .card {
+            min-height: 555px;
+            display: flex;
+            justify-content: center;
+            overflow: visible;
+        }
+        
+        .carousel-image-container {
+            width: 50%;
+            aspect-ratio: 465/695;
+            order: 1;
+            position: static;
+            transform: none;
+        }
+        
+        .carousel-item:nth-child(n+2) .carousel-image-container {
+            width: 80%;
+            aspect-ratio: 695/465;
+            height: auto;
+            margin: 0 auto;
+            overflow: visible;
+        }
+        
+        .carousel-item:nth-child(n+2) .card {
+            min-height: 555px;
+        }
+        
+        .carousel-text-block {
+            width: 100%;
+            margin-left: 0;
+            order: 2;
+            overflow: visible;
+        }
+        
+        .carousel-heading,
+        .carousel-description {
+            white-space: normal;
+        }
+        
+        .carousel-heading {
+        }
+        
+        .carousel-content {
+            padding-left: 24px;
+            padding-right: 48px;
+            gap: 16px;
+            padding-bottom: 0;
+        }
+        
+        .carousel {
+            -webkit-overflow-scrolling: touch;
+            scroll-snap-type: x mandatory;
+        }
+        
+        .gestures-section {
+            margin-top: 120px;
+        }
+        
+        .gestures-section .section-title {
+            margin-bottom: 32px;
+        }
+        
+        .grid-3 {
+            grid-template-columns: 1fr;
+            gap: 16px;
+            padding: 0;
+        }
+        
+        .gestures .card {
+            height: 440px;
+        }
+        
+        .gestures-image {
+            margin-bottom: 40px;
+        }
+        
+        .gestures .grid {
+            margin-bottom: 160px;
+        }
+        
+        .perspective-section {
+            margin-top: 120px;
+        }
+        
+        .perspective-section .section-title {
+            margin-bottom: 32px;
+        }
+        
+        .text-center .section-title {
+            padding-top: 80px;
+        }
+        
+        .text-center .subtitle {
+            margin-top: 20px;
+            margin-bottom: 32px;
+        }
+        
+        .text-center .carousel {
+            position: relative;
+            width: 100vw;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+            overflow-x: scroll;
+            -webkit-overflow-scrolling: touch;
+            scroll-snap-type: x mandatory;
+        }
+        
+        .text-center .carousel-content {
+            display: inline-flex;
+            gap: 16px;
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+        
+        .text-center .carousel-item {
+            width: clamp(327px, 90vw, 1124px);
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .text-center .carousel-item .card {
+            width: 100%;
+            height: clamp(246px, 55vw, 845px);
+            margin-bottom: 1.5rem;
+        }
+        
+        .carousel-item-caption {
+            text-align: left;
+            padding: 0;
+            margin-top: 8px;
+            width: 100%;
+            font-size: 17px;
+            line-height: 1.54;
+        }
+        
+        .grid-section {
+            margin-bottom: 140px;
+        }
+        
+        .timeline {
+            flex-direction: column;
+            gap: 0px;
+        }
+        
+        .modal {
+            width: 90vw;
+            padding: 24px;
+        }
+    }
+</style>
 </head>
 <body>
     <main class="wrap">
@@ -1803,8 +1833,8 @@
 
                         <div class="card fade-in">
                                 <div class="card-content-top">
-                                    <h3 class="box-heading">How do we know we’re helping?</h3>
-                                    <p class="box-text">Is there a measurable improvement to the users actual experience?</p>
+                                    <h3 class="box-heading">Do we know we’re helping?</h3>
+                                    <p class="box-text">Is there an actual improvement to the users experience?</p>
                                 </div>
                                 <div class="card-content-bottom">
                                     <div class="box-tags">
