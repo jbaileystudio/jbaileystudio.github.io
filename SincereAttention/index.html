@@ -704,7 +704,7 @@ h3.box-heading {
     
     /* Carousel Text */
     .carousel-text-block {
-        width: 49%;
+        width: 45%;
         flex-shrink: 0;
     }
     
@@ -743,8 +743,8 @@ h3.box-heading {
     
     /* Carousel Images */
     .carousel-image-container {
-        width: 25%;
-        height: 60%;
+        width: 35%;
+        height: 65%;
         flex-shrink: 0;
     }
     
@@ -756,8 +756,8 @@ h3.box-heading {
     }
     
     .carousel-item:nth-child(n+2) .carousel-image-container {
-        width: 44%;
-        height: 44%;
+        width: 50%;
+        height: 50%;
         flex-shrink: 0;
     }
     
@@ -1247,7 +1247,6 @@ h3.box-heading {
         /* Inherits from above breakpoint */
     }
     
-    
     /* ============================================
        MEDIA QUERIES - TABLET (768-1024px)
        ============================================ */
@@ -1436,8 +1435,14 @@ h3.box-heading {
         .carousel-item {
             height: auto;
         }
+        
     }
     
+    @media screen and (min-width: 768px) {
+    .carousel-item:first-child .carousel-image-container {
+        margin-left: -20px;
+    }
+}
     
     /* ============================================
        MEDIA QUERIES - TABLET SMALL (376-767px)
@@ -1447,7 +1452,12 @@ h3.box-heading {
         .title {
         font-size: var(--step-7);
         }
-        
+
+        .header .subtitle {
+            text-align: left;
+            font-size: var(--step-1);
+        }
+
         .section-title {
             font-size: var(--step-5);
         }
@@ -1646,8 +1656,6 @@ h3.box-heading {
             white-space: normal;
         }
         
-        .carousel-heading {
-        }
         
         .carousel-content {
             padding-left: 24px;
@@ -1771,6 +1779,10 @@ h3.box-heading {
             font-size: var(--step-7); /* Down from step-8 (149px → 95px) */
         }
         
+        .carousel-item:first-child .carousel-image-container {
+                margin-left: 0 !important; /* Add !important to force override */
+            }
+
         .section-title {
             font-size: var(--step-5); /* Down from step-7 (119px → 61px) */
         }
