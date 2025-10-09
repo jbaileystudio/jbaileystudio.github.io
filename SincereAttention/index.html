@@ -85,7 +85,7 @@
     html {
         scroll-behavior: smooth;
         font-size: 16px;
-        background-color: black; /* Top matches */
+        background-color: #black;
     }
     
     body {
@@ -97,7 +97,7 @@
         letter-spacing: -0.03em;
         overscroll-behavior: auto;
         scroll-behavior: smooth;
-        background-color: white;
+        background-color: black;
     }
     
     section {
@@ -200,7 +200,7 @@
     margin-left: clamp(0px, calc(281px - (1400px - 100vw)), 281px);
     max-width: 1119px;
     font-weight: 500;
-    margin-bottom: 315px;
+    padding-bottom: 245px;
     color: #929292;
 }
     
@@ -234,6 +234,16 @@
     
     .grey-background-wrapper {
         background-color: #E5E5E5;
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+    }
+
+    .white-background-wrapper {
+        background-color: white;
         width: 100vw;
         position: relative;
         left: 50%;
@@ -438,7 +448,7 @@ h3.box-heading {
         gap: var(--space);
         margin: 0;
         border: var(--debug-border);
-        margin-top: -115px;
+        top: -115px;
         position: relative;
         z-index: 1;
     }
@@ -852,7 +862,7 @@ h3.box-heading {
        ============================================ */
     
     .perspective-section {
-        margin-top: 252px;
+        padding-top: 252px;
     }
     
     .perspective-section .section-title {
@@ -1466,7 +1476,7 @@ h3.box-heading {
     .perspective-text {
         font-size: var(--step-2);
         margin: 0;
-        margin-bottom: 160px;
+        padding-bottom: 160px;
         line-height: 1.5;
     }
     
@@ -1674,7 +1684,7 @@ h3.box-heading {
     }
     
     .gestures .grid {
-        margin-bottom: 160px;
+        padding-bottom: 160px;
     }
     
     .grid-3 {
@@ -1685,7 +1695,7 @@ h3.box-heading {
     
     /* Perspective Section */
     .perspective-section {
-        margin-top: 120px;
+        padding-top: 120px;
     }
     
     .perspective-section .section-title {
@@ -1843,7 +1853,8 @@ h3.box-heading {
                 </section>
             </div>
         </div>
-
+<div class="white-background-wrapper">
+    <div class="content-wrapper">
         <section class="feature">
             <div class="feature-content">
                 <h2 class="section-title fade-in"><span class="gradient-text-3">Up Close.</span> <br>Personal.</h2>
@@ -1864,7 +1875,10 @@ h3.box-heading {
                 <!--This is a comment. <button class="btn" onclick="openModal()">Take a look through our eyes</button>-->
             </div>
         </section>
-
+    </div>
+</div>
+<div class="white-background-wrapper">
+    <div class="content-wrapper">
         <section class="timeline">
             <h2 class="medium-title fade-in">Over 18 <br>months:</h2>
             <div class="grid grid-4 timeline-grid">
@@ -1906,6 +1920,8 @@ h3.box-heading {
                 </div>
             </div>
         </section>
+    </div>
+</div>
 
 
 <div class="grey-background-wrapper">
@@ -2062,11 +2078,14 @@ h3.box-heading {
     </div>
 </div>
 
-
+<div class="white-background-wrapper">
+    <div class="content-wrapper">
         <section class="perspective-section">
             <h2 class="section-title fade-in">Full Perspective</h2>
             <p class="perspective-text fade-in">This approach supported any team who recognized the importance of a deeper look. The focus was on witnessing how we influenced the <span class="gradient-text-1">life of the customer.</span> We quickly found what matters to our users was lacking attention, what didn’t was getting priority, and opportunity existed in the industry unclaimed. <span class="gradient-text-2">The customer had never gotten this level of attention.</span></p>
         </section>
+    </div>
+</div>
 
 <div class="dark-background-wrapper bottom">
     <div class="content-wrapper">
