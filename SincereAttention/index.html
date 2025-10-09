@@ -86,6 +86,7 @@
         scroll-behavior: smooth;
         font-size: 16px;
         background-color: black;
+        min-height: 100%;
     }
     
     body {
@@ -97,8 +98,28 @@
         letter-spacing: -0.03em;
         overscroll-behavior: auto;
         scroll-behavior: smooth;
-        background-color: black;
+        background: black;
+        min-height: 100vh;
+        position: relative;
     }
+
+    html, body {
+    background-color: black;
+    }
+
+        /* iOS Safari needs this */
+        @supports (-webkit-touch-callout: none) {
+            html {
+                background: black;
+                height: 100%;
+            }
+            
+            body {
+                background: black;
+                min-height: 100vh;
+                min-height: -webkit-fill-available;
+            }
+        }
     
     section {
         margin: 0;
